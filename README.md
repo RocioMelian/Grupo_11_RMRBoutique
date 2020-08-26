@@ -41,17 +41,17 @@
     - Carrito de compras
 
  ## 📝 Wireframes
- - [Home](https://github.com/RocioMelian/grupo_11_RMR_Boutique/blob/master/wireframes/home.jpg)
- - [Detalle del producto](https://github.com/RocioMelian/grupo_11_RMR_Boutique/blob/master/wireframes/detalle-producto.png)
- - [Carrito de compras](https://github.com/RocioMelian/grupo_11_RMR_Boutique/blob/master/wireframes/carrito.png)
- - [Formulario de registro](https://github.com/RocioMelian/grupo_11_-MR_Boutique/blob/master/wireframes/register.png)
- - [Formulario de carga de producto](https://github.com/RocioMelian/grupo_11_-MR_Boutique/blob/master/wireframes/form-admin.png)
- - [Inicio de sesión](https://github.com/RocioMelian/grupo_11_-MR_Boutique/blob/master/wireframes/login.png)
+ - [Home](https://github.com/RocioMelian/Grupo_11_RMRBoutique/blob/master/sprint1/wireframes/home.jpg)
+ - [Detalle del producto](https://github.com/RocioMelian/Grupo_11_RMRBoutique/blob/master/sprint1/wireframes/detalle-producto.png)
+ - [Carrito de compras](https://github.com/RocioMelian/Grupo_11_RMRBoutique/blob/master/sprint1/wireframes/carrito.png)
+ - [Formulario de registro](https://github.com/RocioMelian/Grupo_11_RMRBoutique/blob/master/sprint1/wireframes/register.png)
+ - [Formulario de carga de producto](https://github.com/RocioMelian/Grupo_11_RMRBoutique/blob/master/sprint1/wireframes/form-admin.png)
+ - [Inicio de sesión](https://github.com/RocioMelian/Grupo_11_RMRBoutique/blob/master/sprint1/wireframes/login.png)
 
 ## 🖌 Diseño(en proceso)
-- [Logo](https://github.com/RocioMelian/grupo_11_-MR_Boutique/blob/master/img/logotipo.jpg)
-- [Fondo](https://github.com/RocioMelian/grupo_11_-MR_Boutique/blob/master/img/fondo.jpg)
-- [Colores](https://github.com/RocioMelian/grupo_11_-MR_Boutique/tree/master/paletaColores)
+- [Logo](https://github.com/RocioMelian/Grupo_11_RMRBoutique/blob/master/sitio/public/images/logotipo.jpg)
+- [Fondo](https://github.com/RocioMelian/Grupo_11_RMRBoutique/blob/master/sitio/public/images/fondo.jpg)
+- [Colores](https://github.com/RocioMelian/Grupo_11_RMRBoutique/tree/master/sprint1/paletaColores)
 - Tipografias
    - [Anton](https://fonts.google.com/specimen/Anton?query=anton)
    - [Allan](https://fonts.google.com/specimen/Allan?query=allan)
