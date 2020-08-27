@@ -1,0 +1,47 @@
+:root{
+    --color-amarillo: #EAC926;
+    --color-grisClaro: #ebebeb;
+    --color-grisOscuro: #666666;
+    --color-azul: #03264C;
+    --color-verde: #39b54a;
+    --color-celeste: #1259c3;
+}
+/* BACKGROUND */
+body {
+    background-image: url("/images/fondo.jpg");
+}
+header{
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+}
+header .logo {
+    width: 15px;
+    height: 15px;
+}
+.productos{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.productos .contenido{
+    background-color: black;
+    padding: 10px;
+}
+
+.productos .contenido figure img{
+    width: 100%;
+}
+
+.productos article{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    position: relative;
+    height: 95%;
+}
+
+.footer {
+    justify-content: space-around;
+    align-items: flex-end;
+    background-color: var(--color-grisOscuro)
+}
