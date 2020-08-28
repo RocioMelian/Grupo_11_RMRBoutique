@@ -1,11 +1,37 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    />
+    <title>Registro de Usuario</title>
+    <link rel="stylesheet" href='/stylesheets/styleregister.css' />
   </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+<body>
+    <section class="form-register">
+      <h4>Formulario de Registro</h4>
+      <input class="controls" type="text" name="nombre" id="nombre" placeholder="Nombre">
+      
+      <input class="controls" type="text" name="apellido" id="apellido" placeholder="Apellido">
+      
+      <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su email">
+      
+      <input class="controls" type="password" name="contraseña" id="contraseña" placeholder="Ingrese su contraseña">
+      
+      <p>Estoy de acuerdo con <a href="#">Teminos y condiciones</a></p>
+      <input class="botons" type="submit" value="Registrarse">
+      <p><a href="#">¿Ya tienes cuenta?</a></p>
+    </section>
+    
+</body>
 </html>
