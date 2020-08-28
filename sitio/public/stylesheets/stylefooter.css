@@ -1,0 +1,26 @@
+    /* FOOTER */
+    .piedepagina {
+        position: absolute;
+        background-color: rgb(61, 60, 60);
+        color: white;
+        width: 100%;
+        height: 200px;
+        position: fixed;
+        bottom: 0;
+        overflow: hidden;
+    }
+    .icono1 {
+        float: right;
+        margin: 20px 55px 15px 15px;
+        color: white;
+    }
+    .copyright {
+        text-align: right;
+        font-size: 22px;
+        margin: 37px 85px;
+    }
+    .iconos {
+        border-left: 2px solid white;
+        margin-left: 1000px;
+    }
+    
