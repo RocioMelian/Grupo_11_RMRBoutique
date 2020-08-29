@@ -10,7 +10,7 @@
     margin-top: 100px;
     border-radius: 5px;
     color: black;
-    background: #55ddff;
+   
     box-shadow: 6px 13px 50px #000;
 }
 .form-register h4 {
@@ -20,7 +20,7 @@
 .controls {
     width: 100%;
     padding: 7px;
-    border-radius: 25px;
+    border-radius: 5px;
     margin-bottom: 16px;
     border: 2px solid black;
    font-size: 18px;
@@ -49,49 +49,8 @@
     margin: 16px 0;
     font-size: 16px;
 }
-
-
-
-
 /* BACKGROUND */
 body {
     background-image: url("/images/fondo.jpg");
     float: center;
-}
-/* HEADER */
-.header {
-    background-color: rgba(105, 103, 103,0.8);
-    display: flex;
-    flex-wrap: wrap;
-}
-.menu .header{
-    float: left;
-    border-radius: 4px;
-    padding: 10px 15px;
-    border: 1px solid black;
-}
-.logo {
-    opacity: 0.9;
-    position: relative;
-    width: 60px;
-    height: 60px;
-    justify-content: center;
-}
-.carrito {
-    right: 10px;
-
-}
-.icono1 {
-    float: right;
-    margin: 20px 55px 15px 15px;
-    color: white;
-}
-.copyright {
-    text-align: right;
-    font-size: 22px;
-    margin: 37px 85px;
-}
-.iconos {
-    border-left: 2px solid white;
-    margin-left: 1000px;
 }
