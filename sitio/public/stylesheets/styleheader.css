@@ -1,28 +1,19 @@
 /* HEADER */
-.cabecera {
-    background-color: rgba(105, 103, 103,0.8);
-    display: flex;
-    position: relative;
-    flex-wrap: wrap;
-    width: 100%;
-}
-.menu {
-    float: left;
-    border-radius: 4px;
-    padding: 10px 15px;
-    width: 100%;
-    border: 1px solid black;
-    position: relative;
-}
 .logo {
-    position: relative;
-    opacity: 0.9;
-    width: 60px;
-    height: 60px;
-    margin-left: 50%;
-    align-items: center;
+    text-align: center;
 }
-.carrito {
-    position: relative;
-    right: 10px;
+
+/* VERSION TABLET */
+
+@media(max-width:768px) {
+    .logo {
+    align-content: center;
+    }
+}
+
+/* VERSION PC */
+@media(min-width:1024px){
+    .logo {
+        align-content: center;
+    }
 }

@@ -3,6 +3,6 @@
 }
 /* BACKGROUND */
 body {
-    background-image: url("/images/fondo.jpg");
-    position: absolute;
+    background-image: url("../images/fondo.prueba4.jpg");
+    position: fixed;
 }
