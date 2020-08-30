@@ -14,29 +14,136 @@
     />
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/stylehome.css' />
-    <link rel='stylesheet' href='/stylesheets/styleregister.css' />
     <link rel='stylesheet' href='/stylesheets/stylefooter.css' />
     <link rel='stylesheet' href='/stylesheets/styleheader.css' />
   </head>
+  <%- include('./partials/header.ejs')  %> <!-- HEADER -->
   <body>
-<%- include('./partials/header.ejs')  %> <!-- HEADER -->
-<%- include('./partials/footer.ejs')  %> <!-- FOOTER -->
 
-    <!-- scripts de bootstrap -->
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js "
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj "
-      crossorigin="anonymous "
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js "
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo "
-      crossorigin="anonymous "
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js "
-      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI "
-      crossorigin="anonymous "
-    ></script>
+<div class="container">
+  <div class="row destacados">
+    <div class="col-6 md-4 destacado1">
+      <figure>
+        <a href=""><img src="/images/ropa/sueter.jpg" alt=""></a>
+      </figure>
+      <article class="nombredestacado">
+        <h2>SUETER</h2>
+      </article>
+      <article class="edicion">
+        <h3>Limited Edition</h3>
+      </article>
+      <article class="comprar">
+        <a href=""><button>COMPRAR</button></a>
+      </article>
+      <article class="añadircarrito">
+        <a href=""><button>AÑADIR AL CARRO</button></a>
+      </article>
+    </div>
+    <div class="col-6 destacado2">
+      <figure>
+        <a href=""><img src="/images/ropa/sueter.jpg" alt=""></a>
+      </figure>
+      <article class="nombredestacado">
+        <h3>SUETER</h3>
+      </article>
+      <article class="edicion">
+        <h3>Limited Edition</h3>
+      </article>
+      <article class="comprar">
+        <a href=""><button>COMPRAR</button></a>
+      </article>
+      <article class="añadircarrito">
+        <a href=""><button>AÑADIR AL CARRO</button></a>
+      </article>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-3 md-6 producto1">
+      <a href=""><img src="/images/ropa/pantalonhombre.jpg" alt=""><i class="precioproducto">$29.99</i></a>
+      <i class="nombreproducto">Producto</i>
+    </div>
+    <div class="col-3 producto2">
+      <a href=""><img src="/images/ropa/pantalonhombre2.jpg" alt=""><i class="precioproducto">$29.99</i></a>
+      <a href=""><i class="nombreproducto">Producto</i></a>
+    </div>
+    <div class="col-3 producto3">
+      <a href=""><img src="/images/ropa/remeramujer.jpg" alt=""><i class="precioproducto">$29.99</i></a>
+      <a href=""><i class="nombreproducto">Producto</i></a>
+    </div>
+    <div class="col-3 producto4">
+      <a href=""><img src="/images/ropa/remeramujer2.jpg" alt=""><i class="precioproducto">$29.99</i></a>
+      <a href=""><i class="nombreproducto">Producto</i></a>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-3 producto1">
+      <a href=""><img src="/images/ropa/pantalonhombre.jpg" alt=""><i class="precioproducto">$29.99</i></a>
+      <i class="nombreproducto">Producto</i>
+    </div>
+    <div class="col-3 producto2">
+      <a href=""><img src="/images/ropa/pantalonhombre2.jpg" alt=""><i class="precioproducto">$29.99</i></a>
+      <a href=""><i class="nombreproducto">Producto</i></a>
+    </div>
+    <div class="col-3 producto3">
+      <a href=""><img src="/images/ropa/remeramujer.jpg" alt=""><i class="precioproducto">$29.99</i></a>
+      <a href=""><i class="nombreproducto">Producto</i></a>
+    </div>
+    <div class="col-3 producto4">
+      <a href=""><img src="/images/ropa/remeramujer2.jpg" alt=""><i class="precioproducto">$29.99</i></a>
+      <a href=""><i class="nombreproducto">Producto</i></a>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="ofertas">
+    OFERTAS
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-3 producto1">
+      <a href=""><img src="/images/ropa/pantalonhombre.jpg" alt=""><i class="precioproducto">$29.99</i></a>
+      <i class="nombreproducto">Producto</i>
+    </div>
+    <div class="col-3 producto2">
+      <a href=""><img src="/images/ropa/pantalonhombre2.jpg" alt=""><i class="precioproducto">$29.99</i></a>
+      <a href=""><i class="nombreproducto">Producto</i></a>
+    </div>
+    <div class="col-3 producto3">
+      <a href=""><img src="/images/ropa/remeramujer.jpg" alt=""><i class="precioproducto">$29.99</i></a>
+      <a href=""><i class="nombreproducto">Producto</i></a>
+    </div>
+    <div class="col-3 producto4">
+      <a href=""><img src="/images/ropa/remeramujer2.jpg" alt=""><i class="precioproducto">$29.99</i></a>
+      <a href=""><i class="nombreproducto">Producto</i></a>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-3 producto1">
+      <a href=""><img src="/images/ropa/pantalonhombre.jpg" alt=""><i class="precioproducto">$29.99</i></a>
+      <i class="nombreproducto">Producto</i>
+    </div>
+    <div class="col-3 producto2">
+      <a href=""><img src="/images/ropa/pantalonhombre2.jpg" alt=""><i class="precioproducto">$29.99</i></a>
+      <a href=""><i class="nombreproducto">Producto</i></a>
+    </div>
+    <div class="col-3 producto3">
+      <a href=""><img src="/images/ropa/remeramujer.jpg" alt=""><i class="precioproducto">$29.99</i></a>
+      <a href=""><i class="nombreproducto">Producto</i></a>
+    </div>
+    <div class="col-3 producto4">
+      <a href=""><img src="/images/ropa/remeramujer2.jpg" alt=""><i class="precioproducto">$29.99</i></a>
+      <a href=""><i class="nombreproducto">Producto</i></a>
+    </div>
+  </div>
+</div>
+
+<%- include('./partials/footer.ejs')  %> <!-- FOOTER -->
   </body>
 </html>

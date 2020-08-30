@@ -1,19 +1,23 @@
 /* HEADER */
-.logo {
-    text-align: center;
+header {
+    background-color: rgb(61, 60, 60);
+    color: white;
+    width: 100%;
+    height: 200px;
+    position: relative;
+    bottom: 0;
+    overflow: hidden;
 }
-
-/* VERSION TABLET */
-
-@media(max-width:768px) {
-    .logo {
-    align-content: center;
-    }
+.container .logo img{
+    width: 50px;
 }
-
-/* VERSION PC */
-@media(min-width:1024px){
-    .logo {
-        align-content: center;
-    }
+.container .usuario img{
+    width: 50px;
+}
+.container .buscador img{
+    width: 50px;
+}
+.container .carrito img{
+    width: 50px;
+    right: 10px;
 }
