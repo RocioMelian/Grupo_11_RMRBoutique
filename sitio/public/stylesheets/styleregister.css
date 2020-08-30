@@ -3,16 +3,19 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* TITULO DEL REGISTER y CAJA CONTENEDORA*/
 .form-register {
+    float: right;
     width: 400px;
     padding: 30px;
     margin: auto;
     margin-top: 100px;
     border-radius: 5px;
-    color: black;
-   
+    color:black;
     box-shadow: 6px 13px 50px #000;
+    background: white;
 }
+/* INPUTS */
 .form-register h4 {
    font-size: 32px;
    margin-bottom: 32px;
@@ -22,10 +25,11 @@
     padding: 7px;
     border-radius: 5px;
     margin-bottom: 16px;
-    border: 2px solid black;
+    border: 2px solid rgb(12, 3, 3);
    font-size: 18px;
     
 }
+/* PIE DE REGISTER. ESTOY DE ACUERDO */
 .form-register p {
     height: 40px;
     text-align: center;
@@ -33,24 +37,26 @@
     
 }
 .form-register a {
-    color: black;
+    color: rgb(15, 1, 1);
     text-decoration: none;
 }
 .form-register a:hover {
     color: blue;
     text-decoration: underline;
 }
+/* BOTONERA DE REGISTRARSE */
 .form-register .botons {
     width: 100%;
-    background: #fffd82;
-    border: 2px;
-    padding: 12px;
+    background: #51e9e9;
+    border-bottom-color: black;
+    border: 45px;
+    padding: 15px;
     color: black;
     margin: 16px 0;
-    font-size: 16px;
+    font-size: 19px;
 }
 /* BACKGROUND */
 body {
-    background-image: url("/images/fondo.jpg");
+    background-image: url("/images/fondoo.jpg");
     float: center;
 }

@@ -3,9 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    />
+    <title>Registro y Carga de Productos</title>
+    <link rel="stylesheet" href='/stylesheets/styleformcarga.css' />
 </head>
 <body>
-    hola
+  <section class="form-carga"></section>
+    <h1>Carga de Producto</h1>
+    <div class="required">
+        <label>Nombre del Producto:</label>
+        <input type="text">
+    </div> 
+
+    <label for="">Articulo:</label>
+   <select>
+       <option disabled>Seleccionar</option>
+       <option value="prenda hombre">Hombre</option>
+       <option value="prenda mujer">Mujer</option>
+       <option value="prenda de niños">Niño/a</option>
+      </select>
+
+      <br>
+
+      <div class="required">
+        <label>Numero de Articulo:</label>
+        <input type="text">
+    </div>
+    <div class="required">
+      <label>Precio del Producto:</label>
+      <input type="text">
+  </div>
+  <div class="required">
+    <label>Cantidad de Ingreso:</label>
+    <input type="text">
+</div>
+<div class="required">
+  <label>Talle:</label>
+  <input type="text">
+</div>
+<label>Agregar Descripcion:</label>
+<br>
+<textarea placeholder="" name="" id="" cols="30" rows="10"></textarea>
+<br>
+<input type="submit" value="Agregar">
+<input type="reset" value="Cancelar">
+  
+</section>
+    
 </body>
 </html>
