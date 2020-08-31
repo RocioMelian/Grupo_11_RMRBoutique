@@ -70,3 +70,7 @@ a:hover{
 .buttonCarrito .buttonCambiar{
     margin-left: 100px;
 }
+ 
+@media(min-width:768px){
+    
+}

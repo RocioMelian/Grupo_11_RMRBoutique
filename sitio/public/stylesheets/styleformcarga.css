@@ -11,3 +11,15 @@
 body {
     background-image: url("/images/fondoo.jpg");;
 }
+
+.form-carga{
+    justify-content: center;
+    width: 400px;
+    padding: 30px;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 5px;
+    color:black;
+    box-shadow: 6px 13px 50px #000;
+    background: white;
+}

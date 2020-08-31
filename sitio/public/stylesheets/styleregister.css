@@ -5,11 +5,11 @@
 }
 /* TITULO DEL REGISTER y CAJA CONTENEDORA*/
 .form-register {
-    float: right;
+    justify-content: center;
     width: 400px;
     padding: 30px;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 10px;
     border-radius: 5px;
     color:black;
     box-shadow: 6px 13px 50px #000;
