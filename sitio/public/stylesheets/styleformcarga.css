@@ -1,18 +1,10 @@
-
-
-
-
-
-
-
-
-
-/* BACKGROUND */
-body {
-    background-image: url("/images/fondoo.jpg");;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-
-.form-carga{
+/* TITULO DEL REGISTER y CAJA CONTENEDORA*/
+.form-carga {
     justify-content: center;
     width: 400px;
     padding: 30px;
@@ -22,4 +14,34 @@ body {
     color:black;
     box-shadow: 6px 13px 50px #000;
     background: white;
+}
+/* INPUTS */
+.form-register h4 {
+   font-size: 32px;
+   margin-bottom: 40px;
+}
+.controls {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    border: 2px solid rgb(12, 3, 3);
+   font-size: 20px;
+
+}
+/* BOTONERA DE REGISTRARSE */
+.form-carga .botons {
+    width: 100%;
+    background: #51e9e9;
+    border-bottom-color: black;
+    border: 45px;
+    padding: 15px;
+    color: black;
+    margin: 16px 0;
+    font-size: 19px;
+}
+/* BACKGROUND */
+body {
+    background-image: url("/images/fondoo.jpg");
+    float: center;
 }

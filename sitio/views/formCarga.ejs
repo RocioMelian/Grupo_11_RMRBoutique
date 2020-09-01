@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,52 +14,59 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
     />
-    <title>Registro y Carga de Productos</title>
+    <title>Carga de producto entrante</title>
     <link rel="stylesheet" href='/stylesheets/styleformcarga.css' />
-</head>
+  </head>
 <body>
-  
-  <section class="form-carga">
-    
-    <h1>Carga de Producto</h1>
-    <div class="required">
-        <label>Nombre del Producto:</label>
-        <input type="text">
-    </div> 
+    <section class="form-carga">
+      <h4>Carga de producto entrante</h4>
 
-    <label for="">Articulo:</label>
+      <input class="controls" type="text" name="nombre produc" id="nombre produc" placeholder="Nombre del Producto">
+
+      <input class="controls" type="text" name="talle" id="talle" placeholder="Talle">
+
+      <br>
+      
+      <input class="controls" type="text" name="precio produc" id="precio produc" placeholder="Precio del Producto">
+
+      <br>
+      
+      <input class="controls" type="text" name="cant ingreso" id="cant ingreso" placeholder="Cantidad de Ingreso">
+
+      <br>
+
+      <input class="controls" type="text" name="num art" id="num art" placeholder="Numero de Articulo">
+
+      <label for="">Articulo:</label>
    <select>
        <option disabled>Seleccionar</option>
        <option value="prenda hombre">Hombre</option>
        <option value="prenda mujer">Mujer</option>
        <option value="prenda de niños">Niño/a</option>
       </select>
+      <br><br>
 
+
+      <p>Elija un color:<input type="color" name="colorElegido"></p>
       <br>
 
-      <div class="required">
-        <label>Numero de Articulo:</label>
-        <input type="text">
-    </div>
-    <div class="required">
-      <label>Precio del Producto:</label>
-      <input type="text">
-  </div>
-  <div class="required">
-    <label>Cantidad de Ingreso:</label>
-    <input type="text">
-</div>
-<div class="required">
-  <label>Talle:</label>
-  <input type="text">
-</div>
-<label>Agregar Descripcion:</label>
-<br>
-<textarea placeholder="" name="" id="" cols="30" rows="10"></textarea>
-<br>
-<input type="submit" value="Agregar">
-<input type="reset" value="Cancelar">
 
-</section>
+      <input type="date" name="fecha">
+
+      <br><br>
+
+      <input type="file" name="archivo">
+
+      <br><br>
+
+      <label>Agregar Descripcion:</label>
+      <br>
+      <textarea placeholder="" name="" id="" cols="30" rows="10"></textarea>
+      
+      <input class="botons" type="submit" value="Agregar">
+      <input class="botons" type="submit" value="Cancelar">
+      
+    </section>
+    
 </body>
 </html>
