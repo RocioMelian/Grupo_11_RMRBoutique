@@ -1,32 +1,42 @@
+
+/*GENERAL*/
 *{
     box-sizing: border-box;
     margin: auto 0;
-    align-content: center;
+    
+    
 }
-
+/*BODY*/
 body{
     background-image: url('/images/fondoo.jpg');
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-
+/*CONTENEDOR*/
+.container{
+    width: 90%;
+    
+}
 .padreCarrito{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-.row{
-    width: 70%;
-    background-color: white;
+
+.rowCarrito{
+    width: 100%;
     border: 2px solid grey;
     padding: 30px;
-    height: 200px;
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 10px;
+    margin-top: 5px;
+    height: 400px;
 }
 
+.titulo-carrito h1{
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/*A*/
 a{
     text-decoration: none;
     color: black;
@@ -36,41 +46,107 @@ a:hover{
     color: black;
 }
 
-
-.imagen img{
-    width: 95%;
-    border-left: 2px solid grey;
-    margin-left: 55px;
+/*IMAGEN*/
+.imagen{
+    display: flex;
+    flex-wrap: wrap;
 }
-.detalleCarrito{
-    padding: 10px;
-
+.imagen img{
+    width: 100%;
+    border: 2px solid grey;
+    display: flex;
+    align-items: center;
+}
+/*DETALLE*/
+.detalleCarrito {
+    padding: 5px;
+    
 }
 .nombreprod{
-    font-size: 20px;
+    font-size: 15px;
     font-style: italic;
+    
 }
 .precioprod{
-    font-size: 30px;
+    font-size: 20px;
+  
 }
 .descuentoCarrito{
     color: #39b54a;
+    float: right;
+    margin-top: 5px;
 }
+/*BUTTON*/
 .buttonCarrito{
-    padding: 10px;
-    margin-top: 110px;
+    padding: 5px;
+    
 }
 .buttonCarrito .buttonComprar , .buttonCambiar{
-    padding: 5px;
+
     border-radius: 5px;
 }
 .buttonCarrito .buttonComprar{
-    margin-left: 20px;
+  float: right;
 }
-.buttonCarrito .buttonCambiar{
-    margin-left: 100px;
-}
- 
-@media(min-width:768px){
+
+
+.comprartodo .buttonComprar{
+    border-radius: 5px;
+    margin-top: 25px;
+    float: right;
     
 }
+@media(min-width:768px){
+    .rowCarrito{
+        width: 90%;
+        border: 2px solid grey;
+        padding: 30px;
+        margin-top: 5px;
+        height: 250px;
+        position: relative;
+    }
+    .imagen{
+        width: 90%;
+        float: right;
+        justify-content: flex-end;
+        padding: 0;
+    }
+    .imagen img{
+       width: 45%;
+       
+       
+       
+      
+    }
+    .detalleCarrito{
+       padding: 0;
+     
+       display: flex;
+       flex-direction: column;
+       
+    }
+
+    .buttonCarrito{
+        display: flex;
+        justify-content: center;
+    }
+    .nombreprod{
+        font-display: line;
+        font-size: 25px;
+        font-style: italic;
+        order: -1;
+    }
+    .precioprod{
+        font-size: 30px;
+        order: 0;
+    }
+    .descuentoCarrito{
+        color: #39b54a;
+        order: 1;
+    }
+    
+    
+      
+}
+
+ 

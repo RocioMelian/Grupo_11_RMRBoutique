@@ -1,0 +1,49 @@
+/*GENERAL*/
+*{
+    box-sizing: border-box;
+    margin: auto 0;
+    
+}
+/*BODY*/
+body{
+    background-image: url('/images/fondoo.jpg');
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.padredetalle{
+
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+.row-detalle{
+    width: 100%;
+    background-color: white;
+    border: 2px solid grey;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5px;
+}
+.imgdetalle img{
+     width: 90%;
+     border: 2px solid grey;
+}
+.detalledetalle{
+    display: flex;
+    flex-wrap: wrap;
+}
+.nombredetalle{
+    font-size: 50px;
+    font-style: italic;
+    margin-left: 80px;
+}
+.preciodetalle{
+    font-size: 50px;
+    
+    
+}
+.descuentodetalle{
+    color: #39b54a;
+    font-size: 30px;
+    margin-bottom: 100px;
+}
