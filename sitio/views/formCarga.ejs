@@ -17,7 +17,12 @@
     <title>Carga de producto entrante</title>
     <link rel="stylesheet" href='/stylesheets/styleformcarga.css' />
   </head>
+  <%- include('./partials/head.ejs')  %> <!-- HEAD -->
 <body>
+  <%- include('./partials/header.ejs')  %> <!-- HEADER -->
+
+  <div class = "row">
+    <div class = "col-lg-12 col-md-12 col-sm-12 col-xs-12">
     <section class="form-carga">
       <h4>Carga de producto entrante</h4>
 
@@ -37,21 +42,15 @@
 
       <input class="controls" type="text" name="num art" id="num art" placeholder="Numero de Articulo">
 
-      <label for="">Articulo:</label>
+      <input class="controls" type="text" name="descuento" id="descuento" placeholder="Descuento %">
+
+      <label for="">Genero:</label>
    <select>
        <option disabled>Seleccionar</option>
        <option value="prenda hombre">Hombre</option>
        <option value="prenda mujer">Mujer</option>
        <option value="prenda de niños">Niño/a</option>
       </select>
-      <br><br>
-
-
-      <p>Elija un color:<input type="color" name="colorElegido"></p>
-      <br>
-
-
-      <input type="date" name="fecha">
 
       <br><br>
 
@@ -61,12 +60,15 @@
 
       <label>Agregar Descripcion:</label>
       <br>
-      <textarea placeholder="" name="" id="" cols="30" rows="10"></textarea>
+      <textarea placeholder="" name="" id="" cols="45" rows="5"></textarea>
       
       <input class="botons" type="submit" value="Agregar">
       <input class="botons" type="submit" value="Cancelar">
       
     </section>
-    
+
+  </div>
+</div>
+<%- include('./partials/footer.ejs')  %> <!-- FOOTER -->
 </body>
 </html>
