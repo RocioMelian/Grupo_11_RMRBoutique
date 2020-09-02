@@ -82,13 +82,15 @@ a:hover{
     
 }
 .buttonCarrito .buttonComprar , .buttonCambiar{
-
     border-radius: 5px;
 }
 .buttonCarrito .buttonComprar{
-  float: right;
+    margin-top: 5px;
+    margin-left: 30px;
 }
-
+.buttonCarrito .buttonCambiar{
+    margin-top: 5px;
+}
 
 .comprartodo .buttonComprar{
     border-radius: 5px;
@@ -96,8 +98,11 @@ a:hover{
     float: right;
     
 }
+/*TABLETS*/
 @media(min-width:768px){
     .rowCarrito{
+        display: flex;
+        flex-wrap: wrap;
         width: 90%;
         border: 2px solid grey;
         padding: 30px;
@@ -112,41 +117,81 @@ a:hover{
         padding: 0;
     }
     .imagen img{
-       width: 45%;
+       width: 42%;
        
-       
-       
-      
     }
-    .detalleCarrito{
-       padding: 0;
-     
-       display: flex;
+    .detalleCarrito {
+       padding: 10px;
+       display: inline-flex;
        flex-direction: column;
-       
+       position: absolute;
     }
 
     .buttonCarrito{
         display: flex;
-        justify-content: center;
+        order: 2;
+        margin-top: 8px ;
     }
     .nombreprod{
-        font-display: line;
-        font-size: 25px;
+        font-size: 30px;
         font-style: italic;
         order: -1;
     }
     .precioprod{
-        font-size: 30px;
+        font-size: 35px;
         order: 0;
     }
     .descuentoCarrito{
+        font-size: 20px;
+        display: inline;
         color: #39b54a;
         order: 1;
     }
-    
-    
-      
+    .comprartodo .buttonComprar{
+        border-radius: 5px;
+        margin-top: 25px;
+        float: right;
+        margin-right: 30px;
+    }    
+}
+/*PC*/
+@media(min-width:1024px){
+    .rowCarrito{
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+        border: 2px solid grey;
+        padding: 30px;
+        margin-top: 5px;
+        height: 250px;
+        position: relative;
+    }
+    .titulo-carrito h1{
+        margin-left: 90px;
+        font-size: 30px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .imagen{
+        width: 55%;
+        float: right;
+        justify-content: flex-end;
+        padding: 0;
+    }
+    .detalleCarrito{
+        margin-left: 10px;
+        padding: 10px;
+    }
+    .buttonCarrito{
+        order: 2;
+        margin-top: 8px ; 
+    }
+    .comprartodo .buttonComprar{
+        border-radius: 5px;
+        margin-top: 25px;
+        float: right;
+        margin-right: 110px;
+
+    }
 }
 
  
