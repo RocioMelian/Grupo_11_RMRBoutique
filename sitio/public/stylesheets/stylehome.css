@@ -1,10 +1,10 @@
-/* IMPORTS */
+/* --- IMPORTS --- */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
-/* AJUSTE GLOBAL */
+/* --- AJUSTE GLOBAL --- */
 * {
     margin: 0;
 }
-/* BACKGROUND */
+/* --- BACKGROUND --- */
 body {
     position: absolute;
     background-image: url("/images/fondoo.jpg");
@@ -18,7 +18,7 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
-/* PRODUCTO DESTACADO IZQUIERDO */
+/* --- PRODUCTO DESTACADO IZQUIERDO --- */
 .destacado1 {
     position: relative;
     border: 2px solid grey;
@@ -27,14 +27,14 @@ body {
     box-shadow: gray;
 }
 
-/* PRODUCTO DESTACADO DERECHO */
+/* --- PRODUCTO DESTACADO DERECHO --- */
 .destacado2 {
     position: relative;
     border: 2px solid grey;
     padding: 2px;
     height: 200px;
 }
-/* ATRIBUTOS COMPARTIDOS DE CONTENEDORES DESTACADOS */
+/* --- ATRIBUTOS COMPARTIDOS DE CONTENEDORES DESTACADOS --- */
 .container .destacados {
     border: 20px transparent;
 }
@@ -69,7 +69,7 @@ body {
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
 }
-/* PRODUCTOS */
+/* --- PRODUCTOS --- */
 .producto1,
 .producto2,
 .producto3,
@@ -78,6 +78,7 @@ body {
     border: 22px solid transparent;
     padding: 2px;
     top: 20px;
+    margin-top: 31px;
     margin-bottom: 20px;
 }
 .producto1 img {
@@ -114,9 +115,11 @@ body {
     font-size: 20px;
     border: 2px solid grey;
 }
-.container .ofertas {
+.ofertas {
     position: absolute;
     border: 2px solid grey;
+    font-size: 30px;
+    margin-bottom: 20px;
 }
 /* --- VERSION PARA TABLET (768px) --- */
 

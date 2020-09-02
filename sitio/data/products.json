@@ -1,0 +1,26 @@
+[
+    {
+        "nombre": "Prenda",
+        "id": "1",
+        "precio": "$100",
+        "descuento": "5"
+    },
+    {
+        "nombre": "Prenda",
+        "id": "2",
+        "precio": "$100",
+        "descuento": "0"
+    },
+    {
+        "nombre": "Prenda",
+        "id": "3",
+        "precio": "$100",
+        "descuento": "30"
+    },
+    {
+        "nombre": "Prenda",
+        "id": "4",
+        "precio": "$100",
+        "descuento": "10"
+    }
+]
