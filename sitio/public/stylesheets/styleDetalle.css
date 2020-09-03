@@ -10,48 +10,73 @@ body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-size: cover;
 }
-.padredetalle{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.row-detalle{
-    
+.principal{
     border: 2px solid grey;
-    padding: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 5px;
-}
-/*A*/
-a{
-    text-decoration: none;
-    color: black;
-}
-a:hover{
-    text-decoration: none;
-    color: black;
 }
 .imgdetalle img{
-     width: 70%;
-     border: 2px solid grey;
+    border: 2px solid grey;
+    width: 100%;
 }
-.detalledetalle{
-    display: flex;
-    flex-wrap: wrap;
+.descrip{
+    font-size: 1.5rem;
 }
-.nombredetalle{
-    font-size: 50px;
-    font-style: italic;
-    margin-left: 80px;
+.datos h3{
+    font-size: 40px;
 }
-.preciodetalle{
-    font-size: 50px;
-    
-    
+.detalle h2 {
+    margin-top: 40px;
 }
-.descuentodetalle{
+
+.detalle .contenido {
+    padding: 20px;
+}
+
+.detalle span{
     color: #39b54a;
-    font-size: 30px;
-    margin-bottom: 100px;
+}
+
+.detalle .precio {
+    text-decoration: line-through;
+}
+.detalle button {
+    background-color: lightseagreen;
+    border: 0;
+    width: 100%;
+    border-radius: 8px;
+    padding: 12px;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+ /*TABLETS*/
+
+@media(min-width:768px) {
+    .imgdetalle{
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        margin-left: 15px ;
+    }
+    .imgdetalle img{
+        width: 90%; 
+    }
+}
+
+/*PC*/
+@media(min-width:1024px){
+    .descrip{
+        text-align: center;
+    }
+    .detalle h2 {
+        font-size: 3em;
+        font-weight: 300;
+    }
+    .detalle img {
+        width: 80%;
+    }
+    .detalle .datos {
+        border-left: 2px solid grey;
+    }
+    .datos i{
+        display: inline;
+    }
 }
