@@ -21,17 +21,18 @@
 
 <body>
    <!--<%- include('./partials/header.ejs')  %>  HEADER --> 
-    <nav class="container">
-      <section class="padreCarrito">
+   
+    <div class="container">
+    
         <div class="col-12 titulo-carrito">
           <h1>Tu carrito</h1>
          </div>
-        <div class="rowCarrito">
-          <div class="col-12 col-md-12 col-lg-12">
+         <div class="rowCarrito">
+          <div class="col-12 col-md-12 col-lg-12 col-sm-12">
           <div class="contenido">
-          <div class="imagen">
+          <figure class="imagen">
             <img src="/images/ropa/faldamujer2.jpg" alt="">
-           </div>
+          </figure>
           
             <div class="detalleCarrito">
               
@@ -42,7 +43,10 @@
                   10% OFF
                 </div>
                 <div class="precioprod">
-                    $1999
+                    <strike>$1999</strike>
+                </div>
+                <div class="preciofinal">
+                  $199
                 </div>
                 
           
@@ -55,11 +59,11 @@
         </div>
       </div>
         <div class="rowCarrito">
-          <div class="col-12 col-md-12 col-lg-12">
+          <div class="col-12 col-md-12 col-lg-12 col-sm-12">
            <div class="contenido">
-          <div class="imagen">
+          <figure class="imagen">
             <img src="/images/ropa/jeansmujer.jpg" alt="">
-        </div>
+          </figure>
           <div class="detalleCarrito">
             
             <div class="nombreprod">
@@ -69,9 +73,11 @@
                 15% OFF
               </div>
               <div class="precioprod">
-                  $2199
+                  <strike>$2199</strike>
               </div>
-              
+              <div class="preciofinal">
+                $329
+              </div>
          
           <div class="buttonCarrito">
              <button class="buttonCambiar"><a href="">Cambiar producto</a></button>
@@ -82,13 +88,14 @@
       </div>
         </div>
       <div class="rowCarrito">
-        <div class="col-12 col-md-12 col-lg-12">
+        <div class="col-12 col-md-12 col-lg-12 col-sm-12">
           <div class="contenido">
-        <div class="imagen">
+        <figure class="imagen">
           <img src="/images/ropa/jeanshombre.jpg" alt="">
-      </div>
+        </figure>
         <div class="detalleCarrito">
           
+
           <div class="nombreprod">
             <h2>Jeans Ciro</h2>
           </div>
@@ -96,9 +103,11 @@
               25% OFF
             </div>  
             <div class="precioprod">
-                $3299
+                <strike>$3299</strike>
             </div>
-            
+            <div class="preciofinal">
+              $824
+            </div>
         
         <div class="buttonCarrito">
            <button class="buttonCambiar"><a href="">Cambiar producto</a></button>
@@ -108,12 +117,13 @@
       </div> 
     </div>
   </div>
-      </section>
+     
       <div class="comprartodo">
         <button class="buttonComprar"><a href="">Comprar todo</a></button>
       </div>
-    </nav>
-
+    </div>
+  </div>
+  
 
     <!-- scripts de bootstrap -->
     <script

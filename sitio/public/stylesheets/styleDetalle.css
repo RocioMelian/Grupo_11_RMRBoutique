@@ -8,24 +8,32 @@
 body{
     background-image: url('/images/fondoo.jpg');
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-size: cover;
 }
 .padredetalle{
-
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .row-detalle{
-    width: 100%;
-    background-color: white;
+    
     border: 2px solid grey;
     padding: 30px;
     display: flex;
     flex-wrap: wrap;
     margin-top: 5px;
 }
+/*A*/
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    text-decoration: none;
+    color: black;
+}
 .imgdetalle img{
-     width: 90%;
+     width: 70%;
      border: 2px solid grey;
 }
 .detalledetalle{
