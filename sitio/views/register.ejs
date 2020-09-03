@@ -17,23 +17,31 @@
     <title>Registro de Usuario</title>
     <link rel="stylesheet" href='/stylesheets/styleregister.css' />
   </head>
-<body>
-    <section class="form-register">
-      <h4>Formulario de Registro</h4>
+  <%- include('./partials/head.ejs')  %> <!-- HEAD -->
+  <body>
+    <%- include('./partials/header.ejs')  %> <!-- HEADER -->
 
-      <input class="controls" type="text" name="nombre" id="nombre" placeholder="Nombre">
-      
-      <input class="controls" type="text" name="apellido" id="apellido" placeholder="Apellido">
-      
-      <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su email">
-      
-      <input class="controls" type="password" name="contraseña" id="contraseña" placeholder="Ingrese su contraseña">
-      
-      <p>Estoy de acuerdo con <a href="#">Teminos y condiciones <input type="checkbox"></a></p>
-      
-      <input class="botons" type="submit" value="Registrarse">
-      <p><a href="#">¿Ya tienes cuenta?</a></p>
-    </section>
+    <div class = "row">
+      <div class = "col-lg-12 col-md-12 col-sm-12 col-xs-12">
+      <section class="form-register">
+        <h4>Formulario de Registro</h4>
+  
+        <input class="controls" type="text" name="nombre" id="nombre" placeholder="Nombre">
+        
+        <input class="controls" type="text" name="apellido" id="apellido" placeholder="Apellido">
+        
+        <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su email">
+        
+        <input class="controls" type="password" name="contraseña" id="contraseña" placeholder="Ingrese su contraseña">
+        
+        <p>Estoy de acuerdo con <a href="#">Teminos y condiciones <input type="checkbox"></a></p>
+        
+        <input class="botons" type="submit" value="Registrarse">
+        <p><a href="#">¿Ya tienes cuenta?</a></p>
+      </section>
     
-</body>
-</html>
+    </div>
+  </div>
+  <%- include('./partials/footer.ejs')  %> <!-- FOOTER -->
+  </body>
+  </html>

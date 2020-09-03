@@ -10,13 +10,23 @@ body {
     background-image: url("/images/fondoo.jpg");
     width: 100%;
     max-width: 100%;
+    background-size: cover;
 }
+/* GENERAL */
 .container {
     width: 100%;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+}
+/* BANNER */
+#carouselExampleSlidesOnly {
+    position: relative;
+    width: 80%;
+    border: 2px solid grey;
+    left: 10%;
+    margin-bottom: 20px;
 }
 /* --- PRODUCTO DESTACADO IZQUIERDO --- */
 .destacado1 {
@@ -124,6 +134,13 @@ body {
 /* --- VERSION PARA TABLET (768px) --- */
 
 @media(max-width: 768px) {
+    #carouselExampleSlidesOnly {
+        width: 80%;
+        border: 2px solid grey;
+        left: 10%;
+        margin-bottom: 20px;
+        display: none;
+    }
     .destacado2 {
         display: none;
         width: 100%;
@@ -131,9 +148,20 @@ body {
     .nombreproducto {
         font-size: 30px;
     }
+    .producto1 img {
+        border: 4px solid grey;
+        width: 50%;
+    }
 }
 /* --- VERSION PARA ESCRITORIO (1024px) --- */
 @media(max-width: 1024px) {
+    #carouselExampleSlidesOnly {
+        width: 80%;
+        border: 2px solid grey;
+        left: 10%;
+        margin-bottom: 20px;
+        
+    }
     .nombreproducto {
         font-size: 20px;
     }
