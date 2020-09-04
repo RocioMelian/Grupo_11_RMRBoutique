@@ -15,7 +15,7 @@ body{
 
 /*CONTENEDOR*/
 
-.contenido{
+.contenido-carrito{
     width: 100%;
     border: 2px solid grey;
     margin-top: 5px;
@@ -116,7 +116,7 @@ a:hover{
 }
 /*TABLETS*/
 @media(min-width:768px){
-    .contenido{
+    .contenido-carrito{
         width: 100%;
         border: 2px solid grey;
         margin-top: 5px;
