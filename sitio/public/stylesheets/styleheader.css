@@ -24,15 +24,18 @@ li {
     
 }
 .login{
-    margin-left: 80%;
+   
+    margin-bottom: -5px;
 }
-.carrito, .login{
-    margin-top: 35px;
+.admin{
+    margin-left: 20px;
+    color: white;
 }
+
 .barra input{
     width: 300px;
-    margin-left: 51px;
-    margin-top: 40px;
+    margin-left: 160px;
+    margin-top: 10px;
     border-radius: 40px;
 }
 .boton-barra{
@@ -43,24 +46,34 @@ nav {
     margin-top: 10px;
     margin-right: 20px;
 }
+
+
 a{
     text-decoration: none;
 }
-li:hover a {
+.admin:hover{
    color: #55ddff
 }
-i{
+
+
+.login{
+    text-decoration: none;
+    color: white;
+    margin-top: -5px;
+}
+.login:hover{
+    text-decoration: none;
+    color: #55ddff
+}
+.carritodibujo{
     text-decoration: none;
     color: white;
 }
-i:hover{
+.carritodibujo:hover{
     text-decoration: none;
-    
+    color: #55ddff
 }
-a{
-    text-decoration: none;
-    color: white;
-}
+
 a:hover{
     text-decoration: none;
     
