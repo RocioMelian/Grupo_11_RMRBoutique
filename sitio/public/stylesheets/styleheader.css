@@ -34,7 +34,7 @@ li {
 
 .barra input{
     width: 300px;
-    margin-left: 160px;
+    margin-left: 140px;
     margin-top: 10px;
     border-radius: 40px;
 }
@@ -60,6 +60,7 @@ a{
     text-decoration: none;
     color: white;
     margin-top: -5px;
+    margin-left: -5px;
 }
 .login:hover{
     text-decoration: none;
@@ -68,6 +69,7 @@ a{
 .carritodibujo{
     text-decoration: none;
     color: white;
+    margin-right: 40px;
 }
 .carritodibujo:hover{
     text-decoration: none;
