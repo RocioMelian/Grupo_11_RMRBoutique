@@ -1,3 +1,5 @@
+@import "footer.css";
+@import "header.css";
 /*GENERAL*/
 *{
     box-sizing: border-box;
@@ -68,7 +70,7 @@ body{
     }
     .detalle h2 {
         font-size: 3em;
-        font-weight: 300;
+        margin-top: -2px;
     }
     .detalle img {
         width: 80%;

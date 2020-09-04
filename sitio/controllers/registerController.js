@@ -1,6 +1,7 @@
 module.exports = {
     formulario: (req, res) => {
         
-        res.render('register' , {title : 'Registro de Usuario'})
+        res.render('register' , {title : 'Registro de Usuario',
+        css:'style.css'})
     }
 }
