@@ -1,5 +1,4 @@
-@import "footer.css";
-@import "header.css";
+@import "style.css";
 /*GENERAL*/
 *{
     box-sizing: border-box;
@@ -12,8 +11,9 @@ body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-size: cover;
 }
-.principal{
+.principal-detalle{
     border: 2px solid grey;
+    width: 100%;
 }
 .imgdetalle img{
     border: 2px solid grey;
@@ -22,14 +22,17 @@ body{
 .descrip{
     font-size: 1.5rem;
 }
-.datos h3{
+.datos .dibu{
+    color: black;
+}
+.datos .nombredeta{
     font-size: 40px;
 }
-.detalle h2 {
+.detalle .preciofinaldeta {
     margin-top: 40px;
 }
 
-.detalle .contenido {
+.detalle .contenido-detalle {
     padding: 20px;
 }
 
@@ -37,10 +40,10 @@ body{
     color: #39b54a;
 }
 
-.detalle .precio {
+.detalle .preciodeta {
     text-decoration: line-through;
 }
-.detalle button {
+.detalle .buttondeta {
     background-color: lightseagreen;
     border: 0;
     width: 100%;
@@ -78,7 +81,7 @@ body{
     .detalle .datos {
         border-left: 2px solid grey;
     }
-    .datos i{
+    .datos .dibu{
         display: inline;
     }
 }
