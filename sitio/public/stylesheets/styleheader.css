@@ -1,23 +1,67 @@
 /* HEADER */
 header {
-    background-color: rgb(61, 60, 60);
+     background-color: rgb(80, 73, 73); 
     color: white;
-    width: 50%;
-    height: 200px;
-    position: relative;
-    overflow: hidden;
-    top: 0px;
+    width: 102%;
+    height: 130px;
+    
+
 }
-.container .logo img{
-    width: 50px;
+.logo img{
+    margin-left: 88%;
+    border-radius: 50px;
 }
-.container .usuario img{
-    width: 50px;
+img {
+    width: 130px;
+  
+    
 }
-.container .buscador img{
-    width: 50px;
+li {
+    list-style: none; 
+
+    float: right;
+    
 }
-.container .carrito img{
-    width: 50px;
-    right: 10px;
+.login{
+    margin-left: 80%;
 }
+.carrito, .login{
+    margin-top: 35px;
+}
+.barra input{
+    width: 300px;
+    margin-left: 51px;
+    margin-top: 40px;
+    border-radius: 40px;
+}
+.boton-barra{
+    border-radius: 20px;
+}
+nav {
+    
+    margin-top: 10px;
+    margin-right: 20px;
+}
+a{
+    text-decoration: none;
+}
+li:hover a {
+   color: #55ddff
+}
+i{
+    text-decoration: none;
+    color: white;
+}
+i:hover{
+    text-decoration: none;
+    
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    text-decoration: none;
+    
+}
+
