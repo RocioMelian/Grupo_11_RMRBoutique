@@ -47,14 +47,20 @@
 }
 /* BOTONERA DE REGISTRARSE */
 .form-register .botons {
-    width: 100%;
-    background: #51e9e9;
+
     border-bottom-color: black;
     border: 45px;
     padding: 15px;
     color: black;
     margin: 16px 0;
     font-size: 19px;
+    background-color: lightseagreen;
+    border: 0;
+    width: 100%;
+    border-radius: 8px;
+    padding: 12px;
+    text-transform: uppercase;
+
 }
 /* BACKGROUND */
 body {
