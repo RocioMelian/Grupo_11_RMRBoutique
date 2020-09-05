@@ -1,46 +1,50 @@
 @import "style.css";
 /* HEADER */
 header {
-     background-color: rgb(80, 73, 73); 
+    background-color: rgb(80, 73, 73); 
     color: white;
-    width: 102%;
+    width: 100%;
     height: 130px;
-    
+    display: flex;
+    flex-wrap: wrap;
+} 
+.contenidoheader{
+    display: flex;
+    flex-wrap: wrap;
+}
 
+.logo{
+    margin-left: 210px;
 }
 .logo img{
-    margin-left: 88%;
-    border-radius: 50px;
+   border-radius: 50px;
 }
 img {
-    width: 130px;
-  
-    
+    width: 40%;
 }
-li {
-    list-style: none; 
 
+li {
+    list-style: none;
     float: right;
-    
 }
-.login{
-   
-    margin-bottom: -5px;
-}
-.admin{
-    margin-left: 20px;
-    color: white;
-}
+
+
 
 .barra input{
-    width: 300px;
-    margin-left: 140px;
-    margin-top: 10px;
-    border-radius: 40px;
+    width: 70%;
+    margin-left: -60px;
+    transform: scale(1.3);
 }
+
+
 .boton-barra{
-    border-radius: 20px;
+    border-radius: 5px;
+    border: none;
+    transform: scale(1.3);
+    width: 10%;
 }
+
+
 nav {
     
     margin-top: 10px;
@@ -51,33 +55,69 @@ nav {
 a{
     text-decoration: none;
 }
-.admin:hover{
-   color: #55ddff
+.admin{
+    
+    color: white;
 }
 
+.admin:hover{
+   color: #55ddff;
+   transform: scale(1.3);
+}
+
+.persona{
+    margin-left: -20px;
+}
 
 .login{
     text-decoration: none;
     color: white;
-    margin-top: -5px;
-    margin-left: -5px;
+    
+    
 }
 .login:hover{
     text-decoration: none;
-    color: #55ddff
+    color: #55ddff;
+    transform: scale(1.3);
 }
+.carritoheader{
+    margin-left: -60px;
+}
+
 .carritodibujo{
     text-decoration: none;
     color: white;
-    margin-right: 40px;
+    
 }
 .carritodibujo:hover{
     text-decoration: none;
-    color: #55ddff
+    color: #55ddff;
+    transform: scale(1.3);
 }
 
 a:hover{
     text-decoration: none;
     
+}
+/*TABLETS*/
+@media(min-width:768px){
+    .barra input{
+        width: 60%;
+    }
+}
+/*PC*/
+@media(min-width:1024px){
+    .logo{
+        margin-left: 290px;
+    }
+    .barra input{
+        width: 90%;
+    }
+    .persona{
+        margin-left: 60px;
+    }
+    .carritoheader{
+        margin-right: 8px;
+    }
 }
 
