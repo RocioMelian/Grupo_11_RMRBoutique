@@ -7,6 +7,7 @@
 }
 /* --- BACKGROUND --- */
 body {
+    display: inherit;
     position: absolute;
     background-image: url("/images/fondoo.jpg");
     width: 100%;
@@ -14,7 +15,7 @@ body {
     background-size: cover;
 }
 /* GENERAL */
-.container {
+body .container {
     width: 100%;
     padding-left: 15px;
     padding-right: 15px;
@@ -22,7 +23,7 @@ body {
     margin-right: auto;
 }
 /* BANNER */
-#carouselExampleSlidesOnly {
+body #carouselExampleSlidesOnly {
     position: relative;
     width: 80%;
     border: 2px solid grey;
@@ -30,7 +31,7 @@ body {
     margin-bottom: 20px;
 }
 /* --- PRODUCTO DESTACADO IZQUIERDO --- */
-.destacado1 {
+body .destacado1 {
     position: relative;
     border: 2px solid grey;
     padding: 2px;
@@ -39,7 +40,7 @@ body {
 }
 
 /* --- PRODUCTO DESTACADO DERECHO --- */
-.destacado2 {
+body .destacado2 {
     position: relative;
     border: 2px solid grey;
     padding: 2px;
@@ -47,15 +48,15 @@ body {
     box-shadow: 6px 13px 50px rgba(0, 0, 0, 0.7);
 }
 /* --- ATRIBUTOS COMPARTIDOS DE CONTENEDORES DESTACADOS --- */
-.container .destacados {
+body .container .destacados {
     border: 20px transparent;
 }
-.destacados figure img{
+body .destacados figure img{
     float: right;
     border: 2px solid grey;
     width: 190px;
 }
-.container .comprar button {
+body .container .comprar button {
     background-color: lightseagreen;
     position: absolute;
     left: 5px;
@@ -67,7 +68,7 @@ body {
     padding: 12px;
     text-transform: uppercase;
 }
-.container .añadircarrito button {
+body .container .añadircarrito button {
     background-color: lightseagreen;
     position: absolute;
     left: 95px;
@@ -79,25 +80,25 @@ body {
     padding: 12px;
     text-transform: uppercase;
 }
-.container .nombredestacado {
+body .container .nombredestacado {
     color: black;
     font-family: 'Times New Roman', Times, serif;
     font-size: 40px;
 }
-.container .edition {
+body .container .edition {
     color: black;
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
 }
-.descuentodestacado {
+body .descuentodestacado {
     text-transform: uppercase;
     color: #39B54A;
 }
 /* --- PRODUCTOS --- */
-.producto1,
-.producto2,
-.producto3,
-.producto4 {
+body .producto1,
+body .producto2,
+body .producto3,
+body .producto4 {
     position: relative;
     border: 22px solid transparent;
     padding: 2px;
@@ -105,46 +106,46 @@ body {
     margin-top: 31px;
     margin-bottom: 20px;
 }
-.producto1 img {
+body .producto1 img {
     border: 4px solid grey;
     width: 100%;
     box-shadow: 6px 13px 50px #000;
 }
-.producto2 img {
+body .producto2 img {
     border: 4px solid grey;
     width: 100%;
     box-shadow: 6px 13px 50px #000;
 }
-.producto3 img {
+body .producto3 img {
     border: 4px solid grey;
     width: 100%;
     box-shadow: 6px 13px 50px #000;
 }
-.producto4 img {
+body .producto4 img {
     border: 4px solid grey;
     width: 100%;
     box-shadow: 6px 13px 50px rgba(0, 0, 0, 0.7);
 }
-.container div .nombreproducto {
+body .container div .nombreproducto {
     margin-top: 0px;
     font-family: 'Roboto',sans-serif;
 }
-.nombreproducto {
+body .nombreproducto {
     border: 2px solid grey;
     position: relative;
     width: 100%;
     color: black;
 }
-a:hover{
+body a:hover{
     text-decoration: none;
 }
-.precioproducto {
+body .precioproducto {
     position: absolute;
     right: 4px;
     font-size: 20px;
     border: 2px solid grey;
 }
-.descuentoproducto {
+body .descuentoproducto {
     border: 2px solid grey;
     position: absolute;
     right: 2px;
@@ -156,7 +157,7 @@ a:hover{
     text-transform: uppercase;
     color: #39B54A;
 }
-.ofertas {
+body .ofertas {
     position: absolute;
     border: 2px solid grey;
     font-size: 30px;
@@ -165,60 +166,56 @@ a:hover{
 /* --- VERSION PARA TABLET (768px) --- */
 
 @media(max-width: 768px) {
-    #carouselExampleSlidesOnly {
+    body #carouselExampleSlidesOnly {
         width: 80%;
         border: 2px solid grey;
         left: 10%;
         margin-bottom: 20px;
         display: none;
     }
-    .destacado2 {
+    body .destacado2 {
         display: none;
         width: 100%;
     }
-    .nombreproducto {
+    body .nombreproducto {
         font-size: 30px;
     }
-    .producto1 img {
+    body .producto1 img {
         border: 4px solid grey;
         width: 50%;
     }
-    .descuentoproducto {
+    body .descuentoproducto {
         border: 2px solid grey;
         position: absolute;
         right: 2px;
         height: unset;
         text-align: center;
         width: 22%;
-        text-decoration: none;
-        color: black;
-        text-decoration: none;
+        text-transform: uppercase;
     }
 }
 /* --- VERSION PARA ESCRITORIO (1024px) --- */
 @media(max-width: 1024px) {
-    #carouselExampleSlidesOnly {
+    body #carouselExampleSlidesOnly {
         width: 80%;
         border: 2px solid grey;
         left: 10%;
         margin-bottom: 20px;
     }
-    .nombreproducto {
+    body .nombreproducto {
         font-size: 20px;
     }
-    .destacado2 {
+    body .destacado2 {
         display: none;
         width: 100%;
     }
-    .descuentoproducto {
+    body .descuentoproducto {
         border: 2px solid grey;
         position: absolute;
         right: 2px;
         height: unset;
         text-align: center;
         width: 22%;
-        text-decoration: none;
-        color: black;
-        text-decoration: none;
+        text-transform: uppercase;
     }
 }
