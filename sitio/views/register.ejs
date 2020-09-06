@@ -19,8 +19,26 @@
         
         <input class="controls" type="password" name="contraseña" id="contraseña" placeholder="Ingrese su contraseña">
         
-        <p><input type="checkbox">Estoy de acuerdo con <a href="#">Teminos y condiciones </a></p>
-        
+        <p><input type="checkbox">Estoy de acuerdo con <a href="#ventana1" data-toggle="modal">Términos y condiciones </a></p>
+         
+        <div class="modal fade" id="ventana1">
+           <div class="modal-dialog">
+             <div class="modal-content">
+               <!--Header de la ventana-->
+                <div class="modal-header">
+                  
+                  <h4 class="modal-title">Términos y condiciones</h4>
+                  <button tyle="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                </div>
+                <!--Contenido de la ventana-->
+                <div class="modal-body" width:100%>
+                  <p>El presente Política de Privacidad establece los términos en que  usa y protege la información que es proporcionada por sus usuarios al momento de utilizar su sitio web. Esta compañía está comprometida con la seguridad de los datos de sus usuarios. Cuando le pedimos llenar los campos de información personal con la cual usted pueda ser identificado, lo hacemos asegurando que sólo se empleará de acuerdo con los términos de este documento. Sin embargo esta Política de Privacidad puede cambiar con el tiempo o ser actualizada por lo que le recomendamos y enfatizamos revisar continuamente esta página para asegurarse que está de acuerdo con dichos cambios.
+                    </p>
+                </div>
+                
+             </div>
+            </div>
+        </div>
         <input class="botons" type="submit" value="Registrarse">
         <p><a href="#">¿Ya tienes cuenta?</a></p>
       </section>
