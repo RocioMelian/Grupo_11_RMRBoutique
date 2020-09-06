@@ -117,18 +117,25 @@ a:hover{
 /*PC*/
 @media(min-width:1024px){
     .logo{
-        margin-left: 310px;
-        width: 100%;
+        margin-left: 0px;
+       
+    }
+    .logo img{
+        width: 30%;
+        margin-left: 260px;
     }
     .barra input{
-        width: 90%;
-        margin-left: -80px;
+        width: 80%;
+    }
+    .barra{
+        margin-left: 150px;
     }
     .persona{
-        margin-left: 60px;
+        margin-left: 10px;
     }
     .carritoheader{
         margin-right: 0px;
+       
     }
     .spanhe{
         margin-left: -5px;
@@ -137,7 +144,7 @@ a:hover{
         margin-left: -10px;
     }
     .cargapersona{
-        margin-bottom: 20px;
+        margin-bottom: 24px;
     }
 }
 
