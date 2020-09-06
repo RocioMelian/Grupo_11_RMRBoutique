@@ -1,6 +1,6 @@
 # 👚 ЯMR *Boutique*
 
-![logotipo](./sitio/public/images/logotipo.jpg)
+![logotipo](./sitio/public/images/logotipo2.png)
 
 ### 🗂 Primer sprint (entrega 17/8)
 
@@ -49,8 +49,8 @@
  - [Inicio de sesión](https://github.com/RocioMelian/Grupo_11_RMRBoutique/blob/master/sprint1/wireframes/login.png)
 
 ## 🖌 Diseño(en proceso)
-- [Logo](https://github.com/RocioMelian/Grupo_11_RMRBoutique/blob/master/sitio/public/images/logotipo.jpg)
-- [Fondo](https://github.com/RocioMelian/Grupo_11_RMRBoutique/blob/master/sitio/public/images/fondo.jpg)
+- [Logo](https://github.com/RocioMelian/Grupo_11_RMRBoutique/blob/master/sitio/public/images/logotipo2.png)
+- [Fondo](https://github.com/RocioMelian/Grupo_11_RMRBoutique/blob/master/sitio/public/images/fondoo.jpg)
 - [Colores](https://github.com/RocioMelian/Grupo_11_RMRBoutique/tree/master/sprint1/paletaColores)
 - Tipografias
    - [Anton](https://fonts.google.com/specimen/Anton?query=anton)
@@ -59,6 +59,7 @@
    - [Ubuntu](https://fonts.google.com/specimen/Ubuntu?query=ubuntu)
    - [Billabong](https://fonts.google.com/?query=billabong)
 
-### 🗂 Segundo sprint ()
+### 🗂 Segundo sprint (Entrega 7/9)
 
-📑 [Tablero de trabajo](https://trello.com/b/uB2due9N/grupo-11-%D1%8Fmr-boutique)
+- 📑 [Tablero de trabajo](https://trello.com/b/uB2due9N/grupo-11-%D1%8Fmr-boutique)
+- ⭐ [Retrospectiva]()
