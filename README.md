@@ -62,4 +62,4 @@
 ### 🗂 Segundo sprint (Entrega 7/9)
 
 - 📑 [Tablero de trabajo](https://trello.com/b/uB2due9N/grupo-11-%D1%8Fmr-boutique)
-- ⭐ [Retrospectiva]()
+- ⭐ [Retrospectiva](https://github.com/RocioMelian/Grupo_11_RMRBoutique/blob/master/retro.md)
