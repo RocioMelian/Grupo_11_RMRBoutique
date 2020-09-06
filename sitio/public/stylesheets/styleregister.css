@@ -62,6 +62,9 @@
     text-transform: uppercase;
 
 }
+.form-register .botons:hover{
+    transform: scale(1.1);
+}
 /* BACKGROUND */
 body {
     background-image: url("/images/fondoo.jpg");

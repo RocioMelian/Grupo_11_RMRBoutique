@@ -68,6 +68,9 @@ body .container .comprar button {
     padding: 12px;
     text-transform: uppercase;
 }
+body .container .comprar button:hover{
+    transform: scale(1.1);
+}
 body .container .añadircarrito button {
     background-color: lightseagreen;
     position: absolute;
@@ -79,6 +82,9 @@ body .container .añadircarrito button {
     border-radius: 8px;
     padding: 12px;
     text-transform: uppercase;
+}
+body .container .añadircarrito button:hover{
+    transform: scale(1.1);
 }
 body .container .nombredestacado {
     color: black;

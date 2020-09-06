@@ -93,6 +93,13 @@ a:hover{
     text-transform: uppercase;
     margin-top: 30px;
 }
+.buttonCambiar:hover{
+    transform: scale(1.1);
+}
+.buttonComprar:hover{
+    transform: scale(1.1);
+}
+
 .buttonCarrito .buttonComprar{
     margin-top: 5px;
     
@@ -113,6 +120,9 @@ a:hover{
     padding: 9px;
     text-transform: uppercase;
     
+}
+.comprartodo:hover{
+    transform: scale(1.1);
 }
 /*TABLETS*/
 @media(min-width:768px){

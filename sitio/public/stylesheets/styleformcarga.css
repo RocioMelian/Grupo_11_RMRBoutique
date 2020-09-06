@@ -50,6 +50,9 @@
     text-transform: uppercase;
 
 }
+.form-carga .botons:hover{
+    transform: scale(1.1);
+}
 /* BACKGROUND */
 body {
     background-image: url("/images/fondoo.jpg");
