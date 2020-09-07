@@ -16,9 +16,11 @@ header {
 
 .logo{
     margin-left: 210px;
+   
 }
 .logo img{
    border-radius: 50px;
+   
 }
 img {
     width: 40%;
@@ -113,6 +115,7 @@ a:hover{
     .barra input{
         width: 60%;
     }
+   
 }
 /*PC*/
 @media(min-width:1024px){
@@ -121,6 +124,7 @@ a:hover{
        
     }
     .logo img{
+        
         width: 30%;
         margin-left: 260px;
     }
