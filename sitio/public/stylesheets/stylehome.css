@@ -87,12 +87,12 @@ body .container .añadircarrito button:hover{
 }
 body .container .nombredestacado {
     color: black;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: fantasy;
     font-size: 40px;
 }
 body .container .edition {
     color: black;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: fantasy;
     font-size: 20px;
 }
 body .descuentodestacado {
@@ -139,7 +139,7 @@ body .producto4 img {
 }
 body .container div .nombreproducto {
     margin-top: 0px;
-    font-family: 'Roboto',sans-serif;
+    font-family: fantasy;
 }
 body .nombreproducto {
     border: 2px solid grey;
