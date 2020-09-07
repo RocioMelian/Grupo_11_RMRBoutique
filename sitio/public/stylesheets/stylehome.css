@@ -38,7 +38,6 @@ body .destacado1 {
     height: 200px;
     box-shadow: 6px 13px 50px rgba(0, 0, 0, 0.7);
 }
-
 /* --- PRODUCTO DESTACADO DERECHO --- */
 body .destacado2 {
     position: relative;
@@ -61,8 +60,8 @@ body .container .comprar button {
     position: absolute;
     left: 5px;
     bottom: 5px;
-    font-size: 10px;
-    font-family: 'Roboto',sans-serif;
+    font-size: 15px;
+    font-family: fantasy;
     border: 4px solid transparent;
     border-radius: 8px;
     padding: 12px;
@@ -74,10 +73,10 @@ body .container .comprar button:hover{
 body .container .añadircarrito button {
     background-color: lightseagreen;
     position: absolute;
-    left: 95px;
+    left: 110px;
     bottom: 5px;
-    font-size: 10px;
-    font-family: 'Roboto',sans-serif;
+    font-size: 15px;
+    font-family: fantasy;
     border: 4px solid transparent;
     border-radius: 8px;
     padding: 12px;
@@ -112,7 +111,16 @@ body .producto4 {
     margin-top: 31px;
     margin-bottom: 20px;
 }
-body .producto1 img {
+body .producto1:hover,
+body .producto2:hover,
+body .producto3:hover,
+body .producto4:hover {
+transform: scale(1.1);
+}
+body .producto1 img:hover,
+body .producto2 img:hover,
+body .producto3 img:hover,
+body .producto4 img:hover{
     border: 4px solid grey;
     width: 100%;
     box-shadow: 6px 13px 50px #000;
@@ -120,17 +128,14 @@ body .producto1 img {
 body .producto2 img {
     border: 4px solid grey;
     width: 100%;
-    box-shadow: 6px 13px 50px #000;
 }
 body .producto3 img {
     border: 4px solid grey;
-    width: 100%;
-    box-shadow: 6px 13px 50px #000;
+    width: 100%;  
 }
 body .producto4 img {
     border: 4px solid grey;
     width: 100%;
-    box-shadow: 6px 13px 50px rgba(0, 0, 0, 0.7);
 }
 body .container div .nombreproducto {
     margin-top: 0px;
@@ -171,7 +176,7 @@ body .ofertas {
 }
 /* --- VERSION PARA TABLET (768px) --- */
 
-@media(max-width: 768px) {
+@media(max-width: 765px) {
     body #carouselExampleSlidesOnly {
         width: 80%;
         border: 2px solid grey;
@@ -201,7 +206,7 @@ body .ofertas {
     }
 }
 /* --- VERSION PARA ESCRITORIO (1024px) --- */
-@media(max-width: 1024px) {
+@media(max-width: 1023px) {
     body #carouselExampleSlidesOnly {
         width: 80%;
         border: 2px solid grey;
