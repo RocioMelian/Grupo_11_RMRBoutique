@@ -4,8 +4,21 @@
   <body>
     <%- include('./partials/header.ejs')  %> <!-- HEADER -->
  
-    <h1>Hola</h1>
+    <div class = "row">
+      <div class = "col-lg-12 col-md-12 col-sm-12 col-xs-12">
+      <section class="form-login">
+        <h4>Inicio de Sesion</h4>
   
+        <input class="controls" type="email" name="correo" id="correo" placeholder="Email">
+  
+        <input class="controls" type="password" name="contraseña" id="contraseña" placeholder="Contraseña">
+
+        <input class="botons" type="submit" value="Cancelar">
+        <input class="botons" type="submit" value="Iniciar sesión">
+        
+      </section>
+    </div>
+  </div>
 
   <%- include('./partials/footer.ejs')  %> <!-- FOOTER -->
 </body>
