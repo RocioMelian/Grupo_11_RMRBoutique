@@ -11,6 +11,7 @@ header {
 .contenidoheader{
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 
@@ -61,6 +62,9 @@ a{
 .admin{
     
     color: white;
+}
+.cargapersona{
+    margin-top: 8px;
 }
 
 .admin:hover{
@@ -146,9 +150,6 @@ a:hover{
     }
     h6{
         margin-left: -10px;
-    }
-    .cargapersona{
-        margin-bottom: 24px;
     }
 }
 
