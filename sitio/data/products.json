@@ -1,26 +1,202 @@
 [
     {
-        "nombre": "Prenda",
+        "id": "0",
+        "name": "Campera Niña",
+        "description": "description",
+        "image": "camperaniñas.jpg",
+        "category": "niños/as",
+        "talle": "3",
+        "price": "$100",
+        "discount": "%50"
+    },
+    {
         "id": "1",
-        "precio": "$100",
-        "descuento": "5"
-    },
-    {
-        "nombre": "Prenda",
+        "name": "Campera Niño",
+        "description": "description",
+        "image": "camperaniño.jpg",
+        "category": "niños/as",
+        "talle": "3",
+        "price": "$100",
+        "discount": "%50"
+    },{
         "id": "2",
-        "precio": "$100",
-        "descuento": "0"
-    },
-    {
-        "nombre": "Prenda",
+        "name": "Falda Mujer",
+        "description": "description",
+        "image": "faldamujer.jpg",
+        "category": "mujer",
+        "talle": "3",
+        "price": "$100",
+        "discount": "%50"
+    },{
         "id": "3",
-        "precio": "$100",
-        "descuento": "30"
-    },
-    {
-        "nombre": "Prenda",
+        "name": "Prenda",
+        "description": "description",
+        "image": "faldamujer2.jpg",
+        "category": "mujer",
+        "talle": "3",
+        "price": "$100",
+        "discount": "%50"
+    },{
         "id": "4",
-        "precio": "$100",
-        "descuento": "10"
+        "name": "Prenda",
+        "description": "description",
+        "image": "faldamujer3.jpg",
+        "category": "mujer",
+        "talle": "3",
+        "price": "$100",
+        "discount": "%50"
+    },{
+        "id": "5",
+        "name": "Prenda",
+        "description": "description",
+        "image": "camperaniñas.jpg",
+        "category": "niños/as",
+        "talle": "3",
+        "price": "$100",
+        "discount": "%50"
+    },{
+        "id": "6",
+        "name": "Prenda",
+        "description": "description",
+        "image": "jeanshombre",
+        "category": "hombre",
+        "talle": "3",
+        "price": "$100",
+        "discount": "%50"
+    },{
+        "id": "7",
+        "name": "Prenda",
+        "description": "description",
+        "image": "jeanshombre2",
+        "category": "hombre",
+        "talle": "3",
+        "price": "$100",
+        "discount": "%50"
+    },{
+        "id": "8",
+        "name": "Prenda",
+        "description": "description",
+        "image": "jeanshombre3",
+        "category": "hombre",
+        "talle": "3",
+        "price": "$100",
+        "discount": "%50"
+    },{
+        "id": "9",
+        "name": "Prenda",
+        "description": "description",
+        "image": "jeansmujer.jpg",
+        "category": "mujer",
+        "talle": "3",
+        "price": "$100",
+        "discount": "%50"
+    },{
+        "id": "10",
+        "name": "Prenda",
+        "description": "description",
+        "image": "jeansmujer2.jpg",
+        "category": "mujer",
+        "talle": "3",
+        "price": "$100",
+        "discount": "%50"
+    },{
+        "id": "11",
+        "name": "Prenda",
+        "description": "description",
+        "image": "jeansmujer3.jpg",
+        "category": "mujer",
+        "talle": "3",
+        "price": "$100",
+        "discount": "%50"
+    },{
+        "id": "12",
+        "name": "Prenda",
+        "description": "description",
+        "image": "jeansniño.jpg",
+        "category": "niños/as",
+        "talle": "3",
+        "price": "$100",
+        "discount": "%50"
+    },{
+        "id": "13",
+        "name": "Prenda",
+        "description": "description",
+        "image": "mangalarganiño.jpg",
+        "category": "niños/as",
+        "talle": "3",
+        "price": "$100",
+        "discount": "%50"
+    },{
+        "id": "14",
+        "name": "Prenda",
+        "description": "description",
+        "image": "mangalarganiña.jpg",
+        "category": "niños/as",
+        "talle": "3",
+        "price": "$100",
+        "discount": "%50"
+    },{
+        "id": "15",
+        "name": "Prenda",
+        "description": "description",
+        "image": "packdoscalzasniña.jpg",
+        "category": "niños/as",
+        "talle": "3",
+        "price": "$100",
+        "discount": "%50"
+    },{
+        "id": "16",
+        "name": "Prenda",
+        "description": "description",
+        "image": "pantalonhombre.jpg",
+        "category": "hombre",
+        "talle": "3",
+        "price": "$100",
+        "discount": "%50"
+    },{
+        "id": "17",
+        "name": "Prenda",
+        "description": "description",
+        "image": "pantalonhombre2.jpg",
+        "category": "hombre",
+        "talle": "3",
+        "price": "$100",
+        "discount": "%50"
+    },{
+        "id": "18",
+        "name": "Prenda",
+        "description": "description",
+        "image": "remerahombre.jpg",
+        "category": "hombre",
+        "talle": "3",
+        "price": "$100",
+        "discount": "%50"
+    },{
+        "id": "19",
+        "name": "Prenda",
+        "description": "description",
+        "image": "remerahombre2.jpg",
+        "category": "hombre",
+        "talle": "3",
+        "price": "$100",
+        "discount": "%50"
+    },{
+        "id": "20",
+        "name": "Prenda",
+        "description": "description",
+        "image": "remeramujer.jpg",
+        "category": "mujer",
+        "talle": "3",
+        "price": "$100",
+        "discount": "%50"
+    },{
+        "id": "21",
+        "name": "Prenda",
+        "description": "description",
+        "image": "remeramujer2.jpg",
+        "category": "mujer",
+        "talle": "3",
+        "price": "$100",
+        "discount": "%50"
     }
 ]
