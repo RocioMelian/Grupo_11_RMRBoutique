@@ -6,8 +6,8 @@
         "image": "camperaniñas.jpg",
         "category": "niños/as",
         "talle": "3",
-        "price": "$400",
-        "discount": "%10"
+        "price": "400",
+        "discount": "10"
     },
     {
         "id": "1",
@@ -16,8 +16,8 @@
         "image": "camperaniño.jpg",
         "category": "niños/as",
         "talle": "3",
-        "price": "$600",
-        "discount": "%50"
+        "price": "600",
+        "discount": "50"
     },{
         "id": "2",
         "name": "Falda Valeria",
@@ -25,8 +25,8 @@
         "image": "faldamujer.jpg",
         "category": "mujer",
         "talle": "3",
-        "price": "$2000",
-        "discount": "%50"
+        "price": "2000",
+        "discount": "50"
     },{
         "id": "3",
         "name": "Falda Ivana",
@@ -34,8 +34,8 @@
         "image": "faldamujer2.jpg",
         "category": "mujer",
         "talle": "3",
-        "price": "$700",
-        "discount": "%25"
+        "price": "700",
+        "discount": "25"
     },{
         "id": "4",
         "name": "Falda Victoria",
@@ -43,8 +43,8 @@
         "image": "faldamujer3.jpg",
         "category": "mujer",
         "talle": "3",
-        "price": "$2900",
-        "discount": "%50"
+        "price": "2900",
+        "discount": "50"
     },{
         "id": "5",
         "name": "Campera Rocio",
@@ -52,35 +52,35 @@
         "image": "camperaniñas.jpg",
         "category": "niños/as",
         "talle": "3",
-        "price": "$800",
-        "discount": "%20"
+        "price": "800",
+        "discount": "20"
     },{
         "id": "6",
         "name": "Jeans Matias",
         "description": "Jeans Elegante",
-        "image": "jeanshombre",
+        "image": "jeanshombre.jpg",
         "category": "hombre",
         "talle": "3",
-        "price": "$1600",
-        "discount": "%50"
+        "price": "1600",
+        "discount": "50"
     },{
         "id": "7",
         "name": "Jeans Ezequiel",
         "description": "Jeans super comodo",
-        "image": "jeanshombre2",
+        "image": "jeanshombre2.jpg",
         "category": "hombre",
         "talle": "3",
-        "price": "$2000",
-        "discount": "%50"
+        "price": "2000",
+        "discount": "50"
     },{
         "id": "8",
         "name": "Jeans Leo",
         "description": "Jeans Elegante",
-        "image": "jeanshombre3",
+        "image": "jeanshombre2.jpg",
         "category": "hombre",
         "talle": "3",
-        "price": "$2000",
-        "discount": "%30"
+        "price": "2000",
+        "discount": "30"
     },{
         "id": "9",
         "name": "Jeans Maria",
@@ -88,8 +88,8 @@
         "image": "jeansmujer.jpg",
         "category": "mujer",
         "talle": "3",
-        "price": "$600",
-        "discount": "%5"
+        "price": "600",
+        "discount": "5"
     },{
         "id": "10",
         "name": "Jeans Oriana",
@@ -97,8 +97,8 @@
         "image": "jeansmujer2.jpg",
         "category": "mujer",
         "talle": "3",
-        "price": "$2500",
-        "discount": "%10"
+        "price": "2500",
+        "discount": "10"
     },{
         "id": "11",
         "name": "Jeans Romina",
@@ -106,8 +106,8 @@
         "image": "jeansmujer3.jpg",
         "category": "mujer",
         "talle": "3",
-        "price": "$2500",
-        "discount": "%50"
+        "price": "2500",
+        "discount": "50"
     },{
         "id": "12",
         "name": "Jeans Ciro",
@@ -115,8 +115,8 @@
         "image": "jeansniño.jpg",
         "category": "niños/as",
         "talle": "3",
-        "price": "$650",
-        "discount": "%10"
+        "price": "650",
+        "discount": "10"
     },{
         "id": "13",
         "name": "Polera Luca",
@@ -124,8 +124,8 @@
         "image": "mangalarganiño.jpg",
         "category": "niños/as",
         "talle": "3",
-        "price": "$500",
-        "discount": "%30"
+        "price": "500",
+        "discount": "30"
     },{
         "id": "14",
         "name": "Polera Ludmi",
@@ -133,8 +133,8 @@
         "image": "mangalarganiña.jpg",
         "category": "niños/as",
         "talle": "3",
-        "price": "$1500",
-        "discount": "%50"
+        "price": "1500",
+        "discount": "50"
     },{
         "id": "15",
         "name": "Calzas Mellizas",
@@ -142,8 +142,8 @@
         "image": "packdoscalzasniña.jpg",
         "category": "niños/as",
         "talle": "3",
-        "price": "$800",
-        "discount": "%10"
+        "price": "800",
+        "discount": "10"
     },{
         "id": "16",
         "name": "Joggins Ramiro",
@@ -151,8 +151,8 @@
         "image": "pantalonhombre.jpg",
         "category": "hombre",
         "talle": "3",
-        "price": "$500",
-        "discount": "%10"
+        "price": "500",
+        "discount": "10"
     },{
         "id": "17",
         "name": "Joggins Martin",
@@ -160,8 +160,8 @@
         "image": "pantalonhombre2.jpg",
         "category": "hombre",
         "talle": "3",
-        "price": "$2000",
-        "discount": "%50"
+        "price": "2000",
+        "discount": "50"
     },{
         "id": "18",
         "name": "Remera Emanuel",
@@ -169,8 +169,8 @@
         "image": "remerahombre.jpg",
         "category": "hombre",
         "talle": "3",
-        "price": "$800",
-        "discount": "%5"
+        "price": "800",
+        "discount": "5"
     },{
         "id": "19",
         "name": "Remera Gabi",
@@ -178,8 +178,8 @@
         "image": "remerahombre2.jpg",
         "category": "hombre",
         "talle": "3",
-        "price": "$900",
-        "discount": "%20"
+        "price": "900",
+        "discount": "20"
     },{
         "id": "20",
         "name": "Remera Anahí",
@@ -187,8 +187,8 @@
         "image": "remeramujer.jpg",
         "category": "mujer",
         "talle": "3",
-        "price": "$5600",
-        "discount": "%50"
+        "price": "5600",
+        "discount": "50"
     },{
         "id": "21",
         "name": "Remera Sofia",
@@ -196,7 +196,7 @@
         "image": "remeramujer2.jpg",
         "category": "mujer",
         "talle": "3",
-        "price": "$5000",
-        "discount": "%50"
+        "price": "5000",
+        "discount": "50"
     }
 ]

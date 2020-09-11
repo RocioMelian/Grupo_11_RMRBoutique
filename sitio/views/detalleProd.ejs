@@ -12,20 +12,23 @@
             <div class="contenido-detalle">
               <div class="contenido text-left">
                 <div class="row deta">
+                  <div class="col-12 titulo">
+                    <h2><%= title %> </h2>
+                  </div>
                     <div class="col-12 col-lg-7">
                       <figure class="imgdetalle">
-                        <img src="/images/ropa/camperaniñas.jpg" alt=""><a href=""></a>
+                        <img src="/images/ropa/<%= producto.image %>" alt=""><a href=""></a>
                     </figure>
-                    <p class="descrip">Campera rosa 100% Algodón</p>
+                    <p class="descrip"><%= producto.description %></p>
                     </div>
                     <div class="col-12 col-lg-5 datos">
                         <h3 class="nombredeta">
-                           Campera Ámbar 
+                          <%= producto.name %>
                         </h3>
-                         <strike>$1999</strike><span>10% OFF</span>
-                            <h2 class="preciofinaldeta">
-                              $199
-                            </h2>
+                        <strike>$<%= producto.price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") %></strike> <span><strong> <%= producto.discount %>  % OFF</strong></span>
+                        <h2>
+                          $<%- (producto.price - producto.price * producto.discount / 100).toFixed(0).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") %> 
+                        </h2>
 
                                 <p><i class="fas fa-credit-card mr-3 my-4 dibu"></i>Pagá en 12 cuotas sin interés</p>
                                 <p><i class="fas fa-store mr-3 my-4 dibu"></i>Retiro gratis en el local</p>

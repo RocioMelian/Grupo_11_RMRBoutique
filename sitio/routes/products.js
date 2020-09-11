@@ -5,5 +5,7 @@ let products = require('../controllers/productsController')
 
 
 router.get('/', products.listar)
+router.get('/detalle/:id',products.detalle);
+router.get('/search',products.search)
 
 module.exports = router;
