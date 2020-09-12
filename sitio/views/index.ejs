@@ -9,11 +9,13 @@
 <div class="container"><%- include('./partials/banner.ejs')  %> <!-- BANNER -->
   <div class="row destacados">
     <div class="col-6 col-md-12 col-lg-6 col-sm-12 destacado1">
+      <% productos.forEach(producto => { %>
+        <% if(producto.discount == 60) { %> 
       <figure>
-        <a href=""><img src="/images/ropa/sueter.jpg" alt=""></a>
+        <a href=/products/detalle/<%= producto.id %> ><img src="/images/ropa/<%= producto.image %>" alt=""></a>
       </figure>
       <article class="nombredestacado">
-        <h2>SUETER</h2>
+        <h2><%= producto.name %></h2>
       </article>
       <article class="edicion">
         <h3>Limited Edition</h3>
@@ -24,15 +26,21 @@
         <a href=""><button>AÑADIR AL CARRO</button></a>
       </article>
       <article class="descuentodestacado">
-        <h3>50%</h3>
+          $<%- (producto.price - producto.price * producto.discount / 100).toFixed(0).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") %></i> <% if (producto.discount != 0) { %>
+          <span><%= producto.discount %>%OFF</span>
+        <% } %>
       </article>
     </div>
+    <% } %> 
+    <% }) %>
     <div class="col-6 col-md-6 col-lg-6 col-sm-12 destacado2">
+      <% productos.forEach(producto => { %>
+        <% if(producto.discount == 70 ) { %> 
       <figure>
-        <a href=""><img src="/images/ropa/sueter.jpg" alt=""></a>
+        <a href=/products/detalle/<%= producto.id %> ><img src="/images/ropa/<%= producto.image %>" alt=""></a>
       </figure>
       <article class="nombredestacado">
-        <h3>SUETER</h3>
+        <h2><%= producto.name %></h2>
       </article>
       <article class="edicion">
         <h3>Limited Edition</h3>
@@ -44,51 +52,35 @@
         <a href=""><button>AÑADIR AL CARRO</button></a>
       </article>
       <article class="descuentodestacado">
-        <h3>50%</h3>
+        $<%- (producto.price - producto.price * producto.discount / 100).toFixed(0).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") %></i> <% if (producto.discount != 0) { %>
+          <span><%= producto.discount %>%OFF</span>
+        <% } %>
       </article>
+      <% } %> 
+    <% }) %>
     </div>
   </div>
 </div>
+
 <div class="container">
   <div class="row">
+      <div class="col-12 titulo">
+        </div>
+
+        <% productos.forEach(producto => { %>
+          <% if(producto.discount < 30 ) { %> 
     <div class="col-3 col-sm-12 col-md-6 col-lg-3 producto2">
-      <a href=""><img src="/images/ropa/pantalonhombre.jpg" alt=""></a><i class="precioproducto">$29.99</i><h3 class="descuentoproducto">50%</h3>
-      <a href=""><i class="nombreproducto">Producto</i></a>
+      <a href=/products/detalle/<%= producto.id %> ><img src="/images/ropa/<%= producto.image %>" alt=""></a><i class="precioproducto">
+          $<%- (producto.price - producto.price * producto.discount / 100).toFixed(0).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") %></i><h3 class="descuentoproducto"> <% if (producto.discount != 0) { %>
+          <span><%= producto.discount %>%OFF</span>
+        <% } %></h3>
+      <a href=""><i class="nombreproducto"><%= producto.name %></i></a>
     </div>
-    <div class="col-3 col-sm-12 col-md-6 col-lg-3 producto2">
-      <a href=""><img src="/images/ropa/pantalonhombre2.jpg" alt=""></a><i class="precioproducto">$29.99</i><h3 class="descuentoproducto">50%</h3>
-      <a href=""><i class="nombreproducto">Producto</i></a>
-    </div>
-    <div class="col-3 col-sm-12 col-md-6 col-lg-3 producto3">
-      <a href=""><img src="/images/ropa/remeramujer.jpg" alt=""></a><i class="precioproducto">$29.99</i><h3 class="descuentoproducto">50%</h3>
-      <a href=""><i class="nombreproducto">Producto</i></a>
-    </div>
-    <div class="col-3 col-sm-12 col-md-6 col-lg-3  producto4">
-      <a href=""><img src="/images/ropa/remeramujer2.jpg" alt=""></a><i class="precioproducto">$29.99</i><h3 class="descuentoproducto">50%</h3>
-      <a href=""><i class="nombreproducto">Producto</i></a>
-    </div>
+    <% } %> 
+    <% }) %>
   </div>
 </div>
-<div class="container">
-  <div class="row">
-    <div class="col-3 col-sm-12 col-md-6 col-lg-3  producto2">
-      <a href=""><img src="/images/ropa/pantalonhombre.jpg" alt=""></a><i class="precioproducto">$29.99</i><h3 class="descuentoproducto">50%</h3>
-      <a href=""><i class="nombreproducto">Producto</i></a>
-    </div>
-    <div class="col-3 col-sm-12 col-md-6 col-lg-3 col-xs-12 producto2">
-      <a href=""><img src="/images/ropa/pantalonhombre2.jpg" alt=""></a><i class="precioproducto">$29.99</i><h3 class="descuentoproducto">50%</h3>
-      <a href=""><i class="nombreproducto">Producto</i></a>
-    </div>
-    <div class="col-3 col-sm-12 col-md-6 col-lg-3 col-xs-12 producto3">
-      <a href=""><img src="/images/ropa/remeramujer.jpg" alt=""></a><i class="precioproducto">$29.99</i><h3 class="descuentoproducto">50%</h3>
-      <a href=""><i class="nombreproducto">Producto</i></a>
-    </div>
-    <div class="col-3 col-sm-12 col-md-6 col-lg-3 col-xs-12 producto4">
-      <a href=""><img src="/images/ropa/remeramujer2.jpg" alt=""></a><i class="precioproducto">$29.99</i><h3 class="descuentoproducto">50%</h3>
-      <a href=""><i class="nombreproducto">Producto</i></a>
-    </div>
-  </div>
-</div>
+
 <div class="container oferta">
   <div class="row">
     <div class="ofertas">
@@ -98,42 +90,21 @@
 </div>
 <div class="container">
   <div class="row">
-    <div class="col-3 col-sm-12 col-md-6 col-lg-3 col-xs-12 producto2">
-      <a href=""><img src="/images/ropa/pantalonhombre.jpg" alt=""></a><i class="precioproducto">$29.99</i><h3 class="descuentoproducto">50%</h3>
-      <a href=""><i class="nombreproducto">Producto</i></a>
+      <div class="col-12 titulo">
+        </div>
+
+
+        <% productos.forEach(producto => { %>
+          <% if(producto.discount > 30 ) { %> 
+    <div class="col-3 col-sm-12 col-md-6 col-lg-3 producto2">
+      <a href=/products/detalle/<%= producto.id %> ><img src="/images/ropa/<%= producto.image %>" alt=""></a><i class="precioproducto">
+          $<%- (producto.price - producto.price * producto.discount / 100).toFixed(0).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") %></i><h3 class="descuentoproducto"> <% if (producto.discount != 0) { %>
+          <span><%= producto.discount %>%OFF</span>
+        <% } %></h3>
+      <a href=""><i class="nombreproducto"><%= producto.name %></i></a>
     </div>
-    <div class="col-3 col-sm-12 col-md-6 col-lg-3 col-xs-12 producto2">
-      <a href=""><img src="/images/ropa/pantalonhombre2.jpg" alt=""></a><i class="precioproducto">$29.99</i><h3 class="descuentoproducto">50%</h3>
-      <a href=""><i class="nombreproducto">Producto</i></a>
-    </div>
-    <div class="col-3 col-sm-12 col-md-6 col-lg-3 col-xs-12 producto3">
-      <a href=""><img src="/images/ropa/remeramujer.jpg" alt=""></a><i class="precioproducto">$29.99</i><h3 class="descuentoproducto">50%</h3>
-      <a href=""><i class="nombreproducto">Producto</i></a>
-    </div>
-    <div class="col-3 col-sm-12 col-md-6 col-lg-3 col-xs-12 producto4">
-      <a href=""><img src="/images/ropa/remeramujer2.jpg" alt=""></a><i class="precioproducto">$29.99</i><h3 class="descuentoproducto">50%</h3>
-      <a href=""><i class="nombreproducto">Producto</i></a>
-    </div>
-  </div>
-</div>
-<div class="container">
-  <div class="row">
-    <div class="col-3 col-sm-12 col-md-6 col-lg-3 col-xs-12 producto2">
-      <a href=""><img src="/images/ropa/pantalonhombre.jpg" alt=""></a><i class="precioproducto">$29.99</i><h3 class="descuentoproducto">50%</h3>
-      <a href=""><i class="nombreproducto">Producto</i></a>
-    </div>
-    <div class="col-3 col-sm-12 col-md-6 col-lg-3 col-xs-12 producto2">
-      <a href=""><img src="/images/ropa/pantalonhombre2.jpg" alt=""></a><i class="precioproducto">$29.99</i><h3 class="descuentoproducto">50%</h3>
-      <a href=""><i class="nombreproducto">Producto</i></a>
-    </div>
-    <div class="col-3 col-sm-12 col-md-6 col-lg-3 col-xs-12 producto3">
-      <a href=""><img src="/images/ropa/remeramujer.jpg" alt=""></a><i class="precioproducto">$29.99</i><h3 class="descuentoproducto">50%</h3>
-      <a href=""><i class="nombreproducto">Producto</i></a>
-    </div>
-    <div class="col-3 col-sm-12 col-md-6 col-lg-3 col-xs-12 producto4">
-      <a href=""><img src="/images/ropa/remeramujer2.jpg" alt=""></a><i class="precioproducto">$29.99</i><h3 class="descuentoproducto">50%</h3>
-      <a href=""><i class="nombreproducto">Producto</i></a>
-    </div>
+  <% } %> 
+    <% }) %>
   </div>
 </div>
   </body>

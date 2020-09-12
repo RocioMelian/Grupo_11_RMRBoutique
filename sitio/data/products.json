@@ -62,7 +62,7 @@
         "category": "hombre",
         "talle": "3",
         "price": "1600",
-        "discount": "50"
+        "discount": "60"
     },{
         "id": "7",
         "name": "Jeans Ezequiel",
@@ -80,7 +80,7 @@
         "category": "hombre",
         "talle": "3",
         "price": "2000",
-        "discount": "30"
+        "discount": "70"
     },{
         "id": "9",
         "name": "Jeans Maria",

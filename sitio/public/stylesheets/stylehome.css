@@ -100,10 +100,7 @@ body .descuentodestacado {
     color: #39B54A;
 }
 /* --- PRODUCTOS --- */
-body .producto1,
-body .producto2,
-body .producto3,
-body .producto4 {
+body .producto2{
     position: relative;
     border: 22px solid transparent;
     padding: 2px;
@@ -111,29 +108,15 @@ body .producto4 {
     margin-top: 31px;
     margin-bottom: 20px;
 }
-body .producto1:hover,
-body .producto2:hover,
-body .producto3:hover,
-body .producto4:hover {
+body .producto2:hover{
 transform: scale(1.1);
 }
-body .producto1 img:hover,
-body .producto2 img:hover,
-body .producto3 img:hover,
-body .producto4 img:hover{
+body .producto2 img:hover{
     border: 4px solid grey;
     width: 100%;
     box-shadow: 6px 13px 50px #000;
 }
 body .producto2 img {
-    border: 4px solid grey;
-    width: 100%;
-}
-body .producto3 img {
-    border: 4px solid grey;
-    width: 100%;  
-}
-body .producto4 img {
     border: 4px solid grey;
     width: 100%;
 }
@@ -191,7 +174,7 @@ body .ofertas {
     body .nombreproducto {
         font-size: 30px;
     }
-    body .producto1 img {
+    body .producto2 img {
         border: 4px solid grey;
         width: 50%;
     }
