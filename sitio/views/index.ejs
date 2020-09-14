@@ -8,9 +8,9 @@
 
 <div class="container"><%- include('./partials/banner.ejs')  %> <!-- BANNER -->
   <div class="row destacados">
-    <div class="col-6 col-md-12 col-lg-6 col-sm-12 destacado1">
+    <div class="col-12 col-md-12 col-lg-12 col-sm-12 destacado1">
       <% productos.forEach(producto => { %>
-        <% if(producto.discount == 60) { %> 
+        <% if(producto.discount > 50) { %> 
       <figure>
         <a href=/products/detalle/<%= producto.id %> ><img src="/images/ropa/<%= producto.image %>" alt=""></a>
       </figure>
@@ -33,32 +33,6 @@
     </div>
     <% } %> 
     <% }) %>
-    <div class="col-6 col-md-6 col-lg-6 col-sm-12 destacado2">
-      <% productos.forEach(producto => { %>
-        <% if(producto.discount == 70 ) { %> 
-      <figure>
-        <a href=/products/detalle/<%= producto.id %> ><img src="/images/ropa/<%= producto.image %>" alt=""></a>
-      </figure>
-      <article class="nombredestacado">
-        <h2><%= producto.name %></h2>
-      </article>
-      <article class="edicion">
-        <h3>Limited Edition</h3>
-      </article>
-      <article class="comprar">
-        <a href=""><button>COMPRAR</button></a>
-      </article>
-      <article class="añadircarrito">
-        <a href=""><button>AÑADIR AL CARRO</button></a>
-      </article>
-      <article class="descuentodestacado">
-        $<%- (producto.price - producto.price * producto.discount / 100).toFixed(0).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") %></i> <% if (producto.discount != 0) { %>
-          <span><%= producto.discount %>%OFF</span>
-        <% } %>
-      </article>
-      <% } %> 
-    <% }) %>
-    </div>
   </div>
 </div>
 
