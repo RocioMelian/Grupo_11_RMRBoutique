@@ -34,5 +34,5 @@ module.exports = {
             css:"style.css",
             productos:productos
         })
-    },
+    }
 }
