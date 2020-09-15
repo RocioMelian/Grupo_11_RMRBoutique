@@ -8,9 +8,9 @@
 
 <div class="container"><%- include('./partials/banner.ejs')  %> <!-- BANNER -->
   <div class="row destacados">
-    <div class="col-12 col-md-12 col-lg-12 col-sm-12 destacado1">
-      <% productos.forEach(producto => { %>
-        <% if(producto.discount > 50) { %> 
+    <% productos.forEach(producto => { %>
+      <% if(producto.discount > 50) { %> 
+    <div class="col-6 col-md-12 col-lg-6 col-sm-12 destacado1">
       <figure>
         <a href=/products/detalle/<%= producto.id %> ><img src="/images/ropa/<%= producto.image %>" alt=""></a>
       </figure>
