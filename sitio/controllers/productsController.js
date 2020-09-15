@@ -32,7 +32,10 @@ module.exports = {
         dbProducts.forEach(producto=>{
             if(producto.name.toLowerCase().includes(busqueda.toLowerCase())){
                 productos.push(producto)
+            }else if (producto.category.toLowerCase().includes(busqueda.toLowerCase())){
+                    productos.push(producto)   
             }
+            
         })
         res.render('products',{
             title: "Resultado de la busqueda",
@@ -40,6 +43,7 @@ module.exports = {
             productos:productos
         })
     },
+<<<<<<< HEAD
     agregar: (req, res) => {
         let productoNuevo = {
             id: productos.length + 1,
@@ -64,3 +68,19 @@ module.exports = {
     }
 
     }
+=======
+    editar:function(req,res){
+        let aEditar;
+           dbProducts.forEach(producto=>{
+               if(producto.id == req.params.id){
+                      aEditar == producto
+               }
+        })
+        res.render('editarProd',{
+            title:'Editar producto',
+            css:'style.css',
+            producto:aEditar
+        })
+    }
+}
+>>>>>>> 6a96bf5d7be3e8a44a2ab3766d1cac06719d9a7f
