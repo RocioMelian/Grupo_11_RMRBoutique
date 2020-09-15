@@ -56,6 +56,18 @@ body{
 .buttondeta:hover{
     transform: scale(1.1);
 }
+.basura{
+    color: red;
+}
+.editar{
+    color: darkblue;
+    margin-right: 15px;
+}
+.editar-eliminar{
+        float: right;
+        margin-top: 120px;
+}
+
  /*TABLETS*/
 
 @media(min-width:768px) {
@@ -87,5 +99,16 @@ body{
     }
     .datos .dibu{
         display: inline;
+    }
+    
+    .editar-eliminar{
+        float: right;
+        margin-top: 140px;
+    }
+    .basura{
+        margin-right: 50px;
+    }
+    .detalle .buttondeta{
+        width: 70%;
     }
 }

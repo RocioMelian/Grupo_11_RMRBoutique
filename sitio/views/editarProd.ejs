@@ -13,11 +13,11 @@
   <div class = "row">
     <div class = "col-lg-12 col-md-12 col-sm-12 col-xs-12">
     <section class="form-carga">
-      <h4>Carga de producto</h4>
+      <h4>Editar producto</h4>
+   <form action="/products/editarProd/?_method=PUT" method="POST">
+      <input class="controls" type="text" name="nombre produc" id="nombre produc" placeholder="Nombre del Producto" >
 
-      <input class="controls" type="text" name="nombre produc" id="nombre produc" placeholder="Nombre del Producto">
-
-      <input class="controls" type="text" name="talle" id="talle" placeholder="Talle">
+      <input class="controls" type="text" name="talle" id="talle" placeholder="Talle" >
 
       <br>
       
@@ -54,9 +54,9 @@
       <br>
       <textarea placeholder="" name="" id="" cols="39" rows="5"></textarea>
       
-      <input class="botons" type="submit" value="Agregar">
+      <input class="botons" type="submit" value="Editar">
       <input class="botons" type="submit" value="Cancelar">
-      
+    </form>
     </section>
 
   </div>

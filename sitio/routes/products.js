@@ -8,4 +8,5 @@ router.get('/', products.listar)
 router.get('/detalle/:id',products.detalle);
 router.get('/search',products.search)
 
+router.get('/editarProd/:id',products.editar);
 module.exports = router;

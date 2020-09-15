@@ -4,7 +4,7 @@
         "name": "Campera Ámbar",
         "description": "Campera 100% Algodón",
         "image": "camperaniñas.jpg",
-        "category": "niños/as",
+        "category": "niña",
         "talle": "3",
         "price": "400",
         "discount": "10"
@@ -14,7 +14,7 @@
         "name": "Campera Nico",
         "description": "Campera 100% Algodón",
         "image": "camperaniño.jpg",
-        "category": "niños/as",
+        "category": "niño",
         "talle": "3",
         "price": "600",
         "discount": "50"
@@ -50,7 +50,7 @@
         "name": "Campera Rocio",
         "description": "Campera super Comoda",
         "image": "camperaniñas.jpg",
-        "category": "niños/as",
+        "category": "niña",
         "talle": "3",
         "price": "800",
         "discount": "20"
@@ -113,7 +113,7 @@
         "name": "Jeans Ciro",
         "description": "Para vivir jugando",
         "image": "jeansniño.jpg",
-        "category": "niños/as",
+        "category": "niño",
         "talle": "3",
         "price": "650",
         "discount": "10"
@@ -122,7 +122,7 @@
         "name": "Polera Luca",
         "description": "Polera manga larga",
         "image": "mangalarganiño.jpg",
-        "category": "niños/as",
+        "category": "niño",
         "talle": "3",
         "price": "500",
         "discount": "30"
@@ -131,7 +131,7 @@
         "name": "Polera Ludmi",
         "description": "Polera manga larga",
         "image": "mangalarganiña.jpg",
-        "category": "niños/as",
+        "category": "niña",
         "talle": "3",
         "price": "1500",
         "discount": "50"
@@ -140,7 +140,7 @@
         "name": "Calzas Mellizas",
         "description": "Pack de dos calzas",
         "image": "packdoscalzasniña.jpg",
-        "category": "niños/as",
+        "category": "niña",
         "talle": "3",
         "price": "800",
         "discount": "10"
