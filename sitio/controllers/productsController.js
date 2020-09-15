@@ -2,6 +2,11 @@ const path = require('path');
 const dbProducts = require(path.join(__dirname,'..','data','dbProducts'))
 const fs = require('fs')
 
+
+let productos = fs.readFileSync(path.join(__dirname, '..', 'data', 'products.json'), 'utf-8')
+productos = JSON.parse(productos)
+
+
 module.exports = {
     listar: (req, res) => {
         
@@ -35,4 +40,27 @@ module.exports = {
             productos:productos
         })
     },
-}
+    agregar: (req, res) => {
+        let productoNuevo = {
+            id: productos.length + 1,
+            name: req.body.name,
+            description: req.body.description,
+            image: req.body.image,
+            category: req.body.category,
+            talle: req.body.talle,
+            price: req.body.price,
+            discount: req.body.discount,
+        }
+        
+        productos.push(productoNuevo)
+        res.send(productos)
+
+        let productoJson = JSON.stringify(productos)
+        
+        fs.writeFileSync(path.join(__dirname, '..', 'data', 'products.json', ), productoJson)
+
+        res.redirect('/products');
+        
+    }
+
+    }
