@@ -14,8 +14,8 @@
     <div class = "col-lg-12 col-md-12 col-sm-12 col-xs-12">
     <section class="form-carga">
       <h4>Editar producto</h4>
-   <form action="/products/editarProd/<%= producto.id %> ?_method=PUT" method="POST">
-      <input class="controls" type="text" name="nombre produc" id="nombre produc" placeholder="Nombre del Producto" value="<%= producto.name %> ">
+   <form action="/products/editarProd?_method=PUT" method="POST">
+      <input class="controls" type="text" name="nombre produc" id="nombre produc" placeholder="Nombre del Producto">
 
       <input class="controls" type="text" name="talle" id="talle" placeholder="Talle" >
 
