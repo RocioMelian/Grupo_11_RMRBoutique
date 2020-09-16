@@ -21,8 +21,9 @@ router.get('/detalle/:id',productsController.detalle);
 router.get('/search',productsController.search)
 
 
-router.get('/carga', (req, res) => res.render('formCarga'));
+router.get('/carga',productsController.formCarga);
 router.post('/carga', upload.any(),productsController.agregar)
 
 router.get('/editarProd/:id',productsController.editar);
+router.put('/editarProd/:id',productsController.edit);
 module.exports = router;
