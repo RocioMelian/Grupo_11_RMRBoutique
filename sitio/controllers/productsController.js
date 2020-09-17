@@ -43,7 +43,6 @@ module.exports = {
             productos:productos
         })
     },
-<<<<<<< HEAD
     agregar: (req, res) => {
         let productoNuevo = {
             id: productos.length + 1,
@@ -68,7 +67,6 @@ module.exports = {
     }
 
     }
-=======
     editar:function(req,res){
         let aEditar;
            dbProducts.forEach(producto=>{
@@ -83,4 +81,3 @@ module.exports = {
         })
     }
 }
->>>>>>> 6a96bf5d7be3e8a44a2ab3766d1cac06719d9a7f
