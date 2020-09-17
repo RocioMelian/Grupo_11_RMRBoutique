@@ -14,32 +14,46 @@
     <div class = "col-lg-12 col-md-12 col-sm-12 col-xs-12">
     <section class="form-carga">
       <h4>Editar producto</h4>
-   <form action="/products/editarProd/<%= producto.id %> ?_method=PUT" method="POST">
+   <form action="/products/editarProd/<%= producto.id %>?_method=PUT" method="POST">
       <input class="controls" type="text" name="nombre produc" id="nombre produc" placeholder="Nombre del Producto" value="<%= producto.name %> ">
 
-      <input class="controls" type="text" name="talle" id="talle" placeholder="Talle" >
+      <input class="controls" type="text" name="talle" id="talle" placeholder="Talle" value=<%= producto.talle %>>
 
       <br>
       
-      <input class="controls" type="text" name="precio produc" id="precio produc" placeholder="Precio del Producto">
+      <input class="controls" type="text" name="precio produc" id="precio produc" placeholder="Precio del Producto" value=<%= producto.price %> >
 
       <br>
       
-      <input class="controls" type="text" name="cant ingreso" id="cant ingreso" placeholder="Cantidad de Ingreso">
 
-      <br>
+      <input class="controls" type="text" name="num art" id="num art" placeholder="Numero de Articulo" value=<%= producto.id %> >
 
-      <input class="controls" type="text" name="num art" id="num art" placeholder="Numero de Articulo">
-
-      <input class="controls" type="text" name="descuento" id="descuento" placeholder="Descuento %">
+      <input class="controls" type="text" name="descuento" id="descuento" placeholder="Descuento %" value=<%= producto.discount %> >
 
       <label for="">Categoria:</label>
-      <select>
-       <option disabled>Seleccionar</option>
-       <option value="prenda hombre">Hombre</option>
-       <option value="prenda mujer">Mujer</option>
-       <option value="prenda de niño">Niño</option>
-       <option value="prenda de niña">Niña</option>
+      <select name="category">
+       
+       <% if (producto.category == "hombre") { %>
+        <option value="hombre" selected>Hombre</option>
+        <option value="mujer">Mujer</option>
+        <option value="niño">Niño</option>
+        <option value="niña">Niña</option>
+       <% } else if (producto.category == "mujer") { %>
+       <option value="hombre">Hombre</option>
+       <option value="mujer" selected>Mujer</option>
+       <option value="niño">Niño</option>
+       <option value="niña">Niña</option>
+       <% } else if (producto.category == "niño") { %>
+        <option value="hombre">Hombre</option>
+       <option value="mujer">Mujer</option>
+       <option value="niño" selected>Niño</option>
+       <option value="niña">Niña</option>
+       <% } else if (producto.category == "niña") { %>
+        <option value="hombre">Hombre</option>
+       <option value="mujer">Mujer</option>
+       <option value="niño">Niño</option>
+       <option value="niña" selected>Niña</option>
+       <% } %>
       </select>
 
       <br><br>
@@ -52,7 +66,7 @@
 
       <label>Agregar Descripcion:</label>
       <br>
-      <textarea placeholder="" name="" id="" cols="39" rows="5"></textarea>
+      <textarea placeholder="" name="" id="" cols="39" rows="5"><%= producto.description %></textarea>
       
       <input class="botons" type="submit" value="Editar">
       <input class="botons" type="submit" value="Cancelar">

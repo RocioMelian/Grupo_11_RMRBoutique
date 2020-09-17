@@ -43,6 +43,11 @@ module.exports = {
             productos:productos
         })
     },
+    formCarga:function(req, res){
+        res.render('formCarga', 
+        {title : 'Carga de Productos',
+        css: "style.css"})
+    },
     agregar: (req, res) => {
         let productoNuevo = {
             id: productos.length + 1,
@@ -64,20 +69,37 @@ module.exports = {
 
         res.redirect('/products');
         
-    }
+    },
 
-    }
+    
     editar:function(req,res){
-        let aEditar;
-           dbProducts.forEach(producto=>{
-               if(producto.id == req.params.id){
-                      aEditar == producto
-               }
+        idProducto = req.params.id;
+        let producto = dbProducts.filter(producto=>{
+            return producto.id == idProducto
         })
         res.render('editarProd',{
             title:'Editar producto',
             css:'style.css',
-            producto:aEditar
+            producto:producto[0]
         })
+    },
+    edit:function(req,res){
+            dbProducts.forEach(producto=>{
+              if(producto.id == req.params.id){
+                 producto.name = req.body.name;
+                 producto.description = req.body.description;
+                 producto.image = req.body.image;
+                 producto.category = req.body.category;
+                 producto.talle = req.body.talle;
+                 producto.price = req.body.price;
+                 producto.discount = req.body.discount;
+
+            }
+        })
+        let productoJson = JSON.stringify(dbProducts)
+        
+        fs.writeFileSync(path.join(__dirname, '..', 'data', 'products.json', ), productoJson)
+
+        res.redirect('/products/detalle');
     }
 }
