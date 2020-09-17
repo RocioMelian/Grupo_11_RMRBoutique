@@ -15,20 +15,21 @@
     <section class="form-carga">
       <h4>Editar producto</h4>
    <form action="/products/editarProd/<%= producto.id %>?_method=PUT" method="POST">
-      <input class="controls" type="text" name="nombre produc" id="nombre produc" placeholder="Nombre del Producto" value="<%= producto.name %> ">
-
+    <label for="name">Nombre</label>
+      <input class="controls" type="text" name="name" id="nombre produc" placeholder="Nombre del Producto" value="<%= producto.name %> ">
+    <label for="talle">Talle</label>
       <input class="controls" type="text" name="talle" id="talle" placeholder="Talle" value=<%= producto.talle %>>
 
       <br>
-      
-      <input class="controls" type="text" name="precio produc" id="precio produc" placeholder="Precio del Producto" value=<%= producto.price %> >
+    <label for="price">Precio</label>
+      <input class="controls" type="text" name="price" id="precio produc" placeholder="Precio del Producto" value=<%= producto.price %> >
 
       <br>
       
-
-      <input class="controls" type="text" name="num art" id="num art" placeholder="Numero de Articulo" value=<%= producto.id %> >
-
-      <input class="controls" type="text" name="descuento" id="descuento" placeholder="Descuento %" value=<%= producto.discount %> >
+    <label for="id">Número de articulo</label>
+      <input class="controls" type="text" name="id" id="num art" placeholder="Numero de Articulo" value=<%= producto.id %> >
+    <label for="discount">Descuento</label>
+      <input class="controls" type="text" name="discount id="descuento" placeholder="Descuento %" value=<%= producto.discount %> >
 
       <label for="">Categoria:</label>
       <select name="category">
@@ -59,14 +60,14 @@
       <br><br>
 
       
-
-      <input class="controls" type="file" name="archivo">
+      <label for="image">Imagen</label>
+      <input class="controls" type="file" name="image">
 
       <br><br>
 
       <label>Agregar Descripcion:</label>
       <br>
-      <textarea placeholder="" name="" id="" cols="39" rows="5"><%= producto.description %></textarea>
+      <textarea placeholder="" name="description" id="" cols="39" rows="5"><%= producto.description %></textarea>
       
       <input class="botons" type="submit" value="Editar">
       <input class="botons" type="submit" value="Cancelar">
