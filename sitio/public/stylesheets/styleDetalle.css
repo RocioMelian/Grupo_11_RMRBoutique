@@ -58,15 +58,21 @@ body{
 }
 .basura{
     color: red;
+    font-size: 2.5rem;
 }
 .editar{
     color: darkblue;
     margin-right: 15px;
+    font-size: 2.5rem;
 }
 .editar-eliminar{
         float: right;
-        margin-top: 120px;
+        margin-top: 90px;
+        display: flex;
+        margin-right: 40px;
+        
 }
+
 
  /*TABLETS*/
 
@@ -79,6 +85,12 @@ body{
     }
     .imgdetalle img{
         width: 90%; 
+    }
+    .basura, .editar{
+        font-size: 1.5rem;
+    }
+    .basura{
+        margin-right: 20px;
     }
 }
 
@@ -103,10 +115,14 @@ body{
     
     .editar-eliminar{
         float: right;
-        margin-top: 140px;
+        margin-top: 130px;
     }
     .basura{
         margin-right: 50px;
+        font-size: 1rem;
+    }
+    .editar{
+        font-size: 1rem;
     }
     .detalle .buttondeta{
         width: 70%;

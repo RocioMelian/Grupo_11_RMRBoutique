@@ -14,7 +14,7 @@
     <div class = "col-lg-12 col-md-12 col-sm-12 col-xs-12">
     <section class="form-carga">
       <h4>Editar producto</h4>
-   <form action="/products/editarProd/<%= producto.id %>?_method=PUT" method="POST">
+   <form action="/products/editarProd/<%= producto.id %>?_method=PUT" method="POST" enctype="multipart/form-data">
     <label for="name">Nombre</label>
       <input class="controls" type="text" name="name" id="nombre produc" placeholder="Nombre del Producto" value="<%= producto.name %> ">
     <label for="talle">Talle</label>
@@ -29,7 +29,7 @@
     <label for="id">Número de articulo</label>
       <input class="controls" type="text" name="id" id="num art" placeholder="Numero de Articulo" value=<%= producto.id %> >
     <label for="discount">Descuento</label>
-      <input class="controls" type="text" name="discount id="descuento" placeholder="Descuento %" value=<%= producto.discount %> >
+      <input class="controls" type="text" name="discount" id="descuento" placeholder="Descuento %" value=<%= producto.discount %> >
 
       <label for="">Categoria:</label>
       <select name="category">
@@ -70,7 +70,7 @@
       <textarea placeholder="" name="description" id="" cols="39" rows="5"><%= producto.description %></textarea>
       
       <input class="botons" type="submit" value="Editar">
-      <input class="botons" type="submit" value="Cancelar">
+      <a href="/products/detalle/<%= producto.id %> "><input class="botons" type="submit" value="Cancelar"></a>
     </form>
     </section>
 

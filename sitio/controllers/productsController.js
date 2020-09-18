@@ -84,6 +84,7 @@ module.exports = {
         })
     },
     edit:function(req,res){
+        
         let idProducto = req.body.id;
 
         dbProducts.forEach(producto=>{
@@ -91,9 +92,9 @@ module.exports = {
                 producto.id = Number(req.body.id);
                 producto.name = req.body.name.trim(),
                 producto.description = req.body.description.trim(),
-                producto.image = producto.image,
+                producto.image = (req.files[0])?req.files[0].filename: producto.image,
                 producto.category = req.body.category.trim(),
-                producto.talle = Number(req.body.id),
+                producto.talle = Number(req.body.talle),
                 producto.price = Number(req.body.price),
                 producto.discount = Number(req.body.discount)  
             }
