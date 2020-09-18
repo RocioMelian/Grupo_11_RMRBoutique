@@ -85,22 +85,32 @@ module.exports = {
         })
     },
     edit:function(req,res){
-            dbProducts.forEach(producto=>{
-              if(producto.id == req.params.id){
-                 producto.name = req.body.name;
-                 producto.description = req.body.description;
-                 producto.image = req.body.image;
-                 producto.category = req.body.category;
-                 producto.talle = req.body.talle;
-                 producto.price = req.body.price;
-                 producto.discount = req.body.discount;
+        let idProducto = req.body.id;
 
+        dbProducts.forEach(producto=>{
+            if(producto.id == idProducto){
+                producto.id = Number(req.body.id);
+                producto.name = req.body.name.trim(),
+                producto.description = req.body.description.trim(),
+                producto.image = producto.image,
+                producto.category = req.body.category.trim(),
+                producto.talle = Number(req.body.id),
+                producto.price = Number(req.body.price),
+                producto.discount = Number(req.body.discount)  
             }
         })
-        let productoJson = JSON.stringify(dbProducts)
-        
-        fs.writeFileSync(path.join(__dirname, '..', 'data', 'products.json', ), productoJson)
-
-        res.redirect('/products/detalle');
+        fs.writeFileSync(path.join(__dirname,'../data/products.json'), JSON.stringify(dbProducts),'utf-8');
+        res.redirect('/products/detalle/' + idProducto);
+    },
+    eliminar:function(req,res){
+        let idProducto = req.params.id;
+        dbProducts.forEach(producto=>{
+            if(producto.id == idProducto){
+                var eliminar = dbProducts.indexOf(producto)
+                dbProducts.splice(eliminar,1)
+            }
+        })
+        fs.writeFileSync(path.join(__dirname,'../data/products.json'), JSON.stringify(dbProducts),'utf-8');
+        res.redirect('/products');
     }
 }
