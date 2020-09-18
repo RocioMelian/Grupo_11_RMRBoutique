@@ -56,14 +56,14 @@ body{
 .buttondeta:hover{
     transform: scale(1.1);
 }
-.basura{
+.bi-trash{
     color: red;
-    font-size: 2.5rem;
+    
 }
-.editar{
+.bi-pencil-square{
     color: darkblue;
     margin-right: 15px;
-    font-size: 2.5rem;
+   
 }
 .editar-eliminar{
         float: right;

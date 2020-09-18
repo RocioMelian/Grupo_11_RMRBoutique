@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
+
 const productsController = require('../controllers/productsController');
 const mwProducts = require('../middlewares/mwProducts');
 
@@ -16,5 +17,5 @@ router.post('/carga', mwProducts.any(),productsController.agregar)
 router.get('/editarProd/:id',productsController.editar);
 router.put('/editarProd/:id', mwProducts.any() ,productsController.edit);
 
-router.delete('delete/:id',productsController.eliminar);
+router.delete('/delete/:id',productsController.eliminar);
 module.exports = router;

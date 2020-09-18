@@ -105,13 +105,13 @@ module.exports = {
     },
     eliminar:function(req,res){
         let idProducto = req.params.id;
-        dbProducts.forEach(producto=>{
+        dbProducts.forEach(producto =>{
             if(producto.id == idProducto){
-                var eliminar = dbProducts.indexOf(producto)
-                dbProducts.splice(eliminar,1)
+                let aEliminar = dbProducts.indexOf(producto)
+                dbProducts.splice(aEliminar,1)
             }
         })
-        fs.writeFileSync(path.join(__dirname,'../data/products.json'), JSON.stringify(dbProducts),'utf-8');
-        res.redirect('/products');
+        fs.writeFileSync(path.join(__dirname,'../data/products.json'),JSON.stringify(dbProducts))
+        res.redirect('/products')
     }
 }
