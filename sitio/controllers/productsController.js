@@ -48,12 +48,13 @@ module.exports = {
         {title : 'Carga de Productos',
         css: "style.css"})
     },
-    agregar: (req, res) => {
+    agregar: (req, res, next) => {
+        // res.send(req.file)
         let productoNuevo = {
             id: productos.length + 1,
             name: req.body.name,
             description: req.body.description,
-            image: req.body.image,
+            image: req.files[0].filename,
             category: req.body.category,
             talle: req.body.talle,
             price: req.body.price,
