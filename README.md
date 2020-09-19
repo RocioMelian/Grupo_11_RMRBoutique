@@ -2,7 +2,7 @@
 
 ![logotipo](./sitio/public/images/logotipo2.png)
 
-### 🗂 Primer sprint (entrega 17/8)
+# 🗂 Primer sprint (entrega 17/8)
 
 ## Integrantes
 
@@ -59,7 +59,7 @@
    - [Ubuntu](https://fonts.google.com/specimen/Ubuntu?query=ubuntu)
    - [Billabong](https://fonts.google.com/?query=billabong)
 
-### 🗂 Segundo sprint (Entrega 7/9)
+# 🗂 Segundo sprint (Entrega 7/9)
 
 - 📑 [Tablero de trabajo](https://trello.com/b/uB2due9N/grupo-11-%D1%8Fmr-boutique)
 - ⭐ [Retrospectiva](https://github.com/RocioMelian/Grupo_11_RMRBoutique/blob/master/retro.md)
@@ -71,11 +71,11 @@
   - CARGA DE PRODUCTOS: carga.ejs
   - REGISTRO DE USUARIOS: register.ejs
 
-### 🗂 Tercer sprint (Entrega 21/9)
+# 🗂 Tercer sprint (Entrega 21/9)
 
   - 📑 [Tablero de trabajo](https://trello.com/b/uB2due9N/grupo-11-%D1%8Fmr-boutique)
   - ⭐ [Retrospectiva](https://github.com/RocioMelian/Grupo_11_RMRBoutique/blob/master/retro.md)
-  - 🔉 [Daily]()
+  - 🔉 [Daily](https://github.com/RocioMelian/Grupo_11_RMRBoutique/blob/master/daily.md)
 
 ### 📜 Aplicación Node + Express + EJS
   - Home /
