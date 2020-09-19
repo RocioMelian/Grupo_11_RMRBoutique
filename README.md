@@ -63,3 +63,24 @@
 
 - 📑 [Tablero de trabajo](https://trello.com/b/uB2due9N/grupo-11-%D1%8Fmr-boutique)
 - ⭐ [Retrospectiva](https://github.com/RocioMelian/Grupo_11_RMRBoutique/blob/master/retro.md)
+
+#### 📄 Vistas (views)
+  - HOME: home.ejs
+  - DETALLE PRODUCTO: detalle.ejs
+  - CARRITO DE COMPRAS: carrito.ejs
+  - CARGA DE PRODUCTOS: carga.ejs
+  - REGISTRO DE USUARIOS: register.ejs
+
+### 🗂 Tercer sprint (Entrega 21/9)
+
+  - 📑 [Tablero de trabajo](https://trello.com/b/uB2due9N/grupo-11-%D1%8Fmr-boutique)
+  - ⭐ [Retrospectiva](https://github.com/RocioMelian/Grupo_11_RMRBoutique/blob/master/retro.md)
+  - 🔉 [Daily]()
+
+### 📜 Aplicación Node + Express + EJS
+  - Home /
+  - Busqueda /products/search
+  - Listado de productos /products
+  - Detalle del producto /products/detalle/:id
+  - Formulario de carga y edición de productos /products/carga & /products/editarProd/:id
+  - Formulario de registro y login /users/register & /users/login

@@ -1,18 +1,40 @@
-# ⭐ RETROSPECTIVA
+# ⭐ RETROSPECTIVA (1 Sprint)
 
 ## Creamos nuestra retrospectiva basandonos en Starfish Retrospective.
 
-### - ✔️ Seguir haciendo:
+### ✔️ Seguir haciendo:
   - Tenemos que seguir dividiendonos el trabajo para que cada uno haga la cantidad justa.
 
-### - ✔️ Hacer más:
+### ✔️ Hacer más:
   - Tenemos que dedicarle más tiempo a nuestro trabajo.
 
-### - ✔️ Empezar a hacer:
+### ✔️ Empezar a hacer:
   - Tenemos que empezar a hacer reuniones por zoom ,ya que , en el primer sprint no pudimos acordar ninguna.
 
-### - ✔️ Dejar de hacer:
+### ✔️ Dejar de hacer:
   - Tenemos que dejar de planear las cosas importantes por Whatsapp.
 
-### - ✔️ Hacer menos:
+### ✔️ Hacer menos:
   - Tenemos que trabajar menos por nuestra cuenta y más en equipo.
+
+  # ⭐ RETROSPECTIVA (2 Sprint)
+
+## Creamos nuestra retrospectiva basandonos en Starfish Retrospective.
+
+### ✔️ Seguir haciendo:
+  - Tenemos que seguir dividiendonos el trabajo para que cada uno haga la cantidad justa.
+  - Tenemos que seguir preguntando que cambios hizo cada uno.
+
+### ✔️ Hacer más:
+  - Tenemos que dedicarle más tiempo a nuestro trabajo.
+  - Tenemos que avisar siempre cuando hay que hacer "git pull origin master".
+
+### ✔️ Empezar a hacer:
+  - Tenemos que empezar a hacer mas reuniones por zoom.
+
+### ✔️ Dejar de hacer:
+  - Tenemos que dejar de planear las cosas importantes por Whatsapp.
+
+### ✔️ Hacer menos:
+  - Tenemos que trabajar menos por nuestra cuenta y más en equipo.
+  - Tenemos que dejar de guardar los cambios en git hub con errores.
