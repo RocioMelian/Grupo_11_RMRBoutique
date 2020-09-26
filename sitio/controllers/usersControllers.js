@@ -1,6 +1,9 @@
 const path = require('path');
 const dbProducts = require(path.join(__dirname,'..','data','dbProducts'))
-const fs = require('fs')
+const fs = require('fs');
+const { validationResult } = require('express-validator');
+const e = require('express');
+const dbUsers = require('../data/dbUsers');
 
 let usuario = fs.readFileSync(path.join(__dirname, '..', 'data', 'users.json'), 'utf-8')
 usuario = JSON.parse(usuario)
@@ -10,6 +13,29 @@ module.exports = {
         
         res.render('users' , {title : 'Usuario',
         css:"style.css"})
+    },
+    inicioSesion: (req, res) => {
+        let errores = validationResult(req);
+        if(errores.isEmpty()){
+            dbUsers.forEach(user => {
+                if(usuario.email == req.body.email){
+                    req.session.usuario = {
+                        id: user.id,
+                        nick: user.first_name + " " + user.last_name,
+                        email: user.email,
+                        avatar: user.avatar
+                    }
+                }
+            })
+            res.redirect('/login')
+        } else {
+            res.render('login', {
+                title: "ingresa a tu cuenta",
+                css:"stylelogin.css",
+                errors:errores.mapped(),
+                old: req.body
+            })
+        }
     },
     formulario: (req, res) => {
         
