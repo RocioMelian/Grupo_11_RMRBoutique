@@ -1,63 +1,91 @@
 @import "style.css";
 /* HEADER */
-header {
-    background-color: rgb(80, 73, 73); 
+.header {
+    background-color: rgb(83, 83, 83);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: white;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-wrap: wrap;
+} 
+.headercon{
     width: 100%;
     height: 130px;
     display: flex;
     flex-wrap: wrap;
-} 
-.contenidoheader{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+    justify-content: center;
 }
-
+.avatar{
+    margin-left: 30px;
+    margin-top: 20px;
+}
+    
+.avatar img{
+    border: 2px solid white;
+    border-radius: 50px;
+    width: 70px;
+    height: 70px;
+}
+.avatar h5{
+    color: white;
+    font-size: 1.5rem;
+}
 
 .logo{
-    margin-left: 130px;
-   
+    margin-left: 90px;
 }
 .logo img{
-   border-radius: 50px;
-   
+    width: 160%;
+    border-radius: 80px;
 }
-img {
-    width: 90%;
-}
+
+
 
 li {
     list-style: none;
     float: right;
 }
 
-
-
-.barra input{
-    width: 100%;
-    transform: scale(1.3);
+.barraheader{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 50px;
 }
+.barraheader input{
+    width: 110%;
+    margin-top: 10px;
+    border: none;
+    display: flex;
+}
+
 
 
 .boton-barra{
     border-radius: 5px;
     border: none;
-    transform: scale(1.3);
-    width: 10%;
-}
-
-
-nav {
+    width: 20%;
+    float: right;
+    margin-top: -24px;
     
-    margin-top: 10px;
-    margin-right: 20px;
 }
 
 
-a{
-    text-decoration: none;
+
+
+
+.aheader{
+   color: white;
+   font-size: 1.5rem;
 }
+
+.aheader:hover{
+    color: #55ddff;
+   
+}
+
 .admin{
     
     color: white;
@@ -72,18 +100,32 @@ a{
    transform: scale(1.3);
 }
 
-.persona{
-    margin-left: -30px;
+.personalog{
+    margin-top: 32px;
+}
+.personreg{
+    margin-left: -50px;
+    margin-top: 30px;
 }
 
-.login{
-    
+.loginheader{
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;  
+}
+.loginheader:hover{
+    text-decoration: none;
+    color: #55ddff;
+    transform: scale(1.3);
+}
+.registerheader{
+    font-size: 1.5rem;
     text-decoration: none;
     color: white;
     
     
 }
-.login:hover{
+.registerheader:hover{
     text-decoration: none;
     color: #55ddff;
     transform: scale(1.3);
@@ -101,44 +143,51 @@ a{
     transform: scale(1.3);
 }
 
-a:hover{
-    text-decoration: none;
-    
+.iniciarspan{
+    margin-left: -10px;
 }
-.persona span{
-    display: flex;
-    flex-direction: column;
-}
+
 .registerspan{
-    margin-left: -5px;
+    margin-left: -25px;
 }
 /*TABLETS*/
 @media(min-width:768px){
     .barra input{
         width: 60%;
     }
-   
+    
 }
 /*PC*/
 @media(min-width:1024px){
     .logo{
-        margin-left: 0px;
+        margin-left: 140px;
        
     }
     .logo img{
         
-        width: 37%;
-        margin-left: 170px;
+        width: 94%;
+        
     }
-    .barra input{
-        width: 70%;
+    .boton-barra{
+        margin-right: -16px;
     }
     
-    .spanhe{
-        margin-left: -5px;
+    .barra input{
+        width: 100%;
     }
-    h6{
-        margin-left: -10px;
+    .personalog{
+        margin-top: 40px;
+    }
+    .personreg{
+        margin-top: 38px;
+    
+    }
+    
+    .registerspan{
+        margin-left: -3px;
+    }
+    .iniciarspan{
+        margin-left: 0px;
     }
 }
 

@@ -50,6 +50,20 @@
     font-family: fantasy;
 
 }
+.form-login p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    
+}
+.form-login a {
+    color: rgb(15, 1, 1);
+    text-decoration: none;
+}
+.form-login a:hover {
+    color: blue;
+    text-decoration: underline;
+}
 .form-login .botons:hover{
     transform: scale(1.1);
 }

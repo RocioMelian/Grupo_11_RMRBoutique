@@ -9,11 +9,24 @@ let usuario = fs.readFileSync(path.join(__dirname, '..', 'data', 'users.json'), 
 usuario = JSON.parse(usuario)
 
 module.exports = {
-    sesion: (req, res) => {
-        
-        res.render('users' , {title : 'Usuario',
-        css:"style.css"})
+    sesion: function(req,res){
+        res.render('users',{
+            title:"Supér ofertas",
+            css: "style.css",
+            productos: dbProducts.filter(producto =>{
+                if(producto.discount > 30){
+                    return producto
+                }
+            })
+            
+        })
     },
+    iniciar: (req, res) => {
+        
+        res.render('login' , {title : 'Iniciar Sesión',
+        css:'style.css'})
+    },
+    
     inicioSesion: (req, res) => {
         let errores = validationResult(req);
         if(errores.isEmpty()){
@@ -27,6 +40,7 @@ module.exports = {
                     }
                 }
             })
+            res.locals.usuario == req.session.usuario;
             res.redirect('/login')
         } else {
             res.render('login', {
@@ -41,11 +55,7 @@ module.exports = {
         
         res.render('register' , {title : 'Registro de Usuario',
         css:'style.css'})
-    },
-    iniciar: (req, res) => {
-        
-        res.render('login' , {title : 'Iniciar Sesión',
-        css:'style.css'})
+    
     },
     agregar: (req, res, next) => {
     let nuevoUsuario = {

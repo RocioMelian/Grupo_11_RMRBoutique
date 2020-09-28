@@ -1,36 +1,71 @@
-<header class="container-fluid">
-  <div class="container">
+<header>
+  <div class="container-fluid header">
+  <div class="container headercon">
     <div class="row headerhe">
-      <div class="contenidoheader">
-      <div class="col-2 col-md-2 col-lg-2 persona">
-       <ul>
-          <li> 
-            <a href="/users/register"><svg width="2.5em" height="2.5em" viewBox="0 0 16 16" class="bi bi-person-fill login" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/> 
-             </svg>
-           </a>
-         <span class="registerspan">Registro</span>
-         </li>
-       </div>
-        <div class="col-1 col-md-1 col-lg-1 cargapersona">
-         <li><a href="/products/carga"> <svg width="2.5em" height="2.5em" viewBox="0 0 16 16" class="bi bi-upload admin" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
-          <path fill-rule="evenodd" d="M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708l3-3z"/>
-        </svg></a>
-        <span class="spanhe">+ <h6>Producto</h6></span>
-      </li>
-        </ul> 
-        </div> 
       
+        
+          <% if (typeof user == "undefined") { %>
+            <div class="col-2 col-md-2 col-l-2 col-lg-2 personreg">
+                 
+              <li> 
+                <a href="/users/register"><svg width="2.5em" height="2.5em" viewBox="0 0 16 16" class="bi bi-person-plus-fill registerheader" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                 <path fill-rule="evenodd" d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm7.5-3a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
+               </svg>
+               </a>
+             <span class="registerspan"><a href="/users/register" class="aheader"> Registrate</a></span>
+             </li>
+           </div>
+
+
+                <div class="col-2 col-md-2 col-l-2 col-lg-2 personalog">
+                 
+                     <li> 
+                       <a href="/users/login"><svg width="2.5em" height="2.5em" viewBox="0 0 16 16" class="bi bi-person-fill loginheader" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                       <path fill-rule="evenodd" d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/> 
+                        </svg>
+                      </a>
+                    <span class="iniciarspan"><a href="/users/login" class="aheader">Ingresar</a></span>
+                    </li>
+                  </div>
+             
+             
+                
+             
+          <% } else{ %>
+              <li>
+                  <a href="/users/logout">Cerrar sesión <i class="fas fa-sign-in-alt "></i></a>
+              </li>
+              
+                <div class="col-2 col-md-2 col-l-2 col-lg-2 carritoheader">
+                  
+                  <li><a href="/carrito"><svg width="2.5em" height="2.5em" viewBox="0 0 16 16" class="bi bi-cart3 carritodibujo" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0  0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+                  </svg></a>
+                  <span class="spanhe"><a href="/carrito" class="aheader">Carrito</a></span>
+                </li>
+                
+              
+              </div> 
+             
+             
+                <div class="col-2 col-md-2 col-l-2 col-lg-2 cargapersona">
+                  <li><a href="/products/carga"> <svg width="2.5em" height="2.5em" viewBox="0 0 16 16" class="bi bi-upload admin" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                   <path fill-rule="evenodd" d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+                   <path fill-rule="evenodd" d="M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708l3-3z"/>
+                 </svg></a>
+                 <span class="spanhe"><a href="/products/carga" class="aheader">+ <h6>Producto</h6></a></span>
+               </li>
+                 
+                 </div> 
+             
+          <% } %>
       
-      <div class="col-3 col-md-3 col-lg-4 logo">
+      <div class="col-2 col-md-2 col-l-2 col-lg-2 logo">
         <a href="/"><img  src="/images/logotipo2.png" alt=""></a>
+    
     </div>
 
-
-
-
-    <div class="col-3 col-md-3 col-lg-3 barra">
+    <div class="col-2 col-md-2 col-l-2 col-lg-2 barraheader">
       <!--BUSCADOR-->
       <form action="/products/search" method="GET">
         <input type="search" name="search" placeholder="  Buscar" aria-label="Search">
@@ -42,16 +77,17 @@
     </div>
 
    
-    <div class="col-1 col-md-1 col-lg-1 carritoheader">
-      <ul>
-      <li><a href="/carrito"><svg width="2.5em" height="2.5em" viewBox="0 0 16 16" class="bi bi-cart3 carritodibujo" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0  0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
-      </svg></a>
-      <span class="spanhe">Carrito</span>
-    </li>
-    </ul>
-  
-  </div> 
+    
+  <div class="col-2 col-md-2 col-l-2 col-lg-2 d-block justify-content-end  align-items-center avatar">
+    <a href=""><h5 class="mr-2"><%= (locals.usuario)?locals.usuario.nick:"Invitado" %> </h5></a>
+    <% if (locals.usuario) { %>
+        <a href="/users"><img src="/images/avatar_users/<%= locals.usuario.avatar %> " alt="avatar" width="50px" height="50px" class="avatar"></a>
+
+    <% } else{%>
+    <a href="/users/login"><img src="/images/avatar_users/guest.png" alt="" width="50px" height="50px"></a>
+    <% } %>
+
+</div>
 </div>
 </div>
 </div>
