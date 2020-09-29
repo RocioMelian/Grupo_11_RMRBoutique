@@ -44,8 +44,8 @@ module.exports = {
             res.redirect('/login')
         } else {
             res.render('login', {
-                title: "ingresa a tu cuenta",
-                css:"stylelogin.css",
+                title: "Ingresá a tu cuenta",
+                css:"style.css",
                 errors:errores.mapped(),
                 old: req.body
             })
