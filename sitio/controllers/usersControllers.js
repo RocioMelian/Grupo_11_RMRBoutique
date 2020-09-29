@@ -4,6 +4,7 @@ const fs = require('fs');
 const { validationResult } = require('express-validator');
 const e = require('express');
 const dbUsers = require('../data/dbUsers');
+const bcrypt = require('bcrypt')
 
 let usuario = fs.readFileSync(path.join(__dirname, '..', 'data', 'users.json'), 'utf-8')
 usuario = JSON.parse(usuario)
@@ -31,7 +32,7 @@ module.exports = {
         let errores = validationResult(req);
         if(errores.isEmpty()){
             dbUsers.forEach(user => {
-                if(usuario.email == req.body.email){
+                if(user.email == req.body.email){
                     req.session.usuario = {
                         id: user.id,
                         nick: user.first_name + " " + user.last_name,
@@ -41,7 +42,7 @@ module.exports = {
                 }
             })
             res.locals.usuario == req.session.usuario;
-            res.redirect('/login')
+            res.redirect('/')
         } else {
             res.render('login', {
                 title: "Ingresá a tu cuenta",
@@ -63,7 +64,7 @@ module.exports = {
         first_name: req.body.first_name,
         last_name: req.body.last_name,
         email: req.body.email,
-        password: req.body.password,
+        password: bcrypt.hashSync(req.body.password, 10),
         category: req.body.category,
         avatar: req.files[0].filename,
     }
