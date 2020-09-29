@@ -41,7 +41,7 @@ module.exports = {
                     }
                 }
             })
-            res.locals.usuario == req.session.usuario;
+            res.locals.user == req.session.usuario;
             res.redirect('/')
         } else {
             res.render('login', {
@@ -69,7 +69,7 @@ module.exports = {
         avatar: req.files[0].filename,
     }
     usuario.push(nuevoUsuario)
-    res.send(usuario)
+    
 
     let userJson = JSON.stringify(usuario)
     
