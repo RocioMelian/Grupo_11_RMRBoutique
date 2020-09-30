@@ -1,0 +1,75 @@
+@import "style.css";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* TITULO  y CAJA CONTENEDORA*/
+.form-login {
+    justify-content: center;
+    width: 400px;
+    padding: 35px;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 5px;
+    color:black;
+    box-shadow: 6px 13px 50px #000;
+    background: white;
+}
+/* INPUTS */
+.form-login h4 {
+   font-size: 32px;
+   margin-bottom: 30px;
+   font-family: fantasy;
+}
+.controls {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    border: 2px solid grey;
+    font-size: 20px;
+    font-family: fantasy;
+
+}
+/* BOTONERAS */
+.form-login .botons {
+   
+    border-bottom-color: black;
+    border: 45px;
+    padding: 15px;
+    color: black;
+    margin: 16px 0;
+    font-size: 19px;
+    background-color: lightseagreen;
+    border: 0;
+    width: 100%;
+    border-radius: 8px;
+    padding: 12px;
+    text-transform: uppercase;
+    font-family: fantasy;
+
+}
+.form-login p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    
+}
+.form-login a {
+    color: rgb(15, 1, 1);
+    text-decoration: none;
+}
+.form-login a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+.form-login .botons:hover{
+    transform: scale(1.1);
+}
+/* BACKGROUND */
+body {
+    background-image: url("/images/fondoo.jpg");
+    float: center;
+    background-size: cover;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+  <%- include('./partials/head.ejs')  %> <!-- HEAD -->
+  <body>
+    <%- include('./partials/header.ejs')  %> <!-- HEADER -->
+
+    
+ <form action="/users/login" method="POST">
+    <div class = "row">
+      <div class = "col-lg-12 col-md-12 col-sm-12 col-xs-12">
+      <section class="form-login">
+        <h4>Inicio de Sesión</h4>
+  
+        <input class="controls" type="email" name="email" id="correo" placeholder="Email">
+  
+        <input class="controls" type="password" name="pass" id="contraseña" placeholder="Contraseña">
+
+        <p><input type="checkbox">Recordarme</p>
+         
+        <p><a href="/users/register">¿No tienes cuenta?</a></p>
+        <input class="botons" type="submit" value="Cancelar">
+        <input class="botons" type="submit" value="Iniciar sesión">
+        
+      </section>
+    </div>
+  </div>
+</form>
+
+  <%- include('./partials/footer.ejs')  %> <!-- FOOTER -->
+</body>
+</html>

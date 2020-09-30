@@ -1,0 +1,207 @@
+/* --- IMPORTS --- */
+@import "style.css";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+/* --- AJUSTE GLOBAL --- */
+* {
+    margin: 0;
+}
+/* --- BACKGROUND --- */
+body {
+    display: inherit;
+    position: absolute;
+    background-image: url("/images/fondoo.jpg");
+    width: 100%;
+    max-width: 100%;
+    background-size: cover;
+}
+/* GENERAL */
+body .container {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* BANNER */
+body #carouselExampleSlidesOnly {
+    position: relative;
+    width: 80%;
+    border: 2px solid grey;
+    left: 10%;
+    margin-bottom: 20px;
+}
+/* --- PRODUCTO DESTACADO IZQUIERDO --- */
+body .destacado1 {
+    position: relative;
+    border: 2px solid grey;
+    padding: 2px;
+    height: 273px;
+    box-shadow: 6px 13px 50px rgba(0, 0, 0, 0.7);
+}
+/* --- ATRIBUTOS DE CONTENEDOR DESTACADO --- */
+body .container .destacados {
+    border: 20px transparent;
+}
+body .destacados figure img{
+    float: right;
+    border: 2px solid grey;
+    width: 265px;
+}
+body .container .comprar button {
+    background-color: lightseagreen;
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+    font-size: 15px;
+    font-family: fantasy;
+    border: 4px solid transparent;
+    border-radius: 8px;
+    padding: 12px;
+    text-transform: uppercase;
+}
+body .container .comprar button:hover{
+    transform: scale(1.1);
+}
+body .container .añadircarrito button {
+    background-color: lightseagreen;
+    position: absolute;
+    left: 110px;
+    bottom: 5px;
+    font-size: 15px;
+    font-family: fantasy;
+    border: 4px solid transparent;
+    border-radius: 8px;
+    padding: 12px;
+    text-transform: uppercase;
+}
+body .container .añadircarrito button:hover{
+    transform: scale(1.1);
+}
+body .container .nombredestacado {
+    color: black;
+    font-family: fantasy;
+    font-size: 40px;
+}
+body .container .edition {
+    color: black;
+    font-family: fantasy;
+    font-size: 20px;
+}
+body .descuentodestacado {
+    text-transform: uppercase;
+    color: #39B54A;
+}
+/* --- PRODUCTOS --- */
+body .producto2{
+    position: relative;
+    border: 22px solid transparent;
+    padding: 2px;
+    top: 20px;
+    margin-top: 31px;
+    margin-bottom: 20px;
+}
+body .producto2:hover{
+transform: scale(1.1);
+}
+body .producto2 img:hover{
+    border: 4px solid grey;
+    width: 100%;
+    box-shadow: 6px 13px 50px #000;
+}
+body .producto2 img {
+    border: 4px solid grey;
+    width: 100%;
+}
+body .container div .nombreproducto {
+    margin-top: 0px;
+    font-family: fantasy;
+}
+body .nombreproducto {
+    border: 2px solid grey;
+    position: relative;
+    width: 100%;
+    color: black;
+}
+body a:hover{
+    text-decoration: none;
+}
+body .precioproducto {
+    position: absolute;
+    right: 4px;
+    font-size: 20px;
+    border: 2px solid grey;
+}
+body .descuentoproducto {
+    border: 2px solid grey;
+    position: absolute;
+    right: 2px;
+    height: unset;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #39B54A;
+}
+body .ofertas {
+    position: absolute;
+    border: 2px solid grey;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+/* --- VERSION PARA TABLET (768px) --- */
+
+@media(max-width: 765px) {
+    body #carouselExampleSlidesOnly {
+        width: 80%;
+        border: 2px solid grey;
+        left: 10%;
+        margin-bottom: 20px;
+        display: none;
+    }
+    body .destacado2 {
+        display: none;
+        width: 100%;
+    }
+    body .nombreproducto {
+        font-size: 30px;
+    }
+    body .producto2 img {
+        border: 4px solid grey;
+        width: 100%;
+    }
+    body .descuentoproducto {
+        border: 2px solid grey;
+        position: absolute;
+        right: 2px;
+        height: unset;
+        text-align: center;
+        width: 22%;
+        text-transform: uppercase;
+    }
+}
+/* --- VERSION PARA ESCRITORIO (1024px) --- */
+@media(max-width: 1023px) {
+    body #carouselExampleSlidesOnly {
+        width: 80%;
+        border: 2px solid grey;
+        left: 10%;
+        margin-bottom: 20px;
+    }
+    body .nombreproducto {
+        font-size: 20px;
+    }
+    body .destacado2 {
+        display: none;
+        width: 100%;
+    }
+    body .descuentoproducto {
+        border: 2px solid grey;
+        position: absolute;
+        right: 2px;
+        height: unset;
+        text-align: center;
+        width: 22%;
+        text-transform: uppercase;
+    }
+}
