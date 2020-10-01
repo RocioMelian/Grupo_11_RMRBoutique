@@ -59,6 +59,9 @@ module.exports = {
     
     },
     agregar: (req, res, next) => {
+    let errores = validationResult(req);
+
+        if(errores.isEmpty()){
     let nuevoUsuario = {
         id: usuario.length + 1,
         first_name: req.body.first_name,
@@ -68,13 +71,21 @@ module.exports = {
         category: req.body.category,
         avatar: req.files[0].filename,
     }
-    usuario.push(nuevoUsuario)
-    res.send(usuario)
+    dbUsers.push(nuevoUsuario)
+    res.send(dbUsers)
 
-    let userJson = JSON.stringify(usuario)
+    let userJson = JSON.stringify(dbUsers)
     
     fs.writeFileSync(path.join(__dirname, '..', 'data', 'users.json', ), userJson)
 
     res.redirect('users/login');
+} else{
+    res.render('register', {
+        title: "Registro de usuario",
+        css:"styleregister.css",
+        errors:errores.mapped(),
+        old: req.body
+    })
+}
 }
 }
