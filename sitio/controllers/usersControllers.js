@@ -41,7 +41,6 @@ module.exports = {
                     }
                 }
             })
-            
            
             res.redirect('/')
         } else {
@@ -60,9 +59,6 @@ module.exports = {
     
     },
     agregar: (req, res, next) => {
-    let errores = validationResult(req);
-
-        if(errores.isEmpty()){
     let nuevoUsuario = {
         id: usuario.length + 1,
         first_name: req.body.first_name,
@@ -72,21 +68,12 @@ module.exports = {
         category: req.body.category,
         avatar: req.files[0].filename,
     }
-    dbUsers.push(nuevoUsuario)
-    res.send(dbUsers)
-
-    let userJson = JSON.stringify(dbUsers)
+    usuario.push(nuevoUsuario)
+    
+    let userJson = JSON.stringify(usuario)
     
     fs.writeFileSync(path.join(__dirname, '..', 'data', 'users.json', ), userJson)
 
-    res.redirect('users/login');
-} else{
-    res.render('register', {
-        title: "Registro de usuario",
-        css:"styleregister.css",
-        errors:errores.mapped(),
-        old: req.body
-    })
-}
+    res.redirect('/users/login');
 }
 }

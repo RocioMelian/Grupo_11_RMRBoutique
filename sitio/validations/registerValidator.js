@@ -31,7 +31,7 @@ module.exports = [
     })
     .withMessage("Este mail ya está registrado"),
 
-    check('pass')
+    check('password')
     .isLength({
         min:6,
         max:12

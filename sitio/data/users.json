@@ -185,7 +185,7 @@
         "last_name": "cano",
         "email": "ramiro2000z.rc@gmail.com",
         "password": "$2b$10$zUixcIXzx6S99ZAzc/dhguaZ1qzZtxesQqEg.7QDM5qHqHlXX/Vae",
-        "category": "User",
+        "category": "Admin",
         "avatar": "avatar-1601401302837.jpg"
     },
     {
@@ -196,4 +196,23 @@
         "password": "$2b$10$yodfoFWsmlmjNNo4flw3Bu.BU53e0OzKgb9NuqfgvOpUxBfSEsLCW",
         "category": "User",
         "avatar": "avatar-1601403354308.jpg"
-    }]
+    },
+    {
+        "id": 23,
+        "first_name": "Rocio",
+        "last_name": "Melian",
+        "email": "apaacomelian@gmail.com",
+        "password": "$2b$10$n.Uvr8sl1PsiYKYM7JrSiuBcbY/GSep51CKjSU9e8ySrgsaYX1yD2",
+        "category": "Admin",
+        "avatar": "avatar-1601604071711.jpg"
+    },
+    {
+        "id": 24,
+        "first_name": "matius",
+        "last_name": "Martinez",
+        "email": "matu.memg@gmail.com",
+        "password": "$2b$10$TAcE/ORUEQlipzAOBQ/.geXB4MVkcrFyZK5Me6YRXP7EFigWC84ZK",
+        "category": "User",
+        "avatar": "avatar-1601608439686.jpg"
+    }
+]

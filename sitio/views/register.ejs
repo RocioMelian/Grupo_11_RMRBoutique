@@ -27,7 +27,7 @@
 				class="text-danger"><%= (typeof errors != 'undefined' && errors.email)?errors.email.msg: "" %>
 				</small>
         <input class="controls <%= (typeof old != 'undefined' && old.pass)?"is-valid":(typeof errors != 'undefined' && errors.pass)?"is-invalid": ""  %>" 
-        type="pass" name="pass" id="pass" value="<%= (typeof old != 'undefined' && old.pass)?old.pass:'' %>" placeholder="Ingrese su contraseña">
+        type="password" name="password" id="pass" value="<%= (typeof old != 'undefined' && old.pass)?old.pass:'' %>" placeholder="Ingrese su contraseña">
         <small
 				class="text-danger"><%= (typeof errors != 'undefined' && errors.pass)?errors.pass.msg: "" %>
 				</small>
