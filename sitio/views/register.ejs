@@ -11,13 +11,26 @@
       <section class="form-register">
         <h4>Formulario de Registro</h4>
   
-        <input class="controls" type="text" name="first_name" id="" placeholder="Nombre">
-        
-        <input class="controls" type="text" name="last_name" id="" placeholder="Apellido">
-        
-        <input class="controls" type="email" name="email" id="" placeholder="Ingrese su email">
-        
-        <input class="controls" type="password" name="password" id="" placeholder="Ingrese su contraseña">
+        <input class="controls <%= (typeof old != 'undefined' && old.first_name)?"is-valid":(typeof errors != 'undefined' && errors.first_name)?"is-invalid": ""  %>"
+         type="text" name="first_name" id="first_name" value="<%= (typeof old != 'undefined' && old.first_name)?old.first_name:'' %>" placeholder="Nombre">
+         <small
+				class="text-danger"><%= (typeof errors != 'undefined' && errors.first_name)?errors.first_name.msg: "" %>
+				</small>
+        <input class="controls <%= (typeof old != 'undefined' && old.last_name)?"is-valid":(typeof errors != 'undefined' && errors.last_name)?"is-invalid": ""  %>"
+         type="text" name="last_name" id="last_name" value="<%= (typeof old != 'undefined' && old.last_name)?old.last_name:'' %>" placeholder="Apellido">
+         <small
+				class="text-danger"><%= (typeof errors != 'undefined' && errors.last_name)?errors.last_name.msg: "" %>
+				</small>
+        <input class="controls <%= (typeof old != 'undefined' && old.email)?"is-valid":(typeof errors != 'undefined' && errors.email)?"is-invalid": ""  %>"
+         type="email" name="email" id="email" value="<%= (typeof old != 'undefined' && old.email)?old.email:'' %>" placeholder="email">
+         <small
+				class="text-danger"><%= (typeof errors != 'undefined' && errors.email)?errors.email.msg: "" %>
+				</small>
+        <input class="controls <%= (typeof old != 'undefined' && old.pass)?"is-valid":(typeof errors != 'undefined' && errors.pass)?"is-invalid": ""  %>" 
+        type="pass" name="pass" id="pass" value="<%= (typeof old != 'undefined' && old.pass)?old.pass:'' %>" placeholder="Ingrese su contraseña">
+        <small
+				class="text-danger"><%= (typeof errors != 'undefined' && errors.pass)?errors.pass.msg: "" %>
+				</small>
 
         <label for="">Categoria:</label>
       <select name="category" id="">
@@ -28,8 +41,13 @@
       <br><br>
 
       <input class="controls" type="file" name="avatar">
+      <small
+		class="text-danger"><%= (typeof errorFormato != 'undefined')?errorFormato: "" %>
+	</small>
         
-        <p><input type="checkbox">Estoy de acuerdo con <a href="#ventana1" data-toggle="modal">Términos y condiciones </a></p>
+        <p><input type="checkbox" name="checkbox" > Estoy de acuerdo con <a href="#ventana1" data-toggle="modal">Términos y condiciones </a></p>
+
+        
          
         <div class="modal fade" id="ventana1">
            <div class="modal-dialog">
@@ -39,6 +57,9 @@
                   
                   <h4 class="modal-title">Términos y condiciones</h4>
                   <button tyle="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <small
+													class="text-danger"><%= (typeof errors != 'undefined' && errors.checkbox)?errors.checkbox.msg: "" %>
+												</small>
                 </div>
                 <!--Contenido de la ventana-->
                 <div class="modal-body" width:100%>
