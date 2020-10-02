@@ -72,10 +72,6 @@ li {
     
 }
 
-
-
-
-
 .aheader{
    color: white;
    font-size: 1.5rem;
@@ -87,13 +83,24 @@ li {
 }
 
 .admin{
-    
+    font-size: 1.5rem;
+    color: white;
+}
+.carritodibujo{
+    font-size: 1.5rem;
     color: white;
 }
 .cargapersona{
-    margin-top: 8px;
-    margin-left: 20px;
+   margin-top: 35px;
 }
+.carritoheader{
+   margin-top: 30px;
+   margin-left: -55px;
+}
+.cargapersona h6{
+    font-size: 1.5rem; 
+}
+
 
 .admin:hover{
    color: #55ddff;
@@ -188,6 +195,9 @@ li {
     }
     .iniciarspan{
         margin-left: 0px;
+    }
+    .carritoheader{
+        margin-top: 50px;
     }
 }
 

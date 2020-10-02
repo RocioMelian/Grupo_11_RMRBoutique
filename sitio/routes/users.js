@@ -19,5 +19,7 @@ router.post('/register',mwUser.any(),registerValidator, user.agregar)
 router.get('/login',user.iniciar)
 router.post('/login',loginValidator,user.inicioSesion)
 
+router.get('/logout',user.logout);
+
 
 module.exports = router;

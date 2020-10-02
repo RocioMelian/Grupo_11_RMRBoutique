@@ -36,7 +36,7 @@
                                 <button class="buttondeta">Agregar al carrito</button>
                                 <button class="buttondeta">Comprar ahora</button>
 
-                                <% if (locals.category == "Admin") { %>
+                                <% if (user.category == "Admin") { %>
                                 <div class="editar-eliminar">
                                   <form action="/products/editarProd/<%= producto.id %> " method="GET">
                                 <a href="/products/editarProd/<%= producto.id %> " class="editar"><button class="btn btn-outline-light" ><svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-pencil-square" fill="currentColor" xmlns="http://www.w3.org/2000/svg">

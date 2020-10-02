@@ -1,7 +1,7 @@
 <header>
   <div class="container-fluid header">
-  <div class="container headercon">
-    <div class="row headerhe">
+    <div class="container headercon">
+      <div class="row headerhe">
       
         
           <% if (typeof user == "undefined") { %>
@@ -32,9 +32,7 @@
                 
              
           <% } else{ %>
-              <li>
-                  <a href="/users/logout">Cerrar sesión <i class="fas fa-sign-in-alt "></i></a>
-              </li>
+              
               
                 <div class="col-2 col-md-2 col-l-2 col-lg-2 carritoheader">
                   
@@ -81,13 +79,13 @@
   <div class="col-2 col-md-2 col-l-2 col-lg-2 d-block justify-content-end  align-items-center avatar">
     <a href=""><h5 class="mr-2"><%= (locals.user)?locals.user.nick:"Invitado" %> </h5></a>
     <% if (locals.user) { %>
-        <a href="/users"><img src="/images/avatar_users/<%= locals.user.avatar %> " alt="avatar" width="50px" height="50px" class="avatar"></a>
-
+        <a href="/users"><img src="/images/avatar_users/<%= locals.user.avatar %> " alt="avatar" width="50px" height="50px"></a>
+              
     <% } else{%>
     <a href="/users/login"><img src="/images/avatar_users/guest.png" alt="" width="50px" height="50px"></a>
     <% } %>
 
-</div>
+  </div>
 </div>
 </div>
 </div>

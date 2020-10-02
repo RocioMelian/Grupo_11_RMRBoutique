@@ -29,19 +29,26 @@ module.exports = {
     },
     
     inicioSesion: (req, res) => {
+        function capitalize(word) {
+            return word[0].toUpperCase() + word.slice(1);
+          }
         let errores = validationResult(req);
         if(errores.isEmpty()){
             dbUsers.forEach(user => {
                 if(user.email == req.body.email){
                     req.session.user = {
                         id: user.id,
-                        nick: user.first_name + " " + user.last_name,
+                        nick: capitalize(user.first_name),
                         email: user.email,
-                        avatar: user.avatar
+                        avatar: user.avatar,
+                        category: user.category
                     }
                 }
             })
-           
+            if(req.body.recuerdame){
+                res.cookie('userRmr',req.session.user,{maxAge:1000*60*60})
+            }
+            
             res.redirect('/')
         } else {
             res.render('login', {
@@ -75,5 +82,12 @@ module.exports = {
     fs.writeFileSync(path.join(__dirname, '..', 'data', 'users.json', ), userJson)
 
     res.redirect('/users/login');
+},
+logout:function(req,res){
+    req.session.destroy()
+    if(req.cookies.userRmr){
+        res.cookie('userRmr',' ',{maxAge:-1});
+    }
+    return res.redirect('/')
 }
 }

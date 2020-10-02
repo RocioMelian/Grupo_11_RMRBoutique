@@ -2,8 +2,9 @@ var express = require('express');
 var router = express.Router();
 
 let index = require('../controllers/indexController')
+let cookies = require('../middlewares/cookieCheck')
 
 
-router.get('/', index.home)
+router.get('/',cookies, index.home)
 
 module.exports = router;

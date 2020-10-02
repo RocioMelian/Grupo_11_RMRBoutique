@@ -1,7 +1,7 @@
 const path = require('path');
 const dbProducts = require(path.join(__dirname,'..','data','dbProducts'))
 const fs = require('fs')
-
+const dbUsers = require('../data/dbUsers');
 
 let productos = fs.readFileSync(path.join(__dirname, '..', 'data', 'products.json'), 'utf-8')
 productos = JSON.parse(productos)
@@ -16,6 +16,10 @@ module.exports = {
         productos: dbProducts})
     },
     detalle:function(req,res){
+        
+        let user = dbUsers.forEach(user=>{
+            return user
+        })
         idProducto = req.params.id;
         let producto = dbProducts.filter(producto=>{
             return producto.id == idProducto
@@ -23,7 +27,8 @@ module.exports = {
         res.render('detalleProd',{
             title:"Detalle del Producto",
             css:"style.css",
-            producto:producto[0]
+            producto:producto[0],
+            user:user.category
         })
     },
     search:function(req,res){

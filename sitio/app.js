@@ -7,6 +7,8 @@ let logger = require('morgan');
 const methodOverride = require('method-override');
 const session = require('express-session');
 
+const localsUserCheck = require('./middlewares/localUserCheck');
+
 let indexRouter = require('./routes/index');
 let usersRouter = require('./routes/users');
 let carritoRouter = require('./routes/carrito')
@@ -26,6 +28,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(methodOverride('_method'));
 app.use(session({secret:"rmrBoutique", saveUninitialized: true, resave: true}));
+
+app.use(localsUserCheck)
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
