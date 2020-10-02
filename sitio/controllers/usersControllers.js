@@ -33,7 +33,7 @@ module.exports = {
         if(errores.isEmpty()){
             dbUsers.forEach(user => {
                 if(user.email == req.body.email){
-                    req.session.usuario = {
+                    req.session.user = {
                         id: user.id,
                         nick: user.first_name + " " + user.last_name,
                         email: user.email,
@@ -41,7 +41,8 @@ module.exports = {
                     }
                 }
             })
-            res.locals.usuario == req.session.usuario;
+            
+           
             res.redirect('/')
         } else {
             res.render('login', {

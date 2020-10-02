@@ -7,6 +7,7 @@ const user = require('../controllers/usersControllers')
 const mwUser = require('../middlewares/mwUsers')
 
 
+
 router.get('/', user.sesion)
 
 router.get('/register',user.formulario)
