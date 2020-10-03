@@ -17,9 +17,6 @@ module.exports = {
     },
     detalle:function(req,res){
         
-        let user = dbUsers.forEach(user=>{
-            return user
-        })
         idProducto = req.params.id;
         let producto = dbProducts.filter(producto=>{
             return producto.id == idProducto
@@ -28,7 +25,7 @@ module.exports = {
             title:"Detalle del Producto",
             css:"style.css",
             producto:producto[0],
-            user:user.category
+            
         })
     },
     search:function(req,res){
@@ -51,7 +48,8 @@ module.exports = {
     formCarga:function(req, res){
         res.render('formCarga', 
         {title : 'Carga de Productos',
-        css: "style.css"})
+        css: "style.css",
+       })
     },
     agregar: (req, res, next) => {
         // res.send(req.file)

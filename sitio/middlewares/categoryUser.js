@@ -1,11 +1,8 @@
 module.exports = function(req,res,next){
-    
-    if (req.session.category == 'Admin') {
-        
-       next()
-      }  
-   
-      else {
+  
+    if (req.session.user.category == "admin"){
+        next()
+    }else{
         res.redirect('/')
-      }
+    }
 }
