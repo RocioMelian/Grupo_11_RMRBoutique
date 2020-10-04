@@ -72,7 +72,7 @@ module.exports = {
         email: req.body.email,
         password: bcrypt.hashSync(req.body.password, 10),
         category: req.body.category,
-        avatar: req.files[0].filename,
+        avatar: (req.files[0])?req.files[0].filename:"guest.png",
     }
     usuario.push(nuevoUsuario)
     

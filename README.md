@@ -84,3 +84,21 @@
   - Detalle del producto /products/detalle/:id
   - Formulario de carga y edición de productos /products/carga & /products/editarProd/:id
   - Formulario de registro y login /users/register & /users/login
+
+  # 🗂 Cuarto sprint (Entrega 5/10)
+
+  - 📑 [Tablero de trabajo](https://trello.com/b/uB2due9N/grupo-11-%D1%8Fmr-boutique)
+  - ⭐ [Retrospectiva](https://github.com/RocioMelian/Grupo_11_RMRBoutique/blob/master/retro.md)
+  - 🔉 [Daily](https://github.com/RocioMelian/Grupo_11_RMRBoutique/blob/master/daily.md)
+
+  ### 👤 Registro de usuarios
+  -  Accesible desde /users/register o desde el header, ingresando al login y luego a "¿No tienes cuenta?", permite al usuario registrarse completando los datos, se verican que los mismos sean correctos y en caso de no serlo devuelve los errores debajo de cada campo del formulario, permite subir un avatar de perfil (si el usuario no lo hace se le asigna una por defecto), la contraseña es encriptada antes de guardarse en en JSON de usuarios.
+
+### 🌂 Login de usuarios
+   - Accesible desde /users/login o desde el header. Se verifica la información enviada por el usuario y en caso de haber un error lo devuelve debajo del input donde se produjo, en caso de login correcto, se redirije al home.
+   - Función de recordar .
+
+### 🚦 Rutas de huéspedes y de usuarios
+  - Los huéspedes pueden, por el momento sólo acceder al home y al login/registro, cualquier otra acción los redirige al login
+  - Los usuarios logueados pueden acceder al detalle de los productos, y al carrito pero en el detalle del producto no le aparecen los iconos editar y eliminar producto.
+  - Los usuarios logueados como administrador pueden acceder a todo lo anterior + formulario de agregar producto y en el detalle del producto les aparecen los iconos de editar y eliminar producto.

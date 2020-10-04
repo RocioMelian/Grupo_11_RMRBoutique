@@ -13,3 +13,17 @@ A Rocio le pasa lo mismo que a Martin pero con el formulario de editar producto.
 
 #### 📚 Qué va a hacer hoy: 
 - Para la próxima, tenemos que tener listo el CRUD y actualizar la retrospectiva.
+
+# 🔉 Daily (Sprint 4)
+### Día 3 de Octubre: ⌚
+
+Hablamos todos los dias por Whatsapp y nos justamos una vez por semana por zoom.
+
+#### 📚 Qué hizo ayer: 
+- Hicimos una breve exposición cada uno en la cual, pudimos observar el avance del otro miembro del grupo.
+
+#### 📚 Si se encontró con algún impedimento: 
+- A Rocio no le salia un middleware de administrador e hizo un zoom con el profe Eric para poder solucionarlo y pudieron.
+
+#### 📚 Qué va a hacer hoy: 
+- Para la próxima, tenemos que actualizar la retrospectiva, daily y readme.

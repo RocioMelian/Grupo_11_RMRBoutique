@@ -57,7 +57,7 @@ module.exports = {
             id: productos.length + 1,
             name: req.body.name,
             description: req.body.description,
-            image: req.files[0].filename,
+            image: (req.files[0])?req.files[0].filename: "default-image.png",
             category: req.body.category,
             talle: req.body.talle,
             price: req.body.price,
