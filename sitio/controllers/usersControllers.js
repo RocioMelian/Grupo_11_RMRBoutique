@@ -48,7 +48,6 @@ module.exports = {
             if(req.body.recuerdame){
                 res.cookie('userRmr',req.session.user,{maxAge:1000*60*60})
             }
-            
             res.redirect('/')
         } else {
             res.render('login', {
