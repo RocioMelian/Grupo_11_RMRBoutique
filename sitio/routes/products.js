@@ -5,9 +5,10 @@ var router = express.Router();
 const productsController = require('../controllers/productsController');
 const mwProducts = require('../middlewares/mwProducts');
 const categoryUser = require('../middlewares/categoryUser');
+const noUser = require('../middlewares/noUser');
 
 router.get('/',productsController.listar)
-router.get('/detalle/:id',productsController.detalle);
+router.get('/detalle/:id',noUser,productsController.detalle);
 router.get('/search',productsController.search)
 
 
