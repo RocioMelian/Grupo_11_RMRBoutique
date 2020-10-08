@@ -223,5 +223,14 @@
         "password": "$2b$10$CU2Wt06CQDq/wofcTw60b.8tMHQ3IaCgSNG2erUWGl.HZHgRLwkBC",
         "category": "user",
         "avatar": "avatar-1601608732928.jpg"
+    },
+    {
+        "id": 26,
+        "first_name": "Ciro",
+        "last_name": "Melian",
+        "email": "alexisbarroso000@gmail.com",
+        "password": "$2b$10$CAq5FkdYm3i.R/qb.7z9P.eRW.v6nLzUD1t9UPGBGQGmGtIaQPRoS",
+        "category": "user",
+        "avatar": "avatar-1601863721359.jpg"
     }
 ]

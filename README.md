@@ -100,5 +100,11 @@
 
 ### 🚦 Rutas de huéspedes y de usuarios
   - Los huéspedes pueden, por el momento sólo acceder al home y al login/registro, cualquier otra acción los redirige al login
+
   - Los usuarios logueados pueden acceder al detalle de los productos, y al carrito pero en el detalle del producto no le aparecen los iconos editar y eliminar producto.
-  - Los usuarios logueados como administrador pueden acceder a todo lo anterior + formulario de agregar producto y en el detalle del producto les aparecen los iconos de editar y eliminar producto.
+    - Email: matu.memg@gmail.com
+    - Password:123456
+
+  - Los usuarios logueados como administrador pueden acceder a todo lo anterior + formulario de agregar producto y en el detalle del producto les aparecen los iconos de editar y eliminar producto. 
+    - Email: ramiro2000z.rc@gmail.com 
+    - Password:123456
