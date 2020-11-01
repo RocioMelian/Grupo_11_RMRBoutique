@@ -11,18 +11,12 @@ module.exports = (sequelize,dataTypes) => {
         nombre : {
             type : dataTypes.STRING(45),
             allowNull : false
-        },
-        created_at: {
-            type: DataTypes.DATE()
-        },
-        updated_at: {
-            type: DataTypes.DATE()
         }
     }
 
     let config = {
         tableName: "categories",
-        timestamps: true,
+        timestamps: false,
         underscored: true
     }
 

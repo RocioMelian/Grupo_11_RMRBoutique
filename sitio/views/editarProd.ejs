@@ -31,35 +31,22 @@
     <label for="discount">Descuento</label>
       <input class="controls" type="text" name="discount" id="descuento" placeholder="Descuento %" value=<%= producto.discount %> >
 
-      <label for="">Categoria:</label>
-      <select name="category">
-       
-       <% if (producto.category == "hombre") { %>
-        <option value="hombre" selected>Hombre</option>
-        <option value="mujer">Mujer</option>
-        <option value="niño">Niño</option>
-        <option value="niña">Niña</option>
-       <% } else if (producto.category == "mujer") { %>
-       <option value="hombre">Hombre</option>
-       <option value="mujer" selected>Mujer</option>
-       <option value="niño">Niño</option>
-       <option value="niña">Niña</option>
-       <% } else if (producto.category == "niño") { %>
-        <option value="hombre">Hombre</option>
-       <option value="mujer">Mujer</option>
-       <option value="niño" selected>Niño</option>
-       <option value="niña">Niña</option>
-       <% } else if (producto.category == "niña") { %>
-        <option value="hombre">Hombre</option>
-       <option value="mujer">Mujer</option>
-       <option value="niño">Niño</option>
-       <option value="niña" selected>Niña</option>
-       <% } %>
+      
+      <label for="category">Categoria:</label>
+      <select name="id_categoria" id="category">
+        <option value="<%= producto.categorias.id %>"><%= producto.categorias.nombre %></option>
+        <% categoria.forEach(element => {%>
+          <% if(element.nombre != producto.categorias.nombre) {%>
+          <option value="<%= element.id %>"> <%= element.nombre %></option>
+          <% } %>
+      <%}); %>     
       </select>
 
       <br><br>
 
-      
+      <figure class="text-center">
+        <img src="/images/ropa/<%= producto.image %> " alt="" class="img-fluid">
+      </figure>
       <label for="image">Imagen</label>
       <input class="controls" type="file" name="image">
 

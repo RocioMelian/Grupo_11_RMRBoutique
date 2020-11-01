@@ -1,26 +1,27 @@
 const path = require('path');
 const dbProducts = require(path.join(__dirname,'..','data','dbProducts'))
 const fs = require('fs');
-const { validationResult } = require('express-validator');
-const e = require('express');
 const dbUsers = require('../data/dbUsers');
-const bcrypt = require('bcrypt')
-
 let usuario = fs.readFileSync(path.join(__dirname, '..', 'data', 'users.json'), 'utf-8')
 usuario = JSON.parse(usuario)
+const db = require('../database/models')
+const bcrypt = require('bcrypt')
+const { validationResult } = require('express-validator');
+const e = require('express');
+
 
 module.exports = {
     sesion: function(req,res){
-        res.render('users',{
-            title:"Supér ofertas",
-            css: "style.css",
-            productos: dbProducts.filter(producto =>{
-                if(producto.discount > 30){
-                    return producto
-                }
+        db.Users.findAll()
+        .then(usuario => {
+            res.render('users',{
+                title:"Mi perfil",
+                css: "style.css",
+                usuario: usuario
+                
             })
-            
         })
+       
     },
     iniciar: (req, res) => {
         
@@ -60,20 +61,22 @@ module.exports = {
     },
     formulario: (req, res) => {
         
-        res.render('register' , {title : 'Registro de Usuario',
-        css:'style.css'})
+        res.render('register' , {
+            title : 'Registro de Usuario',
+            css:'style.css'
+        })
     
     },
     agregar: (req, res, next) => {
-    let nuevoUsuario = {
-        id: usuario.length + 1,
+    db.Users.create({
+        
         first_name: req.body.first_name,
         last_name: req.body.last_name,
         email: req.body.email,
         password: bcrypt.hashSync(req.body.password, 10),
         category: req.body.category,
         avatar: (req.files[0])?req.files[0].filename:"guest.png",
-    }
+    })
     usuario.push(nuevoUsuario)
     
     let userJson = JSON.stringify(usuario)

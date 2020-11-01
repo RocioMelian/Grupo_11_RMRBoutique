@@ -30,14 +30,13 @@
 
       <input class="controls" type="text" name="discount" id="" placeholder="Descuento %">
 
-      <label for="">Categoria:</label>
-      <select name="category" id="">
-       <option disabled>Seleccionar</option>
-       <option value="prenda hombre">Hombre</option>
-       <option value="prenda mujer">Mujer</option>
-       <option value="prenda de niño">Niño</option>
-       <option value="prenda de niña">Niña</option>
-      </select>
+      <label for="category">Categoria:</label>
+      <select name="id_categoria" id="category">
+        <option value="">Elige una opción</option>
+        <% categoria.forEach(categorias => { %>
+            <option value="<%= categorias.id %>"><%= categorias.nombre %></option>
+        <%})%>
+      </select>           
 
       <br><br>
 

@@ -23,8 +23,11 @@
                     </div>
                     <div class="col-12 col-lg-5 datos">
                         <h3 class="nombredeta">
-                          <%= producto.name %>
+                          <%= producto.name %>  
                         </h3>
+                          <br>
+                          <h5>Categoria: <%= categorias.nombre %></h5>
+                        
                         <strike>$<%= producto.price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") %></strike> <span><strong> <%= producto.discount %>  % OFF</strong></span>
                         <h2>
                           $<%- (producto.price - producto.price * producto.discount / 100).toFixed(0).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") %> 

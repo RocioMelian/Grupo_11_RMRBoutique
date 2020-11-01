@@ -30,10 +30,10 @@ module.exports = (sequelize,dataTypes) => {
             allowNull : false,
         },
         created_at: {
-            type: DataTypes.DATE()
+            type: dataTypes.DATE()
         },
         updated_at: {
-            type: DataTypes.DATE()
+            type: dataTypes.DATE()
         }
     }
 

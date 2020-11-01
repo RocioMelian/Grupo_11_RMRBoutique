@@ -1,4 +1,4 @@
-module.exports = (sequelize, DataTypes) => {
+module.exports = (sequelize, dataTypes) => {
     let alias = "Products";
 
     let cols = {
@@ -33,10 +33,10 @@ module.exports = (sequelize, DataTypes) => {
             allowNull : false
         },
         created_at : {
-            type: DataTypes.DATE()
+            type: dataTypes.DATE()
         },
         updated_at: {
-            type: DataTypes.DATE()
+            type: dataTypes.DATE()
         },
         id_categoria : {
             type : dataTypes.INTEGER(11)

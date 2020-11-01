@@ -11,7 +11,7 @@
           </div>
 
 
-          <% productos.forEach(producto => { %>
+          <% producto.forEach(producto => { %>
       <div class="col-3 col-sm-12 col-md-6 col-lg-3 producto2">
         <a href=/products/detalle/<%= producto.id %> ><img src="/images/ropa/<%= producto.image %>" alt=""></a><i class="precioproducto">
             $<%- (producto.price - producto.price * producto.discount / 100).toFixed(0).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") %></i><h3 class="descuentoproducto"> <% if (producto.discount !=0) { %>
