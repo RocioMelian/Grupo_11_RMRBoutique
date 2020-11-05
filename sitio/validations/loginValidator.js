@@ -1,26 +1,16 @@
-const dbUsers = require('../data/dbUsers');
+/*const dbUsers = require('../data/dbUsers');*/
 
 const {check,body} = require('express-validator');
 const bcrypt = require('bcrypt');
+const db = require('../database/models');
+
 
 module.exports = [
     check('email')
     .isEmail()
     .withMessage("Debe Ingresar un Email valido"),
 
-    body('email')
-    .custom(function(value){
-        let usuario = dbUsers.filter(usuario=>{
-            return usuario.email == value
-        })
-        if(usuario == false){
-            return false
-        }else{
-            return true
-        }
-    })
-    .withMessage("El usuario No esta registrado"),
-
+    
     check('pass')
     .isLength( {
         min:1
@@ -29,19 +19,18 @@ module.exports = [
 
     body('pass')
     .custom(function(value,{req}){
-        let resultado = true;
-        dbUsers.forEach(usuario => {
-            if(usuario.email == req.body.email){
-                if(!bcrypt.compareSync(value,usuario.password)){
-                    resultado = false
-                }
+        return db.Users.findOne({
+            where : {
+                email : req.body.email
             }
-        });
-        if(resultado == false) {
-            return false
-        } else {
-            return true
-        }
+        })
+        .then( user => {
+            if(!bcrypt.compareSync(value,user.password)){
+                return Promise.reject('Credenciales inválidas')
+            }
+        })
+        .catch(err => {
+            return Promise.reject('Credenciales inválidas')
+        })
     })
-    .withMessage("Contraseña Incorrecta")
 ]

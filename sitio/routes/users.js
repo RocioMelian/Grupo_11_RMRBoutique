@@ -10,16 +10,20 @@ const mwUser = require('../middlewares/mwUsers')
 
 
 
-router.get('/', user.sesion)
+
 
 router.get('/register',user.formulario)
 router.post('/register',mwUser.any(),registerValidator, user.agregar)
 
+router.get('/perfil', user.sesion)
+router.put('/updateProfile/:id',mwUser.any(),user.updateProfile);
 
 router.get('/login',user.iniciar)
 router.post('/login',loginValidator,user.inicioSesion)
 
 router.get('/logout',user.logout);
+
+router.delete('/delete/:id',user.delete);
 
 
 module.exports = router;

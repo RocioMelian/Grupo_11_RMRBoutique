@@ -23,7 +23,7 @@
       <article class="comprar">
         <a href=""><button>COMPRAR</button></a>
       <article class="añadircarrito">
-        <a href=""><button>AÑADIR AL CARRO</button></a>
+        <a href="/carrito"><button>AÑADIR AL CARRITO</button></a>
       </article>
       <article class="descuentodestacado">
           $<%- (producto.price - producto.price * producto.discount / 100).toFixed(0).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") %></i> <% if (producto.discount != 0) { %>

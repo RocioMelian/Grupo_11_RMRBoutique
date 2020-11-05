@@ -17,6 +17,7 @@ module.exports = {
                 {title : 'RMR Boutique',
                 css:'style.css',
                 productos: productos
+                
            })
         })
     }

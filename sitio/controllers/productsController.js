@@ -22,6 +22,7 @@ module.exports = {
         })
     },
     detalle:function(req,res){
+     
         db.Products.findOne({
             where : {
                 id: req.params.id
@@ -32,12 +33,16 @@ module.exports = {
                 }
             ]
         })
+       
         .then(function(producto){
         res.render('detalleProd',{
             title:"Detalle del Producto",
             css:"style.css",
             producto:producto,
-            categorias: producto.categorias})
+            categorias: producto.categorias,
+           
+            })
+            
         })
     },
     search:function(req,res){
