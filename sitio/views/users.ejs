@@ -22,37 +22,82 @@
               
     
     
-              <div class="col-12 col-lg-7">
-                <figure class="imgdetalle">
-                  <img src="/images/avatar_users/<%= usuario.avatar %>" alt="">
-              </figure>
-              <p class="descrip"><%= usuario.email %></p>
-              </div>
-              <div class="col-12 col-lg-5 datos">
-                  <h3 class="nombredeta">
-                    <%= usuario.first_name %>  <%= usuario.last_name %>  
-                  </h3>
-                    <br>
-                   
+              <div class="contenido">
 
-                         
-                          <div class="editar-eliminar">
-                            <form action="/users/updateProfile/<%= usuario.id %> " method="GET">
-                          <a href="/products/editarProd/<%= usuario.id %> " class="editar"><button class="btn btn-outline-light" ><svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-pencil-square" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456l-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
-                            <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
-                          </svg></button></a>
+
+               
+                <div class="tab-content" id="myTabContent">
+    
+                  <div class="tab-pane fade show active p-4" id="datos" role="tabpanel" aria-labelledby="home-tab">
+                   
+                        <form action="/users/updateProfile/<%= usuario.id %> ?_method=PUT" method="POST"
+                          enctype="multipart/form-data">
+                          <div class="form-row">
+                            <div class="col-12 col-md-4 mt-3 d-flex flex-column align-items-center">
+                            
+                              
+                              <img src="/images/avatar_users/<%= usuario.avatar %> " class="avatarImg" alt="avatar" width="75%"
+                                style="object-fit: cover; object-position: top;">
+                             
+                              <div class="form-group w-75">
+                                <input type="file" class="form-control" id="avatarImput" name="avatar">
+                              </div>
+                            </div>
+                            <div class="col-12 col-md-8 ">
+                              <div class="form-row mt-2">
+                                <div class="form-group col-12 col-md-6 ">
+                                  <label for="inputNombre">Nombre</label>
+                                  <input type="text" name="first_name" class="form-control" id="inputNombre"
+                                    value="<%= usuario.first_name %>" >
+                                </div>
+                                <div class="form-group col-12 col-md-6">
+                                  <label for="inputApellido">Apellido</label>
+                                  <input type="text" name="last_name" class="form-control" id="inputApellido"
+                                    value="<%= usuario.last_name %>" >
+                                </div>
+                                <div class="form-group col-12 col-md-6">
+                                  <label for="imputEmail">Email</label>
+                                  <input type="email" name="email" class="form-control" id="imputEmail"
+                                    value=<%= usuario.email %> >
+                                </div>
+                               
+                                
+                              </div>
+                              <div class="d-md-flex justify-content-end mt-5">
+                                <button type="button" class="btn-sm btn-secondary m-1"><a href="/" class="text-light">Salir
+                                    sin
+                                    guardar</a></button>
+                                <button type="submit" class="btn-sm btn-primary m-1">Actualizar datos</button>
+                              </div>
+                            </div>
+                          </div>
                         </form>
-                        <form action="/products/delete/<%= usuario.id %>?_method=DELETE"
-                          method="POST">
-                          
-                          <a href="" class="basura"><button class="btn btn-outline-light" type="submit"><svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-trash" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
-                            <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4L4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
-                          </svg></button></a>
-                        </form>
-                        
+                    
+                        <div class="col-12 col-md-4 d-flex justify-content-center">
+                          <form action="/users/delete/<%= usuario.id %>?_method=DELETE" method="POST">
+                            <button type="submit" class="btn-sm btn-danger">Darse de baja</button>
+                          </form>
                         </div>
+    
+                      </div>
+                 
+    
+    
+                  <div class="tab-pane fade  " id="productos" role="tabpanel" aria-labelledby="profile-tab">
+    
+                    <div class="row principal p-4">
+    
+                      <div class="col-12 col-md-4 col-xl-3">
+    
+                        <div class="contenido">
+    
+                        </div>
+                      </div>
+    
+                    </div>
+                  </div>
+                </div>
+              </div>
                         </div>
 
                       </div>

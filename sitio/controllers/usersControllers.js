@@ -116,10 +116,45 @@ sesion: function(req,res){
     })
 },
 updateProfile:function (req,res) {
-    
+     db.Users.update({
+                first_name: req.body.first_name,
+                last_name: req.body.last_name,
+                email:req.body.email,
+                avatar:(req.files[0])?req.files[0].filename:req.session.user.avatar,
+                
+            },
+            {
+                where : {
+                    id : req.params.id
+                }
+        })
+        .then( result => {
+            console.log(result)
+            return res.redirect('/users/perfil')
+        })
+        .catch( err => {
+            res.send(err)
+        })
 },
 delete:function(req,res) {
-    
+    db.Users.destroy({
+        where : {
+            id : req.params.id
+        }
+    })
+    .then( result => {
+        console.log(result)
+        
+        req.session.destroy();
+        if(req.cookies.userRmr){
+            res.cookie('userRmr','',{maxAge:-1});
+        }
+        return res.redirect('/')
+        
+    })
+    .catch( error => {
+        res.send(error)
+    })
 },
 logout:function(req,res){
     req.session.destroy()

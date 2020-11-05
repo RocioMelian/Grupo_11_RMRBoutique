@@ -27,3 +27,17 @@ Hablamos todos los dias por Whatsapp y nos justamos una vez por semana por zoom.
 
 #### 📚 Qué va a hacer hoy: 
 - Para la próxima, tenemos que actualizar la retrospectiva, daily y readme.
+
+# 🔉 Daily (Sprint 5)
+### Día 5 de Noviembre: ⌚
+
+DEJAMOS DE HABLAR COMPLETAMENTE.
+
+#### 📚 Qué hizo ayer: 
+- ROCIO: HICE TODO LO DE BASE DE DATOS , CRUD DE PRODUCTOS Y CRUD DE USUARIOS.
+
+#### 📚 Si se encontró con algún impedimento: 
+- ROCIO: ESTOY HACE 1 SEMANA CON UN PROBLEMA DE SESSION Y LOCALS USER, NO CREO LLEGAR A LA ENTREGA.
+
+#### 📚 Qué va a hacer hoy: 
+- VOY A DECIRLE A ERIC SI ME PUEDE AYUDAR HACIENDO UN ZOOM.

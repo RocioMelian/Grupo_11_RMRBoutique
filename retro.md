@@ -60,3 +60,24 @@
 
 ### ✔️ Hacer menos:
   - Tenemos que trabajar menos por nuestra cuenta y más en equipo.
+
+  # ⭐ RETROSPECTIVA (4 Sprint)
+
+## Creamos nuestra retrospectiva basandonos en Starfish Retrospective.
+
+### ✔️ Seguir haciendo:
+  - Tenemos que seguir dividiendonos el trabajo para que cada uno haga la cantidad justa.
+  - Tenemos que seguir preguntando que cambios hizo cada uno.
+  - Tenemos que seguir ayudandonos siempre.
+
+### ✔️ Hacer más:
+  - Tenemos que avisar siempre cuando hay que hacer "git pull origin master".
+
+### ✔️ Empezar a hacer:
+  - Ser mas responsables.
+
+### ✔️ Dejar de hacer:
+  - Tenemos que dejar de guardar el tp en github si vemos que tenemos errores.
+
+### ✔️ Hacer menos:
+  - Tenemos que trabajar menos por nuestra cuenta y más en equipo.

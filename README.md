@@ -108,3 +108,17 @@
   - Los usuarios logueados como administrador pueden acceder a todo lo anterior + formulario de agregar producto y en el detalle del producto les aparecen los iconos de editar y eliminar producto. 
     - Email: ramiro2000z.rc@gmail.com 
     - Password:123456
+
+
+    # 🗂 Quinto sprint (Entrega 5/11) *No llego a la entrega*
+
+  - 📑 [Tablero de trabajo](https://trello.com/b/uB2due9N/grupo-11-%D1%8Fmr-boutique)
+  - ⭐ [Retrospectiva](https://github.com/RocioMelian/Grupo_11_RMRBoutique/blob/master/retro.md)
+  - 🔉 [Daily](https://github.com/RocioMelian/Grupo_11_RMRBoutique/blob/master/daily.md)
+
+  - 💡 [Script de creación de DB](https://github.com/RocioMelian/Grupo_11_RMRBoutique/blob/master/structure.sql)
+
+  - 🎁 [Script de población de DB](https://github.com/RocioMelian/Grupo_11_RMRBoutique/blob/master/rmrboutique.sql)
+
+  - 📄 [Diagrama de DB en PDF](https://github.com/RocioMelian/Grupo_11_RMRBoutique/blob/master/diagrampdf.pdf)
+
