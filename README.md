@@ -110,8 +110,7 @@
     - Password:123456
 
 
-    # 🗂 Quinto sprint (Entrega 5/11) *No llego a la entrega*
-
+    # 🗂 Quinto sprint (Entrega 5/11) 
   - 📑 [Tablero de trabajo](https://trello.com/b/uB2due9N/grupo-11-%D1%8Fmr-boutique)
   - ⭐ [Retrospectiva](https://github.com/RocioMelian/Grupo_11_RMRBoutique/blob/master/retro.md)
   - 🔉 [Daily](https://github.com/RocioMelian/Grupo_11_RMRBoutique/blob/master/daily.md)
