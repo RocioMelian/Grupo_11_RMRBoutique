@@ -1,43 +1,36 @@
 @import "style.css";
 /* HEADER */
 .header {
-    background-color: rgb(83, 83, 83);
+    background-color:lightslategray;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: white;
     width: 100%;
-    height: 150px;
+    height: 90px;
     display: flex;
     flex-wrap: wrap;
 } 
-.headercon{
-    width: 100%;
-    height: 130px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
+
 .avatar{
-    margin-left: 30px;
     margin-top: 20px;
 }
     
 .avatar img{
     border: 2px solid white;
     border-radius: 50px;
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
 }
 .avatar h5{
     color: white;
     font-size: 1.5rem;
 }
 
-.logo{
-    margin-left: 90px;
-}
+
 .logo img{
-    width: 160%;
+    width: 70%;
     border-radius: 80px;
+    justify-content: center;
+    padding: 10px;
 }
 
 
@@ -46,35 +39,50 @@ li {
     list-style: none;
     float: right;
 }
-
 .barraheader{
+    margin-top: 25px;
+    margin-left: 90px;
+}
+
+header form{
+    position: relative;
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
-    margin-top: 10px;
-    margin-left: 50px;
-}
-.barraheader input{
-    width: 110%;
-    margin-top: 10px;
-    border: none;
-    display: flex;
+    font-size: 0.8rem;
+    justify-content: center;
 }
 
-
-
-.boton-barra{
+header form input{
+    border: solid 1px lightgrey;
+    display: block;
+    width: 100%;
+    padding: 7px 35px 7px 7px;
     border-radius: 5px;
+    height: 40px;
+    font-size: 1.5em;
+    font-family: inherit;
+  }
+
+header form input:focus,
+form button:focus {
+    outline: none;
+}
+
+
+header form button{
+    position: absolute;
+    right: 2px;
+    height: 60%;
+    background-color: white;
     border: none;
-    width: 20%;
-    float: right;
-    margin-top: -24px;
-    
+    border-left: solid 1px lightgrey;
+    color: grey;
+    cursor: pointer;
 }
 
 .aheader{
    color: white;
-   font-size: 1.5rem;
+   font-size: 1rem;
 }
 
 .aheader:hover{
@@ -87,16 +95,11 @@ li {
     color: white;
 }
 .carritodibujo{
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: white;
 }
-.cargapersona{
-   margin-top: 35px;
-}
-.carritoheader{
-   margin-top: 30px;
-   margin-left: -55px;
-}
+
+
 .cargapersona h6{
     font-size: 1.5rem; 
 }
@@ -108,55 +111,36 @@ li {
 }
 
 .personalog{
-    margin-top: 32px;
+    margin-left: 20px;
+    margin-top: 15px;
 }
 .personreg{
-    margin-left: -50px;
-    margin-top: 30px;
+   margin-top: 15px;
+    margin-left:100px;
 }
-
-.loginheader{
-    font-size: 1.5rem;
-    text-decoration: none;
-    color: white;  
-}
-.loginheader:hover{
-    text-decoration: none;
-    color: #55ddff;
-    transform: scale(1.3);
-}
-.registerheader{
-    font-size: 1.5rem;
-    text-decoration: none;
-    color: white;
-    
-    
-}
-.registerheader:hover{
-    text-decoration: none;
-    color: #55ddff;
-    transform: scale(1.3);
-}
-
 
 .carritodibujo{
     text-decoration: none;
     color: white;
-    
+    margin-right: -5px;
 }
 .carritodibujo:hover{
     text-decoration: none;
     color: #55ddff;
     transform: scale(1.3);
 }
-
-.iniciarspan{
-    margin-left: -10px;
+.carritoheader{
+    margin-left: 30px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+.cargapersona{
+    margin-left: 20px;
 }
 
-.registerspan{
-    margin-left: -25px;
-}
+
+
+
 /*TABLETS*/
 @media(min-width:768px){
     .barra input{
@@ -166,38 +150,34 @@ li {
 }
 /*PC*/
 @media(min-width:1024px){
-    .logo{
-        margin-left: 140px;
-       
-    }
+   .header{
+       justify-content: center;
+   }
+   
     .logo img{
+       
+        width: 40%;
         
-        width: 94%;
-        
-    }
-    .boton-barra{
-        margin-right: -16px;
-    }
-    
-    .barra input{
-        width: 100%;
-    }
-    .personalog{
-        margin-top: 40px;
     }
     .personreg{
-        margin-top: 38px;
-    
+        margin-left: 20px;
+        
+    }
+    .reg{
+        font-size: 20px;
+    }
+    .personalog{
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+    .personreg{
+       margin-top: 10px;
+        margin-left:100px;
     }
     
-    .registerspan{
-        margin-left: -3px;
-    }
-    .iniciarspan{
-        margin-left: 0px;
-    }
-    .carritoheader{
-        margin-top: 50px;
-    }
+   
+    
+    
+    
 }
 

@@ -8,12 +8,12 @@
 
     
 
-   
-  <form action="/products/carga" method="POST" enctype="multipart/form-data"
-  
-  >
-  <div class = "row">
-    <div class = "col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <div class="container">
+      <div class = "row">
+        <div class = "col-lg-12 col-md-12 col-sm-12 col-xs-12">
+  <form action="/products/carga" method="POST" enctype="multipart/form-data">
+    
+ 
     <section class="form-carga">
       <h4>Carga de producto</h4>
 
@@ -21,11 +21,11 @@
 
       <input class="controls" type="text" name="talle" id="" placeholder="Talle">
 
-      <br>
+     
       
       <input class="controls" type="text" name="price" id="" placeholder="Precio del Producto">
 
-      <br>
+      
       
 
       <input class="controls" type="text" name="discount" id="" placeholder="Descuento %">
@@ -55,9 +55,12 @@
       
     </section>
 
-  </div>
-</div>
+
 </form>
+
+</div>
+</div>
+</div>
 <%- include('./partials/footer.ejs')  %> <!-- FOOTER -->
 </body>
 </html>

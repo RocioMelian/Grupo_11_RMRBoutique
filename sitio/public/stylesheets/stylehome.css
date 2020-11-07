@@ -36,7 +36,7 @@ body .destacado1 {
     border: 2px solid grey;
     padding: 2px;
     height: 273px;
-    box-shadow: 6px 13px 50px rgba(0, 0, 0, 0.7);
+    
 }
 /* --- ATRIBUTOS DE CONTENEDOR DESTACADO --- */
 body .container .destacados {

@@ -64,7 +64,9 @@ iniciar: (req, res) => {
 },
 
 inicioSesion: (req, res) => {
-   
+    function convertir(string) {
+        return string.charAt(0).toUpperCase() + string.slice(1);
+    } 
     let errores = validationResult(req);
     if(errores.isEmpty()){
         db.Users.findOne({
@@ -75,7 +77,7 @@ inicioSesion: (req, res) => {
            .then(user =>{
                   req.session.user = {
                     id: user.id,
-                    nick: user.first_name,
+                    nick: convertir(user.first_name),
                     email: user.email,
                     category: user.category,
                     avatar: user.avatar

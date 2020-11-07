@@ -5,40 +5,12 @@
     <%- include('./partials/header.ejs')  %> <!-- HEADER -->
 
     
+    <%- include('./partials/banner.ejs')  %> <!-- BANNER -->
 
-<div class="container"><%- include('./partials/banner.ejs')  %> <!-- BANNER -->
-  <div class="row destacados">
-    <% productos.forEach(producto => { %>
-      <% if(producto.discount > 50) { %> 
-    <div class="col-6 col-md-12 col-lg-6 col-sm-12 destacado1">
-      <figure>
-        <a href=/products/detalle/<%= producto.id %> ><img src="/images/ropa/<%= producto.image %>" alt=""></a>
-      </figure>
-      <article class="nombredestacado">
-        <h2><%= producto.name %></h2>
-      </article>
-      <article class="edicion">
-        <h3>Limited Edition</h3>
-      </article>
-      <article class="comprar">
-        <a href=""><button>COMPRAR</button></a>
-      <article class="añadircarrito">
-        <a href="/carrito"><button>AÑADIR AL CARRITO</button></a>
-      </article>
-      <article class="descuentodestacado">
-          $<%- (producto.price - producto.price * producto.discount / 100).toFixed(0).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") %></i> <% if (producto.discount != 0) { %>
-          <span><%= producto.discount %>%OFF</span>
-        <% } %>
-      </article>
-    </div>
-    <% } %> 
-    <% }) %>
-  </div>
-</div>
-
-<div class="container">
+<div class="container-fluid">
   <div class="row">
       <div class="col-12 titulo">
+        <h1>RMЯ BOUTIQUE</h1>
         </div>
 
         <% productos.forEach(producto => { %>
@@ -55,14 +27,15 @@
   </div>
 </div>
 
-<div class="container oferta">
+<div class="container-fluid oferta">
   <div class="row">
-    <div class="ofertas">
-      OFERTAS
-    </div>
+    <div class="col-12 titulo">
+      <h2>RMЯ OFERTAS</h2>
+      </div>
+
   </div>
 </div>
-<div class="container">
+<div class="container-fluid">
   <div class="row">
       <div class="col-12 titulo">
         </div>
