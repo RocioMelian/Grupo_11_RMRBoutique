@@ -11,4 +11,8 @@
     />
     <title><%= title %></title>
     <link rel="stylesheet" href="/stylesheets/<%= css %> " />
+    <% if (typeof script !== 'undefined') { %>
+      <script type="text/javascript" src="/javascripts/<%= script %>"></script>
+
+    <% } %>
   </head>

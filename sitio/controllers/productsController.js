@@ -79,6 +79,7 @@ module.exports = {
             res.render('formCarga', 
             {title : 'Carga de Productos',
             css: "style.css",
+            script: 'prodAdd.js',
             categoria : categoria
            })
         })

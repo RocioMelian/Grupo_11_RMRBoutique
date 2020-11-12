@@ -5,7 +5,7 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: white;
     width: 100%;
-    height: 90px;
+    height: 100px;
     display: flex;
     flex-wrap: wrap;
 } 
@@ -150,34 +150,30 @@ header form button{
 }
 /*PC*/
 @media(min-width:1024px){
-   .header{
-       justify-content: center;
-   }
+    
    
     .logo img{
        
-        width: 40%;
+        width: 55%;
         
+    }
+    .barraheader{
+        margin-top: -75px;
+        margin-left: 150px;
+    }
+    
+   .carritodibujo{
+       margin-top: 5px;
+   }
+    
+    .avatar {
+        margin-top: -110px;
     }
     .personreg{
-        margin-left: 20px;
-        
-    }
-    .reg{
-        font-size: 20px;
+        margin-top: 0px;
     }
     .personalog{
-        margin-left: 20px;
-        margin-top: 10px;
+        margin-top: 0px;
     }
-    .personreg{
-       margin-top: 10px;
-        margin-left:100px;
-    }
-    
-   
-    
-    
-    
 }
 

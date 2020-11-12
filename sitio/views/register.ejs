@@ -44,9 +44,9 @@
       </select>
       <br><br>
 
-      <small class="text-danger"><%= (typeof errorFormato != 'undefined')?errorFormato: "" %>
+      <small class="text-danger" id="errorImagen"><%= (typeof avatar != 'undefined')?avatar: "" %>
 	</small>
-      <input class="controls" type="file" name="avatar">
+      <input class="controls" type="file" name="avatar" id="imagen" accept="image/*" lang="es">
       
       
   <small class="text-danger"><%= (typeof errors != 'undefined' && errors.checkbox)?errors.checkbox.msg: "" %>

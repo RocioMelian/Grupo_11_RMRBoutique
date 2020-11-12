@@ -6,13 +6,13 @@ module.exports = [
     
     check('first_name')
     .isLength({
-        min:1
+        min:2
     })
     .withMessage("Debes ingresar tu nombre"),
 
     check('last_name')
     .isLength({
-        min:1
+        min:2
     })
     .withMessage("Debes ingresar tu apellido"),
 
@@ -35,10 +35,20 @@ module.exports = [
      }),
     check('password')
     .isLength({
-        min:6,
+        min:8,
         max:12
     })
-    .withMessage("Debes ingresar una contraseña entre 6 y 12 caracteres"),
+    .withMessage("Debes ingresar una contraseña entre 8 y 12 caracteres"),
+
+    body('avatar')
+    .custom((value,{req}) =>{
+        if(req.fileValidationError){
+            return false
+        }else{
+            return true
+        }
+    })
+    .withMessage("Solo se permite png, jpg, jpeg, gif"),
 
     check('checkbox')
     .isString("on")

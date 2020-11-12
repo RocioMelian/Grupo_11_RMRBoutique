@@ -16,7 +16,8 @@ module.exports = {
         
         res.render('register' , {
             title : 'Registro de Usuario',
-            css:'style.css'
+            css:'style.css',
+            script: 'userRegister.js'
         })
     
     },
@@ -60,7 +61,9 @@ iniciar: (req, res) => {
         
     res.render('login' , {
         title : 'Iniciar Sesión',
-        css:'style.css'})
+        css:'style.css',
+        script: 'userLogin.js'
+    })
 },
 
 inicioSesion: (req, res) => {
