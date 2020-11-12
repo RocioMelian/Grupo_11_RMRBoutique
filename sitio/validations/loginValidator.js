@@ -11,13 +11,13 @@ module.exports = [
     .withMessage("Debe Ingresar un Email valido"),
 
     
-    check('pass')
+    check('password')
     .isLength( {
         min:1
     })
     .withMessage("Ingrese Su Contraseña"),
 
-    body('pass')
+    body('password')
     .custom(function(value,{req}){
         return db.Users.findOne({
             where : {
@@ -26,11 +26,11 @@ module.exports = [
         })
         .then( user => {
             if(!bcrypt.compareSync(value,user.password)){
-                return Promise.reject('Credenciales inválidas')
+                return Promise.reject('Contraseña Incorrecta')
             }
         })
         .catch(err => {
-            return Promise.reject('Credenciales inválidas')
+            return Promise.reject('Contraseña Incorrecta')
         })
     })
 ]

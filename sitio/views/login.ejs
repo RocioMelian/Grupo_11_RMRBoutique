@@ -11,9 +11,15 @@
       <section class="form-login">
         <h4>Inicio de Sesión</h4>
   
-        <input class="controls" type="email" name="email" id="correo" placeholder="Email">
+        <small
+				class="text-danger"><%= (typeof errors != 'undefined' && errors.email)?errors.email.msg: "" %>
+        </small>
+        <input class="email" type="email" name="email" id="correo" placeholder="Email">
   
-        <input class="controls" type="password" name="pass" id="contraseña" placeholder="Contraseña">
+        <small
+				class="text-danger"><%= (typeof errors != 'undefined' && errors.password)?errors.password.msg: "" %>
+				</small>
+        <input class="password" type="password" name="password" id="Contraseña" placeholder="Contraseña">
 
         <p><input type="checkbox" name="recuerdame">Recordarme</p>
          

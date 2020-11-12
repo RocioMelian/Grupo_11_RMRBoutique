@@ -22,7 +22,7 @@
    margin-bottom: 32px;
    font-family: fantasy;
 }
-.controls {
+.first_name {
     width: 100%;
     padding: 7px;
     border-radius: 5px;
@@ -32,6 +32,37 @@
     font-family: fantasy;
     
 }
+.last_name {
+    width: 100%;
+    padding: 7px;
+    border-radius: 5px;
+    margin-bottom: 16px;
+    border: 2px solid grey;
+    font-size: 18px;
+    font-family: fantasy;
+    
+}
+.email {
+    width: 100%;
+    padding: 7px;
+    border-radius: 5px;
+    margin-bottom: 16px;
+    border: 2px solid grey;
+    font-size: 18px;
+    font-family: fantasy;
+    
+}
+.pass {
+    width: 100%;
+    padding: 7px;
+    border-radius: 5px;
+    margin-bottom: 16px;
+    border: 2px solid grey;
+    font-size: 18px;
+    font-family: fantasy;
+    
+}
+
 /* PIE DE REGISTER. ESTOY DE ACUERDO */
 .form-register p {
     height: 40px;
