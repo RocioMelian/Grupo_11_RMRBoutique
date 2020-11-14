@@ -99,6 +99,7 @@ body .producto2{
     top: 20px;
     margin-top: 31px;
     margin-bottom: 20px;
+    transition: all 1s;
 }
 body .producto2:hover{
 transform: scale(1.1);
