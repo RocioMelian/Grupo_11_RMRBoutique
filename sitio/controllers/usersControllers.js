@@ -133,9 +133,12 @@ updateProfile:function (req,res) {
                     id : req.params.id
                 }
         })
-        .then( result => {
-            console.log(result)
-            return res.redirect('/users/perfil')
+        .then( user => {
+            req.session.user.first_name = req.body.first_name,
+            req.session.user.last_name = req.body.last_name,
+            req.session.user.nick = req.body.first_name,
+            req.session.user.avatar = (req.files[0])?req.files[0].filename:req.session.user.avatar,
+            res.redirect('/users/perfil')
         })
         .catch( err => {
             res.send(err)

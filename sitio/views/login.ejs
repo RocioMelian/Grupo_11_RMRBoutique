@@ -20,13 +20,15 @@
         <label for="Contraseña"></label>
         <small
 				class="text-danger" id="errorPass"><%= (typeof errors != 'undefined' && errors.password)?errors.password.msg: "" %>
-				</small>
+        </small>
+        
         <input class="form-control <%= (typeof old != 'undefined' && old.password)?"is-valid":(typeof errors != 'undefined' && errors.password)?"is-invalid": ""  %>" type="password" name="password" id="Contraseña" placeholder="Contraseña">
          <br><br>
+         
         <p><input  type="checkbox" name="recuerdame">Recordarme</p>
          
         <p><a href="/users/register">¿No tienes cuenta?</a></p>
-        
+         <label for="submit"></label>
         <span id="msgError" class="text-danger"></span>
         <input class="botons" name="submit" type="submit" value="Iniciar sesión">
         <a href="/"><input class="botons" type="submit" value="Cancelar"></a>
