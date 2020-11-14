@@ -1,6 +1,6 @@
 # 👚 ЯMR *Boutique*
 
-![logotipo](./sitio/public/images/logotipo2.png)
+![logotipo](./sitio/public/images/logotipoo.jfif)
 
 # 🗂 Primer sprint (entrega 17/8)
 
