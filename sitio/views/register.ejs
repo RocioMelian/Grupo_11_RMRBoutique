@@ -14,30 +14,30 @@
         <small
 				class="text-danger"><%= (typeof errors != 'undefined' && errors.first_name)?errors.first_name.msg: "" %>
         </small>
-        <input class="controls <%= (typeof old != 'undefined' && old.first_name)?"is-valid":(typeof errors != 'undefined' && errors.first_name)?"is-invalid": ""  %>"
+        <input class="form-control <%= (typeof old != 'undefined' && old.first_name)?"is-valid":(typeof errors != 'undefined' && errors.first_name)?"is-invalid": ""  %>"
          type="text" name="first_name" id="first_name" value="<%= (typeof old != 'undefined' && old.first_name)?old.first_name:'' %>" placeholder="Nombre">
-         
+         <br>
         <small
 				class="text-danger"><%= (typeof errors != 'undefined' && errors.last_name)?errors.last_name.msg: "" %>
         </small>
-        <input class="controls <%= (typeof old != 'undefined' && old.last_name)?"is-valid":(typeof errors != 'undefined' && errors.last_name)?"is-invalid": ""  %>"
+        <input class="form-control <%= (typeof old != 'undefined' && old.last_name)?"is-valid":(typeof errors != 'undefined' && errors.last_name)?"is-invalid": ""  %>"
          type="text" name="last_name" id="last_name" value="<%= (typeof old != 'undefined' && old.last_name)?old.last_name:'' %>" placeholder="Apellido">
-         
+         <br>
         <small
 				class="text-danger"><%= (typeof errors != 'undefined' && errors.email)?errors.email.msg: "" %>
         </small>
-        <input class="controls <%= (typeof old != 'undefined' && old.email)?"is-valid":(typeof errors != 'undefined' && errors.email)?"is-invalid": ""  %>"
-         type="email" name="email" id="email" value="<%= (typeof old != 'undefined' && old.email)?old.email:'' %>" placeholder="email">
-         
+        <input class="form-control <%= (typeof old != 'undefined' && old.email)?"is-valid":(typeof errors != 'undefined' && errors.email)?"is-invalid": ""  %>"
+         type="email" name="email" id="email" value="<%= (typeof old != 'undefined' && old.email)?old.email:'' %>" placeholder="Email">
+         <br>
         <small
 				class="text-danger"><%= (typeof errors != 'undefined' && errors.password)?errors.password.msg: "" %>
 				</small>
-        <input class="controls <%= (typeof old != 'undefined' && old.pass)?"is-valid":(typeof errors != 'undefined' && errors.pass)?"is-invalid": ""  %>" 
-        type="password" name="password" id="pass" value="<%= (typeof old != 'undefined' && old.pass)?old.pass:'' %>" placeholder="Ingrese su contraseña">
-        
+        <input class="form-control <%= (typeof old != 'undefined' && old.password)?"is-valid":(typeof errors != 'undefined' && errors.password)?"is-invalid": ""  %>" 
+        type="password" name="password" id="pass" value="<%= (typeof old != 'undefined' && old.password)?old.password:'' %>" placeholder="Ingrese su contraseña">
+        <br>
 
         <label for="category">Categoria:</label>
-      <select name="category" id="category">
+      <select class="form-control" name="category" id="category">
        <option disabled>Seleccionar</option>
        <option value="user">Usuario</option>
        <option value="admin">Administrador</option>
@@ -46,8 +46,8 @@
 
       <small class="text-danger" id="errorImagen"><%= (typeof avatar != 'undefined')?avatar: "" %>
 	</small>
-      <input class="controls" type="file" name="avatar" id="imagen" accept="image/*" lang="es">
-      
+      <input class="form-control" type="file" name="avatar" id="imagen" accept="image/*" lang="es">
+      <br>
       
   <small class="text-danger"><%= (typeof errors != 'undefined' && errors.checkbox)?errors.checkbox.msg: "" %>
 												</small>

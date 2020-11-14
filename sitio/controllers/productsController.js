@@ -101,8 +101,31 @@ module.exports = {
             .then(()=>{
                 return res.redirect('/products')
             })
-        }
-       
+        }else{
+            db.Categorias.findAll({
+                order:[
+                    'nombre'
+                ]
+            })
+            .then(categoria => {
+                let oldCategoria;
+                if(req.body.categoria){
+                    categoria.forEach(categoria => {
+                        if(categoria.id == req.body.categoria){
+                            oldCategoria = categoria.nombre
+                        }
+                    });
+                }
+            res.render('formCarga', {
+                title: "Agregar Producto",
+                css:'style.css',
+                categoria: categoria,
+                errors: errors.mapped(),
+                old:req.body,
+                oldCategoria:oldCategoria
+            }) 
+        
+            })
        
         
         /*productos.push(productoNuevo)
@@ -113,7 +136,7 @@ module.exports = {
         fs.writeFileSync(path.join(__dirname, '..', 'data', 'products.json', ), productoJson)
 
         res.redirect('/products');*/
-        
+        } 
     },
 
     

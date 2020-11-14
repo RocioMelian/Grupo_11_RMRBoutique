@@ -5,27 +5,30 @@
     <%- include('./partials/header.ejs')  %> <!-- HEADER -->
 
     
- <form action="/users/login" method="POST">
+ <form action="/users/login" method="POST" id="login">
     <div class = "row">
       <div class = "col-lg-12 col-md-12 col-sm-12 col-xs-12">
       <section class="form-login">
         <h4>Inicio de Sesión</h4>
-  
+        
+        <label for="correo"></label>
         <small
-				class="text-danger"><%= (typeof errors != 'undefined' && errors.email)?errors.email.msg: "" %>
+				class="text-danger" id="errorEmail"><%= (typeof errors != 'undefined' && errors.email)?errors.email.msg: "" %>
         </small>
-        <input class="email" type="email" name="email" id="correo" placeholder="Email">
+        <input class="form-control <%= (typeof old != 'undefined' && old.email)?"is-valid":(typeof errors != 'undefined' && errors.email)?"is-invalid": ""  %>" type="email" name="email" id="correo" placeholder="Email">
   
+        <label for="Contraseña"></label>
         <small
-				class="text-danger"><%= (typeof errors != 'undefined' && errors.password)?errors.password.msg: "" %>
+				class="text-danger" id="errorPass"><%= (typeof errors != 'undefined' && errors.password)?errors.password.msg: "" %>
 				</small>
-        <input class="password" type="password" name="password" id="Contraseña" placeholder="Contraseña">
-
-        <p><input type="checkbox" name="recuerdame">Recordarme</p>
+        <input class="form-control <%= (typeof old != 'undefined' && old.password)?"is-valid":(typeof errors != 'undefined' && errors.password)?"is-invalid": ""  %>" type="password" name="password" id="Contraseña" placeholder="Contraseña">
+         <br><br>
+        <p><input  type="checkbox" name="recuerdame">Recordarme</p>
          
         <p><a href="/users/register">¿No tienes cuenta?</a></p>
         
-        <input class="botons" type="submit" value="Iniciar sesión">
+        <span id="msgError" class="text-danger"></span>
+        <input class="botons" name="submit" type="submit" value="Iniciar sesión">
         <a href="/"><input class="botons" type="submit" value="Cancelar"></a>
         
       </section>

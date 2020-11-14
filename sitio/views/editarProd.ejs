@@ -16,24 +16,27 @@
       <h4>Editar producto</h4>
    <form action="/products/editarProd/<%= producto.id %>?_method=PUT" method="POST" enctype="multipart/form-data">
     <label for="name">Nombre</label>
-      <input class="controls" type="text" name="name" id="nombre produc" placeholder="Nombre del Producto" value="<%= producto.name %> ">
+    <input class="form-control" type="text" name="name" id="nombre produc" placeholder="Nombre del Producto" value="<%= producto.name %> ">
+   <br>
     <label for="talle">Talle</label>
-      <input class="controls" type="text" name="talle" id="talle" placeholder="Talle" value=<%= producto.talle %>>
+      <input class="form-control" type="text" name="talle" id="talle" placeholder="Talle" value=<%= producto.talle %>>
 
       <br>
     <label for="price">Precio</label>
-      <input class="controls" type="text" name="price" id="precio produc" placeholder="Precio del Producto" value=<%= producto.price %> >
+      <input class="form-control" type="text" name="price" id="precio produc" placeholder="Precio del Producto" value=<%= producto.price %> >
 
+     
       <br>
-      
     <label for="id">Número de articulo</label>
-      <input class="controls" type="text" name="id" id="num art" placeholder="Numero de Articulo" value=<%= producto.id %> >
-    <label for="discount">Descuento</label>
-      <input class="controls" type="text" name="discount" id="descuento" placeholder="Descuento %" value=<%= producto.discount %> >
+      <input class="form-control" type="text" name="id" id="num art" placeholder="Numero de Articulo" value=<%= producto.id %> >
+   <br>
+      <label for="discount">Descuento</label>
+      <input class="form-control" type="text" name="discount" id="descuento" placeholder="Descuento %" value=<%= producto.discount %> >
 
-      
+     <br> 
       <label for="category">Categoria:</label>
-      <select name="id_categoria" id="category">
+      <select 
+     class="form-control" name="id_categoria" id="category">
         <option value="<%= producto.categorias.id %>"><%= producto.categorias.nombre %></option>
         <% categoria.forEach(element => {%>
           <% if(element.nombre != producto.categorias.nombre) {%>
@@ -42,19 +45,19 @@
       <%}); %>     
       </select>
 
-      <br><br>
+      <br>
 
       <figure class="text-center">
         <img src="/images/ropa/<%= producto.image %> " alt="" class="img-fluid">
       </figure>
       <label for="image">Imagen</label>
-      <input class="controls" type="file" name="image">
+      <input class="form-control" type="file" name="image">
 
-      <br><br>
+      <br>
 
       <label>Agregar Descripcion:</label>
       <br>
-      <textarea placeholder="" name="description" id="" cols="39" rows="5"><%= producto.description %></textarea>
+      <textarea class="form-control" placeholder="" name="description" id="" cols="39" rows="5"><%= producto.description %></textarea>
       
       <input class="botons" type="submit" value="Editar">
       <a href="/products/detalle/<%= producto.id %> "><input class="botons" type="submit" value="Cancelar"></a>
