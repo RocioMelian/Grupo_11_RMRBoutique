@@ -81,3 +81,32 @@
 
 ### ✔️ Hacer menos:
   - Tenemos que trabajar menos por nuestra cuenta y más en equipo.
+
+ 
+  # ⭐ RETROSPECTIVA (5 Sprint)
+
+## Creamos nuestra retrospectiva basandonos en Starfish Retrospective.
+
+### En el Quinto Sprint estuve sola(Rocio)
+
+
+# ⭐ RETROSPECTIVA (6 Sprint)
+
+## Creamos nuestra retrospectiva basandonos en Starfish Retrospective.
+
+### ✔️ Seguir haciendo:
+  - Seguir hablando apenas se presenta el sprint y no esperar a que Rocio les diga que hacer.
+
+### ✔️ Hacer más:
+  - Tenemos que avisar siempre cuando hay que hacer "git pull origin master".
+
+### ✔️ Empezar a hacer:
+  - Ser mas responsables.
+
+### ✔️ Dejar de hacer:
+  - Tenemos que dejar de guardar el tp en github si vemos que tenemos errores.
+  - Dejar de dejar todo para ultimo momento.
+  - Dejar de preguntar que hay que hacer ,esperando que alguién te explique la vida.
+
+### ✔️ Hacer menos:
+  - Tenemos que trabajar menos por nuestra cuenta y más en equipo.

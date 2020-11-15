@@ -41,3 +41,21 @@ DEJAMOS DE HABLAR COMPLETAMENTE.
 
 #### 📚 Qué va a hacer hoy: 
 - VOY A DECIRLE A ERIC SI ME PUEDE AYUDAR HACIENDO UN ZOOM.
+
+# 🔉 Daily (Sprint 6)
+### Día 11 de Noviembre: ⌚
+
+Los chicos volvieron a hablar y volvimos a intentar hacer todo juntos.
+
+#### 📚 Qué hizo ayer: 
+- Ramiro soluciono unos problemas de las validaciones del back.
+- Martin hizo las validaciones del back de Productos que nos faltaba.
+- Rocio hizo las validaciones del front de Productos y Login (ayude a Ramiro con las validaciones del front de Register)
+
+#### 📚 Si se encontró con algún impedimento: 
+- Ramiro no podia hacer las validaciones del front de register ,Rocio lo ayudo.
+- Martin tenia problemas con las validaciones del back de Productos , Rocio lo ayudo.
+
+#### 📚 Qué va a hacer hoy: 
+- Voy a terminar El daily ,retro y readme (Rocio)
+- Ramiro se va a fijar el back de contraseñas porque algo falla.
