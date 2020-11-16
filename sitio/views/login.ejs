@@ -22,7 +22,7 @@
 				class="text-danger" id="errorPass"><%= (typeof errors != 'undefined' && errors.password)?errors.password.msg: "" %>
         </small>
         
-        <input class="form-control <%= (typeof old != 'undefined' && old.password)?"is-valid":(typeof errors != 'undefined' && errors.password)?"is-invalid": ""  %>" type="password" name="password" id="Contraseña" placeholder="Contraseña">
+        <input title="La contraseña debe tener entre 8 y 12 caracteres,una mayuscula,una minuscula y un numero" class="form-control <%= (typeof old != 'undefined' && old.password)?"is-valid":(typeof errors != 'undefined' && errors.password)?"is-invalid": ""  %>" type="password" name="password" id="Contraseña" placeholder="Contraseña">
          <br><br>
          
         <p><input  type="checkbox" name="recuerdame">Recordarme</p>

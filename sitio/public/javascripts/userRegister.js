@@ -87,9 +87,9 @@ window.addEventListener('load',function(){
                 this.classList.add('is-invalid')
                 break;
             case !regExPass.test(this.value) :
-                errorPass.innerHTML = "La contraseña debe tener entre 8 y 12 caracteres"
+                errorPass.innerHTML = "La contraseña no cumple los requisitos"
                 this.classList.add('is-invalid')
-                break
+                break;
             default:
                 this.classList.remove('is-invalid')
                 this.classList.add('is-valid')
