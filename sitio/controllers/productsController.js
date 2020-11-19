@@ -11,7 +11,9 @@ const {validationResult} = require('express-validator');
 
 module.exports = {
     listar: (req, res) => {
-        db.Products.findAll()
+        db.Products.findAll({
+            order: [["name","ASC"]]
+        })
         
 
         .then(producto =>{
@@ -215,5 +217,69 @@ module.exports = {
             res.redirect('/products')
           
         })
+    },
+    mujer:function(req,res){
+       db.Products.findAll({
+           where :{
+            id_categoria : 2
+           }
+       })
+        
+    
+      .then((producto) => {
+        res.render('categoria',{
+            title:'Mujeres',
+            css:'style.css',
+            producto: producto,
+        })
+      })
+    },
+    hombre:function(req,res){
+        db.Products.findAll({
+            where :{
+             id_categoria : 1
+            }
+        })
+         
+     
+       .then((producto) => {
+         res.render('categoria',{
+             title:'Hombres',
+             css:'style.css',
+             producto: producto,
+         })
+       })
+    },
+    niña:function(req,res){
+        db.Products.findAll({
+            where :{
+             id_categoria : 4
+            }
+        })
+         
+     
+       .then((producto) => {
+         res.render('categoria',{
+             title:'Niñas',
+             css:'style.css',
+             producto: producto,
+         })
+       })
+    },
+    niño:function(req,res){
+        db.Products.findAll({
+            where :{
+             id_categoria : 3
+            }
+        })
+         
+     
+       .then((producto) => {
+         res.render('categoria',{
+             title:'Niños',
+             css:'style.css',
+             producto: producto,
+         })
+       })
     }
 }

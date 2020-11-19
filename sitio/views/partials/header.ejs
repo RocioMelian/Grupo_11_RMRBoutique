@@ -14,11 +14,12 @@
              Mi cuenta <i class="fas fa-user-alt "></i>
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="/users/perfil">Tu perfil</a>
+            <a class="dropdown-item" href="/users/perfil">Mi perfil</a>
             <a class="dropdown-item" href="/users/logout">Cerrar Sesión <i class="fas fa-sign-in-alt "></i></a>
            
           </div>
         </li>
+       
       <li class="nav-item">
         <a class="nav-link active" href="/">Home</a>
       </li>
@@ -26,7 +27,18 @@
         <a class="nav-link" href="/products">Productos</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/carrito">Tu carrito <i class="fas fa-cart-plus"></i></a>
+        <a class="nav-link" href="/carrito">Mi carrito <i class="fas fa-cart-plus"></i></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Categorias
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/products/categoria/mujer">Mujer</a>
+          <a class="dropdown-item" href="/products/categoria/hombre">Hombre</a>
+          <a class="dropdown-item" href="/products/categoria/nia">Niña</a>
+          <a class="dropdown-item" href="/products/categoria/nio">Niño</a>
+        </div>
       </li>
       
       <li class="nav-item">
@@ -51,7 +63,7 @@
   </div>
   <form action="/products/search" method="get" class="form-inline my-2 my-lg-0">
     <input class="form-control mr-sm-2" type="text" name="search" placeholder="Buscar" aria-label="Search">
-    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
   </form>
 </nav>
 

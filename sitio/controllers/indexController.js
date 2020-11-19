@@ -10,7 +10,9 @@ module.exports = {
         /*let productos = dbProducts.filter(producto=>{
                 return producto
         })*/
-            db.Products.findAll()
+            db.Products.findAll({
+                limit: 10
+            })
         
         .then(productos =>{
             res.render('index' , 

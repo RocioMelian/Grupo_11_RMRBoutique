@@ -20,4 +20,9 @@ router.get('/editarProd/:id',productsController.editar);
 router.put('/editarProd/:id', mwProducts.any() ,productsController.edit);
 
 router.delete('/delete/:id',productsController.eliminar);
+
+router.get('/categoria/mujer',productsController.mujer)
+router.get('/categoria/hombre',productsController.hombre)
+router.get('/categoria/nia',productsController.niña)
+router.get('/categoria/nio',productsController.niño)
 module.exports = router;
