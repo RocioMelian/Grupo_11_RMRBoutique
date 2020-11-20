@@ -27,7 +27,7 @@ module.exports = [
     body('image')
     .custom((value,{req})=>{
         if(!req.files[0]){
-            return false
+            return true
         }else{
             return true
         }
@@ -40,7 +40,7 @@ module.exports = [
     })
     .withMessage('La descripcion del producto es obligatoria'),
 
-    check('categoria')
+    check('id_categoria')
     .isLength({
         min:1
     })

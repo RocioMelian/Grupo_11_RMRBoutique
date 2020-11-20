@@ -48,6 +48,9 @@ module.exports = {
         })
     },
     search:function(req,res){
+        if(req.query.search == ""){
+            res.redirect('/')
+        }
         /*let busqueda = req.query.search;
         let productos = [];
         dbProducts.forEach(producto=>{
