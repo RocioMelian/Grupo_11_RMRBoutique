@@ -1,6 +1,10 @@
-
+<style>
+  .logo{
+    border-radius: 50px;
+  }
+</style>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="/"><img  src="/images/logotipoo.jfif" alt="" width="70px" height="70px"></a>
+  <a class="navbar-brand" href="/"><img  src="/images/logotipoo.jfif" alt="" width="70px" height="70px" class="logo"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -21,7 +25,7 @@
         </li>
        
       <li class="nav-item">
-        <a class="nav-link active" href="/">Home</a>
+        <a class="nav-link" href="/">Home</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="/products">Productos</a>
@@ -43,9 +47,17 @@
       
       <li class="nav-item">
         <% if (user.category == "admin") { %>
-          <li class="nav-item">
-            <a class="nav-link" href="/products/carga">Añadir producto</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Administrador <i class="fas fa-user-alt "></i>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="/products/carga">Añadir producto</a>
+              <div class="dropdown-divider"></div>
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"> Se elimina y se edita desde el detalle del producto.</a>
+            </div>
           </li>
+         
       <% } %>
            
            

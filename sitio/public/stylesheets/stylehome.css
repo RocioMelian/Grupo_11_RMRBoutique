@@ -9,7 +9,7 @@
 body {
     display: inherit;
     position: absolute;
-    background-image: url("/images/fondoo.jpg");
+   
     width: 100%;
     max-width: 100%;
     background-size: cover;
@@ -105,12 +105,12 @@ body .producto2:hover{
 transform: scale(1.1);
 }
 body .producto2 img:hover{
-    border: 4px solid grey;
+    border: 1px solid grey;
     width: 100%;
-    box-shadow: 6px 13px 50px #000;
+    box-shadow: 2px 10px 30px #000;
 }
 body .producto2 img {
-    border: 4px solid grey;
+    border: 1px solid grey;
     width: 100%;
 }
 body .container div .nombreproducto {
@@ -118,24 +118,28 @@ body .container div .nombreproducto {
     font-family: fantasy;
 }
 body .nombreproducto {
-    border: 2px solid grey;
+    border: 0px solid grey;
     position: relative;
     width: 100%;
     color: black;
+    left: 30px;
+    font-size: 20px;
+    top: 10px;
 }
 body a:hover{
     text-decoration: none;
 }
 body .precioproducto {
     position: absolute;
-    right: 4px;
+    top: 5px;
+    right: 15px;
     font-size: 20px;
-    border: 2px solid grey;
+    border: 0px solid grey;
 }
 body .descuentoproducto {
-    border: 2px solid grey;
+    border: 1x solid grey;
     position: absolute;
-    right: 2px;
+    right: 30px;
     height: unset;
     text-align: center;
     text-decoration: none;
@@ -143,10 +147,11 @@ body .descuentoproducto {
     text-decoration: none;
     text-transform: uppercase;
     color: #39B54A;
+    margin-top: 7px;
 }
 body .ofertas {
     position: absolute;
-    border: 2px solid grey;
+    border: 1px solid grey;
     font-size: 30px;
     margin-bottom: 20px;
 }

@@ -7,16 +7,17 @@
 }
 /*BODY*/
 body{
-    background-image: url('/images/fondoo.jpg');
+    
     font-family: fantasy;
     background-size: cover;
 }
+
 .principal-detalle{
-    border: 2px solid grey;
+    border: 0px solid grey;
     width: 100%;
 }
 .imgdetalle img{
-    border: 2px solid grey;
+    border: 1px solid grey;
     width: 100%;
 }
 .descrip{

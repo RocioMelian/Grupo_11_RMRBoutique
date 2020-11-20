@@ -8,7 +8,7 @@
 }
 /*BODY*/
 body{
-    background-image: url('/images/fondoo.jpg');
+    
     font-family: fantasy;
     background-size: cover;
 }
@@ -17,7 +17,7 @@ body{
 
 .contenido-carrito{
     width: 100%;
-    border: 2px solid grey;
+    border: 1px solid grey;
     margin-top: 5px;
     height: 550px;
     display: flex;
@@ -47,7 +47,7 @@ a:hover{
 }
 .imagen img{
     width: 70%;
-    border: 2px solid grey;
+    border: 1px solid grey;
     display: flex;
     
 }
