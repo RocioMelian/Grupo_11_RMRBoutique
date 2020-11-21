@@ -46,7 +46,7 @@ window.addEventListener('load',function(){
             case !regExPass.test(this.value) :
                 errorPass.innerHTML = "La contraseña no cumple los requisitos"
                 this.classList.add('is-invalid')
-                break
+                break;
             default:
                 this.classList.remove('is-invalid')
                 this.classList.add('is-valid')
@@ -75,7 +75,7 @@ window.addEventListener('load',function(){
             msgError.innerHTML = "Los campos señadados son obligatorios"
         }
     
-
+    })
 
 
 })
