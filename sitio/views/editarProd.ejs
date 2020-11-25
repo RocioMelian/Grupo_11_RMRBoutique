@@ -14,24 +14,26 @@
     <div class = "col-lg-12 col-md-12 col-sm-12 col-xs-12">
     <section class="form-carga">
       <h4>Editar producto</h4>
-   <form action="/products/editarProd/<%= producto.id %>?_method=PUT" method="POST" enctype="multipart/form-data">
+   <form action="/products/editarProd/<%= producto.id %>?_method=PUT" method="POST" enctype="multipart/form-data" id="edit">
     <label for="name">Nombre</label>
-    <input class="form-control" type="text" name="name" id="nombre produc" placeholder="Nombre del Producto" value="<%= producto.name %> ">
+    <small id="errorNombre" class="text-danger"><%= (typeof errors != 'undefined' && errors.name)?errors.name.msg: "" %> </small>
+    <input class="form-control <%= (typeof old != 'undefined' && old.name)?"is-valid":(typeof errors != 'undefined' && errors.name)?"is-invalid": ""  %>" type="text" name="name" id="name" placeholder="Nombre del Producto" value="<%= (typeof old != 'undefined' && old.name)?old.name: producto.name %> ">
    <br>
+  
     <label for="talle">Talle</label>
-      <input class="form-control" type="text" name="talle" id="talle" placeholder="Talle" value=<%= producto.talle %>>
+    <small id="errorTalle" class="text-danger"><%= (typeof errors != 'undefined' && errors.talle)?errors.talle.msg: "" %> </small>
+      <input class="form-control <%= (typeof old != 'undefined' && old.talle)?"is-valid":(typeof errors != 'undefined' && errors.talle)?"is-invalid": ""  %>" type="text" name="talle" id="talle" placeholder="Talle" value= "<%= (typeof old != 'undefined' && old.talle)?old.talle: producto.talle %>">
 
       <br>
+      
     <label for="price">Precio</label>
-      <input class="form-control" type="text" name="price" id="precio produc" placeholder="Precio del Producto" value=<%= producto.price %> >
+    <small id="errorPrice" class="text-danger"><%= (typeof errors != 'undefined' && errors.price)?errors.price.msg: "" %> </small>
+      <input class="form-control <%= (typeof old != 'undefined' && old.price)?"is-valid":(typeof errors != 'undefined' && errors.price)?"is-invalid": ""  %>" type="text" name="price" id="price" placeholder="Precio del Producto" value="<%= (typeof old != 'undefined' && old.price)?old.price: producto.price %>">
 
-     
-      <br>
-    <label for="id">Número de articulo</label>
-      <input class="form-control" type="text" name="id" id="num art" placeholder="Numero de Articulo" value=<%= producto.id %> >
    <br>
       <label for="discount">Descuento</label>
-      <input class="form-control" type="text" name="discount" id="descuento" placeholder="Descuento %" value=<%= producto.discount %> >
+      <small id="errorDiscount" class="text-danger"><%= (typeof errors != 'undefined' && errors.discount)?errors.discount.msg: "" %> </small>
+      <input class="form-control <%= (typeof old != 'undefined' && old.discount && !errors.discount)?"is-valid":(typeof errors != 'undefined' && errors.precio)?"is-invalid": ""  %>" type="text" name="discount" id="discount" placeholder="Descuento %" value="<%= (typeof old != 'undefined' && old.discount)?old.discount: producto.discount %>">
 
      <br> 
       <label for="category">Categoria:</label>
@@ -50,17 +52,19 @@
       <figure class="text-center">
         <img src="/images/ropa/<%= producto.image %> " alt="" class="img-fluid">
       </figure>
+      <small id="errorImage" class="text-danger"><%= (typeof errors != 'undefined' && errors.image)?errors.image.msg: "" %> </small>
       <label for="image">Imagen</label>
-      <input class="form-control" type="file" name="image">
+      <input class="form-control" type="file" name="image" id="image" value="<%= (typeof old != 'undefined' && old.image)?old.image: producto.image %>" accept="image/*">
 
       <br>
 
-      <label>Agregar Descripcion:</label>
+      <label for="description">Agregar Descripcion:</label>
       <br>
-      <textarea class="form-control" placeholder="" name="description" id="" cols="39" rows="5"><%= producto.description %></textarea>
+      <small id="errorDescription" class="text-danger"><%= (typeof errors != 'undefined' && errors.description)?errors.description.msg: "" %> </small>
+      <textarea class="form-control <%= (typeof old != 'undefined' && old.description && !errors.description)?"is-valid":(typeof errors != 'undefined' && errors.description)?"is-invalid": ""  %></textarea>" placeholder="" name="description" id="description" cols="39" rows="5"><%= (typeof old != 'undefined' && old.description)?old.description: producto.description %> </textarea>
       
       <input class="botons" type="submit" value="Editar">
-      <a href="/products/detalle/<%= producto.id %> "><input class="botons" type="submit" value="Cancelar"></a>
+      <a href="/products/detalle/<%= producto.id %> "><input class="botons" type="reset" value="Cancelar"></a>
     </form>
     </section>
 

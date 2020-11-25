@@ -37,7 +37,7 @@
       <label for="category">Categoria:</label>
       <small id="errorCategoria" class="text-danger"><%= (typeof errors != 'undefined' && errors.categoria)?errors.categoria.msg: "" %> </small>
       <select name="id_categoria" id="category" class="form-control <%= (typeof old != 'undefined' && old.categoria)?"is-valid":(typeof errors != 'undefined' && errors.categoria)?"is-invalid": ""  %>">
-        <option value="">Eligí la categoría</option>
+        <option value="" disabled >Eligí la categoría</option>
         <% if (typeof oldCategoria != 'undefined') { %>
             <option value="<%= old.categoria %> " selected><%= oldCategoria %> </option>
         <% } %>

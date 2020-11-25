@@ -2,6 +2,9 @@
   .logo{
     border-radius: 50px;
   }
+  .logo-avatar{
+    border-radius: 50px;
+  }
 </style>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="/"><img  src="/images/logotipoo.jfif" alt="" width="70px" height="70px" class="logo"></a>
@@ -14,7 +17,7 @@
     <ul class="navbar-nav mr-auto">
       <% if (typeof user != "undefined" && user) { %>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <img src="/images/avatar_users/<%= user.avatar %> " alt="avatar" width="20px" height="20px">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <img src="/images/avatar_users/<%= user.avatar %> " alt="" width="20px" height="20px" class="logo-avatar">
              Mi cuenta <i class="fas fa-user-alt "></i>
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">

@@ -75,7 +75,9 @@ module.exports = {
                 producto:producto
             })
         })
-        
+        .catch(error=>{
+            res.send(error)
+        })
     },
     formCarga:function(req, res){
         let categoria = db.Categorias.findAll()
@@ -167,6 +169,7 @@ module.exports = {
             res.render('editarProd',{
             title:'Editar producto',
             css:'style.css',
+            script:'editProd.js',
             producto: producto,
             categoria: categoria
         })
@@ -197,7 +200,34 @@ module.exports = {
         .then(() => {
              res.redirect('/products/detalle/' + req.params.id)
         })
-    }
+        .catch(error =>{
+            res.send(error)
+        })
+    }else{
+        let producto = db.Products.findOne({
+            where : {
+                id: req.params.id
+            },
+            include : [
+                {
+                    association: 'categorias'
+                }
+            ]
+        })
+        let categoria = db.Categorias.findAll()
+        Promise.all([producto,categoria])
+        
+         .then(([producto,categoria]) =>{
+            res.render('editarProd',{
+            title:'Editar producto',
+            css:'style.css',
+            producto: producto,
+            categoria: categoria,
+            errors: errors.mapped(),
+            old:req.body,
+        })
+    })
+}
         /*fs.writeFileSync(path.join(__dirname,'../data/products.json'), JSON.stringify(dbProducts),'utf-8');
         res.redirect('/products/detalle/' + idProducto);*/
     },

@@ -1,14 +1,14 @@
 window.addEventListener('load',function(){
     console.log('JS vinculado correctamente');
 
-    let formulario = document.querySelector('form#carga');
+    let formulario = document.querySelector('form#edit');
     console.log(formulario.elements)
 
     let inputNombre = formulario.elements[0];
     let inputTalle = formulario.elements[1];
     let inputPrice = formulario.elements[2];
     let inputDiscount = formulario.elements[3];
-    let inputCategory = formulario.elements[4];
+    
     let inputImage = formulario.elements[5];
     let inputDescription = formulario.elements[6];
     
@@ -72,23 +72,7 @@ window.addEventListener('load',function(){
 
     })
 
-    inputCategory.addEventListener('blur',function(){
-
-        switch (true) {
-            case this.value.length === 0:
-                errorCategoria.innerHTML = "La categoria es obligatoria";
-                this.classList.add('is-invalid')
-                break;
-           
-            default:
-                this.classList.remove('is-invalid')
-                this.classList.add('is-valid')
-                errorCategoria.innerHTML = ""
-                break;
-        }
-
-    })
-
+   
     inputDiscount.addEventListener('blur',function(){
 
         switch (true) {
@@ -153,13 +137,13 @@ window.addEventListener('load',function(){
         }
 
     })
-       formulario.addEventListener('submit',function(e){
+    formulario.addEventListener('submit',function(e){
         e.preventDefault();
         let elementos = formulario.elements
 
    
         let error = false
-        for (let index = 0; index < elementos.length-1; index++) {
+        for (let index = 0; index < elementos.length-2; index++) {
             if(elementos[index].value == 0){
                 elementos[index].classList.add('is-invalid');
                error = true;
@@ -170,8 +154,8 @@ window.addEventListener('load',function(){
         }else{
             msgError.innerHTML = "Los campos señadados son obligatorios"
         }
-   
-
     })
+    
+
 
 })
