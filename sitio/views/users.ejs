@@ -29,7 +29,7 @@
                   <div class="tab-pane fade show active p-4" id="datos" role="tabpanel" aria-labelledby="home-tab">
                    
                         <form action="/users/updateProfile/<%= usuario.id %> ?_method=PUT" method="POST"
-                          enctype="multipart/form-data">
+                          enctype="multipart/form-data" id="editUser">
                           <div class="form-row">
                             <div class="col-12 col-md-4 mt-3 d-flex flex-column align-items-center">
                             
@@ -38,25 +38,36 @@
                                 style="object-fit: cover; object-position: top;">
                              
                               <div class="form-group w-75">
-                                <input type="file" class="form-control" id="avatarImput" name="avatar">
+                                <small class="text-danger" id="errorImagen"><%= (typeof avatar != 'undefined')?avatar: "" %>
+                                </small>
+                                <input type="file" class="form-control" id="avatarImput" name="avatar" value="<%= (typeof old != 'undefined' && old.avatar)?old.avatar: usuario.avatar %>">
                               </div>
                             </div>
                             <div class="col-12 col-md-8 ">
                               <div class="form-row mt-2">
                                 <div class="form-group col-12 col-md-6 ">
                                   <label for="inputNombre">Nombre</label>
-                                  <input type="text" name="first_name" class="form-control" id="inputNombre"
-                                    value="<%= usuario.first_name %>" >
+                                  <small
+                                  class="text-danger" id="errorNombre"><%= (typeof errors != 'undefined' && errors.first_name)?errors.first_name.msg: "" %>
+                                  </small>
+                                  <input type="text" name="first_name" class="form-control <%= (typeof old != 'undefined' && old.first_name)?"is-valid":(typeof errors != 'undefined' && errors.first_name)?"is-invalid": ""  %>" id="inputNombre"
+                                    value="<%= (typeof old != 'undefined' && old.first_name)?old.first_name: usuario.first_name %> " >
                                 </div>
                                 <div class="form-group col-12 col-md-6">
                                   <label for="inputApellido">Apellido</label>
-                                  <input type="text" name="last_name" class="form-control" id="inputApellido"
-                                    value="<%= usuario.last_name %>" >
+                                  <small
+                                  class="text-danger" id="errorApellido"><%= (typeof errors != 'undefined' && errors.last_name)?errors.last_name.msg: "" %>
+                                  </small>
+                                  <input type="text" name="last_name" class="form-control <%= (typeof old != 'undefined' && old.last_name)?"is-valid":(typeof errors != 'undefined' && errors.last_name)?"is-invalid": ""  %>" id="inputApellido"
+                                    value="<%= (typeof old != 'undefined' && old.last_name)?old.last_name: usuario.last_name %>" >
                                 </div>
                                 <div class="form-group col-12 col-md-6">
                                   <label for="imputEmail">Email</label>
-                                  <input type="email" name="email" class="form-control" id="imputEmail"
-                                    value=<%= usuario.email %> >
+                                  <small
+                                  class="text-danger" id="errorEmail"><%= (typeof errors != 'undefined' && errors.email)?errors.email.msg: "" %>
+                                  </small>
+                                  <input type="email" name="email" class="form-control <%= (typeof old != 'undefined' && old.email)?"is-valid":(typeof errors != 'undefined' && errors.email)?"is-invalid": ""  %>" id="imputEmail"
+                                    value="<%= (typeof old != 'undefined' && old.email)?old.email: usuario.email %>">
                                 </div>
                                
                                 

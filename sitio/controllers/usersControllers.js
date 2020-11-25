@@ -113,6 +113,7 @@ sesion: function(req,res){
         res.render('users',{
             title:"Perfil de usuario",
             css: "style.css",
+            script:'editUser.js',
             usuario : user
         })
     })
@@ -121,7 +122,10 @@ sesion: function(req,res){
     })
 },
 updateProfile:function (req,res) {
-     db.Users.update({
+    let errors = validationResult(req)
+
+        if (errors.isEmpty()) {
+            db.Users.update({
                 first_name: req.body.first_name,
                 last_name: req.body.last_name,
                 email:req.body.email,
@@ -140,9 +144,18 @@ updateProfile:function (req,res) {
             req.session.user.avatar = (req.files[0])?req.files[0].filename:req.session.user.avatar,
             res.redirect('/users/perfil')
         })
-        .catch( err => {
-            res.send(err)
-        })
+    }else{
+        db.Users.findByPk(req.session.user.id)
+        .then(user => {
+            res.render('users', {
+                title: 'Perfil de Usuario',
+                css: 'style.css',
+                errors: errors.mapped(),
+                usuario: user,
+                old: req.body
+                })
+            })
+    }
 },
 delete:function(req,res) {
     db.Users.destroy({
