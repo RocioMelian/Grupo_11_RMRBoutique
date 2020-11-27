@@ -115,7 +115,7 @@ window.addEventListener('load',function(){
       
         let error = false
         for (let index = 0; index < elementos.length-2; index++) {
-            if(index != 5 && elementos[index].value == 0){
+            if(index != 0 && elementos[index].value == 0){
                 elementos[index].classList.add('is-invalid');
                error = true;
             }

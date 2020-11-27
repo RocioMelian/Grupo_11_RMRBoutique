@@ -37,7 +37,7 @@
                               <img src="/images/avatar_users/<%= usuario.avatar %> " class="avatarImg" alt="avatar" width="75%"
                                 style="object-fit: cover; object-position: top;">
                              
-                              <div class="form-group w-75">
+                              <div class="form-group w-105">
                                 <small class="text-danger" id="errorImagen"><%= (typeof avatar != 'undefined')?avatar: "" %>
                                 </small>
                                 <input type="file" class="form-control" id="avatarImput" name="avatar" value="<%= (typeof old != 'undefined' && old.avatar)?old.avatar: usuario.avatar %>">

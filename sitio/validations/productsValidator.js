@@ -1,5 +1,5 @@
 const {check,validationResult,body} = require('express-validator');
-
+let db = require('../database/models');
 module.exports = [
 
     check('name')
@@ -25,14 +25,14 @@ module.exports = [
     }).withMessage('El producto debe tener un precio válido'),
 
     body('image')
-    .custom((value,{req})=>{
-        if(!req.files[0]){
-            return true
+    .custom((value,{req}) =>{
+        if(req.fileValidationError){
+            return false
         }else{
             return true
         }
     })
-    .withMessage("Tiene que subir una imagen"),
+    .withMessage("Solo se permite png, jpg, jpeg, gif"),
 
     check('description')
     .isLength({

@@ -93,7 +93,7 @@ window.addEventListener('load',function(){
 
         switch (true) {
             case this.value.length === 0:
-                errorDiscount.innerHTML = "El descuento es obligatorio, si no posee descuento poner 0 (cero)";
+                errorDiscount.innerHTML = "El descuento es obligatorio";
                 this.classList.add('is-invalid')
                 break;
            
@@ -115,8 +115,7 @@ window.addEventListener('load',function(){
                 errores.foto = "Solo imagenes con extension jpg, jpeg, png, o gif"
                 errorFoto.innerHTML = errores.foto;
                 this.classList.add('is-invalid')
-                this.value = '';
-                vistaPrevia.src = "";
+               
             break
         
             default:
@@ -129,7 +128,7 @@ window.addEventListener('load',function(){
                 reader.readAsDataURL(e.target.files[0]);
                 // Le decimos que cuando este listo ejecute el código interno
                 reader.onload = function(){
-                vistaPrevia.src = reader.result;
+                
                 };
                 this.classList.remove('is-invalid');
                 this.classList.add('is-valid');
@@ -160,7 +159,7 @@ window.addEventListener('load',function(){
    
         let error = false
         for (let index = 0; index < elementos.length-1; index++) {
-            if(elementos[index].value == 0){
+            if(index != 5 && elementos[index].value == 0){
                 elementos[index].classList.add('is-invalid');
                error = true;
             }
