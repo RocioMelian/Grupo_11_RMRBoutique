@@ -66,7 +66,7 @@
                                   <small
                                   class="text-danger" id="errorEmail"><%= (typeof errors != 'undefined' && errors.email)?errors.email.msg: "" %>
                                   </small>
-                                  <input type="email" name="email" class="form-control <%= (typeof old != 'undefined' && old.email)?"is-valid":(typeof errors != 'undefined' && errors.email)?"is-invalid": ""  %>" id="imputEmail"
+                                  <input disabled type="email" name="email" class="form-control <%= (typeof old != 'undefined' && old.email)?"is-valid":(typeof errors != 'undefined' && errors.email)?"is-invalid": ""  %>" id="imputEmail"
                                     value="<%= (typeof old != 'undefined' && old.email)?old.email: usuario.email %>">
                                 </div>
                                
