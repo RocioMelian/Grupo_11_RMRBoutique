@@ -7,7 +7,7 @@ window.addEventListener('load',function(){
     let inputAvatar = formulario.elements[0];
     let inputFirst_name = formulario.elements[1];
     let inputLast_name = formulario.elements[2];
-    let inputEmail = formulario.elements[3];
+    
     
     
    
@@ -58,25 +58,7 @@ window.addEventListener('load',function(){
 
     })
 
-    inputEmail.addEventListener('blur',function(){
-
-        switch (true) {
-            case this.value.length === 0:
-                errorEmail.innerHTML = "El campo email es obligatorio";
-                this.classList.add('is-invalid')
-                break;
-            case !regExEmail.test(this.value) :
-                errorEmail.innerHTML = "Debes escribir un email válido"
-                this.classList.add('is-invalid')
-                break
-            default:
-                this.classList.remove('is-invalid')
-                this.classList.add('is-valid')
-                errorEmail.innerHTML = ""
-                break;
-        }
-
-    })
+    
 
     
 
@@ -114,7 +96,7 @@ window.addEventListener('load',function(){
         let elementos = formulario.elements
       
         let error = false
-        for (let index = 0; index < elementos.length-2; index++) {
+        for (let index = 0; index < elementos.length-3; index++) {
             if(index != 0 && elementos[index].value == 0){
                 elementos[index].classList.add('is-invalid');
                error = true;

@@ -15,11 +15,7 @@ module.exports = [
     })
     .withMessage("Debes ingresar tu apellido"),
 
-    check('email')
-    .isEmail()
-    .withMessage("Debes ingresar un email válido"),
-
-   
+    
     body('avatar')
     .custom((value,{req}) =>{
         if(req.fileValidationError){
