@@ -14,7 +14,7 @@
     <div class = "col-lg-12 col-md-12 col-sm-12 col-xs-12">
     <section class="form-carga">
       <h4>Editar producto</h4>
-   <form action="/products/editarProd/<%= producto.id %>?_method=PUT" method="POST" enctype="multipart/form-data" id="edit">
+   <form action="/products/editarProd/<%= producto.id %>?_method=PUT" autocomplete="off" method="POST" enctype="multipart/form-data" id="edit">
     <label for="name">Nombre</label>
     <small id="errorNombre" class="text-danger"><%= (typeof errors != 'undefined' && errors.name)?errors.name.msg: "" %> </small>
     <input class="form-control <%= (typeof old != 'undefined' && old.name)?"is-valid":(typeof errors != 'undefined' && errors.name)?"is-invalid": ""  %>" type="text" name="name" id="name" placeholder="Nombre del Producto" value="<%= (typeof old != 'undefined' && old.name)?old.name: producto.name %> ">
