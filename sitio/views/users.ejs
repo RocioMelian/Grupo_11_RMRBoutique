@@ -28,7 +28,7 @@
     
                   <div class="tab-pane fade show active p-4" id="datos" role="tabpanel" aria-labelledby="home-tab">
                    
-                        <form action="/users/updateProfile/<%= usuario.id %> ?_method=PUT" method="POST"
+                        <form action="/users/updateProfile/<%= usuario.id %> ?_method=PUT" autocomplete="off" method="POST"
                           enctype="multipart/form-data" id="editUser">
                           <div class="form-row">
                             <div class="col-12 col-md-4 mt-3 d-flex flex-column align-items-center">
@@ -81,7 +81,7 @@
                         </form>
                     
                         <div class="col-12 col-md-4 d-flex justify-content-center">
-                          <form action="/users/delete/<%= usuario.id %>?_method=DELETE" method="POST">
+                          <form action="/users/delete/<%= usuario.id %>?_method=DELETE" autocomplete="off" method="POST">
                             <button type="submit" class="btn-sm btn-danger">Darse de baja</button>
                           </form>
                         </div>
